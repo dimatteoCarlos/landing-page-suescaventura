@@ -103,11 +103,11 @@ export const pages = [
     photoGroup: [{ idImg: 23 }, { idImg: 24 }, { idImg: 25 }],
     texts: {
       title: 'Travesía en cuevas (Espeleismo)',
-      parr: 'La actividad inicia caminando por senderos naturales para llegar a la cueva Chocoansia, donde realizaremos un recorrido de aproximadamente 350 metros, sorteando diferentes obstáculos naturales como pasos estrechos y posos de agua,rodeados por ecosistemas propios de este tipo de escenarios, al finalizar el recorrido retornaremos al punto de partida caminando.',
+      parr: '',
       parr1:
-        'Nota: Contar con muda de ropa completa por si nos ensuciamos o nos mojamos',
+        'La actividad inicia caminando por senderos naturales para llegar a la cueva Chocoansia, donde realizaremos un recorrido de aproximadamente 350 metros, sorteando diferentes obstáculos naturales como pasos estrechos y pozos de agua,rodeados por ecosistemas propios de este tipo de escenarios, al finalizar el recorrido retornaremos al punto de partida caminando.',
       parr2: [
-        'Cada persona contará con seguro de asistencia médica, cada uno estará equipado con los sistemas de seguridad necesarios, equipos certificados, bajo la instrucción especializada de guías calificados.',
+        'Nota: Contar con muda de ropa completa por si nos ensuciamos o nos mojamos',
       ],
     },
   },
@@ -119,7 +119,7 @@ export const pages = [
     photoGroup: [],
     texts: {
       title: '',
-      parr: '',
+      parr: 'Cada persona contará con seguro de asistencia médica, cada uno estará equipado con los sistemas de seguridad necesarios, equipos certificados, bajo la instrucción especializada de guías calificados.',
       parr1: '',
       parr2: [],
     },

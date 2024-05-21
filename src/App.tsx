@@ -38,7 +38,7 @@ function App() {
                 />
               </div>
 
-              <div className={`page__card page__card--parr--${page}`}>
+              <div className={`page__card page__card--${page} page__card--parr--${page}`}>
                 <span
                   className={`page__texts--title page__texts--title--${page}`}
                 >
@@ -78,17 +78,17 @@ function App() {
             >
               {photoGroup.length > 0 &&
                 photoGroup.map((photo, i) => (
-                  <div
-                    className={`page__photoGroup__photo page__photoGroup__photo--${page} `}
-                    key={`photoGroup__${page}--${i}`}
-                  >
+                  // <div
+                  //   className={`page__photoGroup__photo page__photoGroup__photo--${page} `}
+                  //   key={`photoGroup__${page}--${i}`}
+                  // >
                     <img
                       src={`${images[photo.idImg].imgUrl}`}
                       alt={`${images[idImg]}`}
                       className={`page__photoGroup page__photoGroup--${page} page__photoGroup--${page}--${i}`}
                       style={{ backgroundColor: 'red' }}
                     />
-                  </div>
+                  // </div>
                 ))}
             </article>
           </section>
