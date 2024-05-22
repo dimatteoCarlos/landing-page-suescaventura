@@ -1,4 +1,5 @@
-export const pages = [
+import { PageType } from '../../types/types';
+export const pages: PageType[] = [
   {
     page: 1,
     idImg: 1,
@@ -69,7 +70,7 @@ export const pages = [
       parr2: [],
     },
   },
-  ,
+
   {
     page: 6,
     idImg: 14,
@@ -110,38 +111,6 @@ export const pages = [
         'Nota: Contar con muda de ropa completa por si nos ensuciamos o nos mojamos',
       ],
     },
-  },
-
-  //los planes deben ir en componente aparte
-  {
-    page: 9,
-    idImg: 26,
-    photoGroup: [],
-    texts: {
-      title: '',
-      parr: 'Cada persona contará con seguro de asistencia médica, cada uno estará equipado con los sistemas de seguridad necesarios, equipos certificados, bajo la instrucción especializada de guías calificados.',
-      parr1: '',
-      parr2: [],
-    },
-  },
-
-  {
-    page: 10,
-    idImg: 26,
-    photoGroup: [],
-    texts: { title: '', parr: '', parr1: '', parr2: [] },
-  },
-  {
-    page: 11,
-    idImg: 26,
-    photoGroup: [],
-    texts: { title: '', parr: '', parr1: '', parr2: [] },
-  },
-  {
-    page: 12,
-    idImg: 27,
-    photoGroup: [],
-    texts: { title: '', parr: '', parr1: '', parr2: [] },
   },
 ];
 
