@@ -46,12 +46,12 @@ export type PlansType = {
   // | null;
 };
 
+//-----------------------------
 export type PlansEntity = {
   planId: number;
   planTitle: string;
-  planCards?: PlanCardsType[] 
+  planCards?: PlanCardsType[];
   // | null
-  ;
 };
 export type PlanCardsType = {
   cardId: number;

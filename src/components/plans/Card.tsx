@@ -19,7 +19,7 @@ function Card({ planCard }: CardTypeProp) {
     <>
       <div className='card__plans__container'>
         <div className='card__plans__image__box'>
-          <CardFigure cardFigureNames={cardFigurePlan} />
+          <CardFigure cardFigurePlan={cardFigurePlan} />
           <div className='card__plans__title'>
             {cardTableHead}
 

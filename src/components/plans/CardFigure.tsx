@@ -1,20 +1,19 @@
-import React from 'react';
-
-export default function CardFigure({ cardFigureNames }) {
+type CardFigurePropType = {
+  cardFigurePlan: string[];
+};
+export default function CardFigure({ cardFigurePlan }: CardFigurePropType) {
   return (
     <>
-      {/* <img src='/figures/escalada.png' alt='' /> */}
-      
       <div className='card__figure__container'>
-        {cardFigureNames.map((figName, ifig) => {
+        {cardFigurePlan.map((figName, ifig) => (
           <img
-            src='/figures/scalator.png'
-            alt=''
+            // src={`/figures/${figName}.png`}
+            src={`/figures/${figName}-removebg-preview.png`}
+            alt={`figure-${figName}-${ifig}`}
             key={`${figName}-fig-${ifig}`}
-          />;
-        })}
+          />
+        ))}
       </div>
-      
     </>
   );
 }

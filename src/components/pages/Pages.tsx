@@ -1,4 +1,4 @@
-import '../styles/style-pages.css';
+import '../../styles/style-pages.css';
 
 import { DataImageType, PageType } from '../../types/types.ts';
 type PagesPropsType = {
