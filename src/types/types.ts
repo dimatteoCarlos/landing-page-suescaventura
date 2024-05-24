@@ -57,9 +57,9 @@ export type PlanCardsType = {
   cardId: number;
   cardFigurePlan?: string[] | null;
   cardTableHead: string;
-  planRows?: PlanRowsEntity[] | null;
+  planRows?: PlanRowsType[] | null;
 };
-export type PlanRowsEntity = {
+export type PlanRowsType = {
   rowId: number;
   concept: string;
   cost: number;

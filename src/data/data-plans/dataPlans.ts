@@ -3,7 +3,7 @@ import { PlansType } from '../../types/types';
 export const dataPlans: PlansType[] = [
   //page
   {
-    pageId: 1,
+    pageId: 9,
     pageTitle: 'Planes suescAventura',
     parr: 'inversión',
     parr1:
@@ -56,7 +56,7 @@ export const dataPlans: PlansType[] = [
 
   //start page
   {
-    pageId: 2,
+    pageId: 10,
     pageTitle: '',
     parr: '',
     parr1: '',
@@ -173,7 +173,7 @@ export const dataPlans: PlansType[] = [
 
   //start page
   {
-    pageId: 3,
+    pageId: 11,
     pageTitle: '',
     parr: '',
     parr1: '',
@@ -254,7 +254,7 @@ export const dataPlans: PlansType[] = [
 
   //start of page
   {
-    pageId: 4,
+    pageId: 12,
     pageTitle: '',
     parr: '',
     parr1: '',

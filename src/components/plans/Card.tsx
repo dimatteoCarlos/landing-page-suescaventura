@@ -1,4 +1,6 @@
 import CardFigure from './CardFigure';
+import '../../styles/style-plans.css';
+import Row from './Row';
 
 type CardTypeProp = {
   planCard: {
@@ -17,37 +19,25 @@ function Card({ planCard }: CardTypeProp) {
 
   return (
     <>
-      <div className='card__plans__container'>
-        <div className='card__plans__image__box'>
-          <CardFigure cardFigurePlan={cardFigurePlan} />
-          <div className='card__plans__title'>
-            {cardTableHead}
+
+        <div className='card__plan__container'>
+          <div className='card__plans__image__box'>
+            <CardFigure cardFigurePlan={cardFigurePlan} />
+          </div>
+          <div className='card__plans__box'>
+            <div className='card__plans__box cardTableHead'>
+              {cardTableHead}
+            </div>
 
             {planRows.map((planRow, _) => {
-              const { rowId, concept, cost } = planRow;
+              const { rowId } = planRow;
               const keyRow = `card-${cardId}-${rowId}`;
-              return (
-                <div className={`card__plans__row--${rowId}`} key={keyRow}>
-                  <div className={`card__row__col card__row__col--left`}>
-                    {concept}
-                  </div>
-
-                  <div className={`card__row__col card__row__col--right`}>
-                    $
-                    {new Intl.NumberFormat(
-                      'es-ES'
-                      //  {
-                      //   style: 'currency',
-                      //   currency: 'COP',
-                      // }
-                    ).format(cost)}
-                  </div>
-                </div>
-              );
+              return <Row planRow={planRow} cardId={cardId} key={keyRow} />;
             })}
           </div>
         </div>
-      </div>
+
+
     </>
   );
 }

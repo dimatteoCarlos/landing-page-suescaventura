@@ -8,6 +8,7 @@ type PagesPropsType = {
 
 function Pages({ pages, images }: PagesPropsType) {
   let logoIMg = '/logos/logoSuescaventuraWord-sinFondo.png';
+  // let pages = [pags]
 
   return (
     <>
@@ -20,23 +21,17 @@ function Pages({ pages, images }: PagesPropsType) {
             texts: { title, parr, parr1, parr2 },
           } = pag;
 
-          console.log(
-            images[idImg].imgUrl,
-            page,
-
-            { pag }
-          );
 
           return (
             <section
               className={`section__page section__page--${page}`}
               key={`page-${indx}`}
             >
-              <div className={`page__container page__container--${page}`}>
+            <div className={`page__container page__container--${page}`}>
                 {page === 1 ? (
                   <img src={`${logoIMg}`} alt={`logo`} className='logo' />
                 ) : (
-                  ''
+                  null
                 )}
 
                 <div className={`page__bgImg page__bgImg--${page}`}>
@@ -70,18 +65,21 @@ function Pages({ pages, images }: PagesPropsType) {
                     {parr1}
                   </p>
                 )}
-                <ul
-                  className={`page__texts__paragraph page__text__paragraph__parr2 page__card page__card--parr2--${page}`}
-                >
-                  {parr2.map((parr2Item, i) => (
-                    <li
-                      className={`page__parr2--item--${page} page__parr2--item`}
-                      key={i}
-                    >
-                      {parr2Item}
-                    </li>
-                  ))}
-                </ul>
+
+                {
+                  <ul
+                    className={`page__texts__paragraph page__text__paragraph__parr2 page__card page__card--parr2--${page}`}
+                  >
+                    {parr2.map((parr2Item, i) => (
+                      <li
+                        className={`page__parr2--item--${page} page__parr2--item`}
+                        key={i}
+                      >
+                        {parr2Item}
+                      </li>
+                    ))}
+                  </ul>
+                }
               </div>
 
               <article
