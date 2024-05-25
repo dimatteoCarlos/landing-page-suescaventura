@@ -87,9 +87,9 @@ export const dataPlans: PlansType[] = [
             cardFigurePlan: ['escalada', 'plus', 'cabalgata'],
             cardTableHead: 'Valor por persona',
             planRows: [
-              { rowId: 1, concept: '1 persona', cost: 115000 },
+              { rowId: 1, concept: '1 persona:', cost: 115000 },
 
-              { rowId: 2, concept: '2 en adelante', cost: 90000 },
+              { rowId: 2, concept: '2 en adelante:', cost: 90000 },
             ], //planRows
           }, //card
           //card
@@ -98,9 +98,9 @@ export const dataPlans: PlansType[] = [
             cardFigurePlan: ['rappel', 'plus', 'cabalgata'],
             cardTableHead: 'Valor por persona',
             planRows: [
-              { rowId: 1, concept: '1 persona', cost: 115000 },
+              { rowId: 1, concept: '1 persona:', cost: 115000 },
 
-              { rowId: 2, concept: '2 en adelante', cost: 90000 },
+              { rowId: 2, concept: '2 en adelante:', cost: 90000 },
             ], //planRows
           }, //card
         ], //planCards
@@ -264,7 +264,7 @@ export const dataPlans: PlansType[] = [
       {
         planId: 12,
         planTitle:
-          '12. Escalada (25m)1 ruta + Rappel (25m) 1 linea de descenso + Caminata',
+          '12. Escalada (25m) 1 ruta + Rappel (25m) 1 línea de descenso + Caminata',
         planCards: [
           //start of card
           {
@@ -306,7 +306,7 @@ export const dataPlans: PlansType[] = [
       {
         planId: 14,
         planTitle:
-          '14.Escalada (25m)1 ruta + Rappel (25m) 1 linea de descenso + Caminata + Espeleismo (cuevas)',
+          '14.Escalada (25m) 1 ruta + Rappel (25m) 1 línea de descenso + Caminata + Espeleismo (cuevas)',
         planCards: [
           //start of card
           {

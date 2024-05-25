@@ -114,6 +114,30 @@ export const pages: PageType[] = [
   },
 ];
 
+export const lastPage: PageType = {
+  page: 12,
+  idImg: 27,
+  photoGroup: [{ idImg: 29 }],
+  texts: {
+    title: '',
+    parr: 'Cordialmente:',
+    parr1: '',
+    parr2: [
+      'No incluye parqueadero',
+      'No incluye comidas y bebidas',
+      'No incluye servicios no especificados',
+    ],
+
+    parr3: [
+      'ARLEY PARRA GÓMEZ',
+      'GERENTE GENERAL AGENCIA SUESCAVENTURA',
+      'GUIA DE ESCALADA EN ROCA',
+      'arleyparragomez@gmail.com',
+      'tel:3203837807',
+    ],
+  },
+};
+
 export const images = {
   1: { imgUrl: '/images/image-000.png' },
   2: { imgUrl: '/images/image-001.png' },

@@ -21,18 +21,15 @@ function Pages({ pages, images }: PagesPropsType) {
             texts: { title, parr, parr1, parr2 },
           } = pag;
 
-
           return (
             <section
               className={`section__page section__page--${page}`}
               key={`page-${indx}`}
             >
-            <div className={`page__container page__container--${page}`}>
+              <div className={`page__container page__container--${page}`}>
                 {page === 1 ? (
                   <img src={`${logoIMg}`} alt={`logo`} className='logo' />
-                ) : (
-                  null
-                )}
+                ) : null}
 
                 <div className={`page__bgImg page__bgImg--${page}`}>
                   <img
@@ -70,23 +67,22 @@ function Pages({ pages, images }: PagesPropsType) {
                   <ul
                     className={`page__texts__paragraph page__text__paragraph__parr2 page__card page__card--parr2--${page}`}
                   >
-                    {parr2.map((parr2Item, i) => (
-                      <li
-                        className={`page__parr2--item--${page} page__parr2--item`}
-                        key={i}
-                      >
-                        {parr2Item}
-                      </li>
-                    ))}
+                    {parr2.length > 0 &&
+                      parr2.map((parr2Item, i) => (
+                        <li
+                          className={`page__parr2--item--${page} page__parr2--item`}
+                          key={i}
+                        >
+                          {parr2Item}
+                        </li>
+                      ))}
                   </ul>
                 }
               </div>
-
               <article
                 className={`page__card gallery__photoGroup gallery__photoGroup--page--${page}`}
               >
-                {
-                  // photoGroup.length > 0 &&
+                {photoGroup!.length > 0 &&
                   photoGroup?.map((photo, i) => (
                     // <div
                     //   className={`page__photoGroup__photo page__photoGroup__photo--${page} `}
@@ -98,11 +94,9 @@ function Pages({ pages, images }: PagesPropsType) {
                       src={`${images[photo.idImg].imgUrl}`}
                       alt={`${images[idImg]}`}
                       className={`page__photoGroup page__photoGroup--${page} page__photoGroup--${page}--${i}`}
-                      style={{ backgroundColor: 'red' }}
                     />
                     // </div>
-                  ))
-                }
+                  ))}
               </article>
             </section>
           );

@@ -10,6 +10,7 @@ export type PageType = {
     parr: string;
     parr1: string;
     parr2: string[];
+    parr3?: string[];
   };
 };
 

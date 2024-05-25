@@ -12,25 +12,23 @@
 
 .page__container {
   width: 100%;
-  height: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: space-between;
   justify-content: center;
 }
 /*-----position---------*/
-.page__container {
-  width: 100%;
-  height: 100%;
-}
 
 .page__bgImg {
   width: 100%;
   height: 100%;
-
   object-fit: cover/center;
   z-index: 0;
+}
+
+.test {
+  flex-direction: column;
+  display: flex;
 }
 
 .page__card {
@@ -38,7 +36,7 @@
   outline: none;
   border: none;
   border-radius: 1rem;
-  z-index: 20;
+  z-index: 10;
 
   padding: 0.5rem;
   margin: 0rem 3rem;
@@ -117,11 +115,7 @@
 }
 
 .page__texts--title--1 {
-  font-size: 1.75rem;
-  font-weight: 600;
-}
-
-.page__texts--title--1 {
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 3rem;
   border: 10px;
@@ -463,3 +457,4 @@
   opacity: 0.9;
   scale: 1.1;
 }
+

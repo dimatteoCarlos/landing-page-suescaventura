@@ -112,7 +112,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: end;
+  /* flex-wrap: wrap; */
 }
 
 .card__plan__container {
@@ -120,7 +121,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
 }
 
@@ -137,9 +138,8 @@
 .card__figure--rappel {
   height: 7rem;
   /* width: 7rem; */
-   padding-top: 1rem;
-  
-  }
+  padding-top: 1rem;
+}
 
 .card__plans__box {
   display: flex;

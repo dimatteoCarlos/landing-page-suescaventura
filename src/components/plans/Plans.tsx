@@ -4,6 +4,8 @@ import '../../styles/style-plans.css';
 import { dataPlans } from '../../data/data-plans/dataPlans.ts';
 
 function Plans() {
+
+  
   return (
     <>
       {dataPlans &&
@@ -79,7 +81,7 @@ function Plans() {
                         </div>
                         <div
                           className={
-                            'plan__cards__container plan__cards__container--${iplan}'
+                            `plan__cards__container plan__cards__container--${iplan}`
                           }
                         >
                           {planCards.map((card, icard) => (
