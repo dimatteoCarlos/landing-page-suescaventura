@@ -435,9 +435,6 @@
 } */
 
 .gallery__photoGroup--page--6 {
-  top: 71%;
-  right: 5%;
-  position: absolute;
   height: auto;
   gap: 0.5rem;
   padding: 0.5rem;
