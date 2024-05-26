@@ -54,7 +54,7 @@
 }
 
 .seguro__medico {
-  width: var(--w);
+  /* width: var(--w); */
   display: grid;
   align-items: center;
 
@@ -65,7 +65,7 @@
 }
 
 .pagePlan__container {
-  width: calc(var(--w) + 45px);
+  /* width: calc(var(--w) + 45px); */
 
   padding: 1.5rem;
 
