@@ -49,7 +49,7 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
               />
               {/* </div> */}
               <div className='managerData'>
-                {parr3?.map((p, ip) => (
+                {parr3?.map((_, ip) => (
                   <p
                     className='page__parr3--item'
                     key={`page__parr3--item--${ip}`}
@@ -89,7 +89,6 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
           </div>
         </div>
       </section>
-      
     </>
   );
 }

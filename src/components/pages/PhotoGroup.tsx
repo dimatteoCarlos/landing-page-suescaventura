@@ -1,4 +1,4 @@
-import { DataImageType, PageType } from '../../types/types.ts';
+import { DataImageType } from '../../types/types.ts';
 type PhotoGroupPropsType = {
   images: DataImageType;
   page: number;
