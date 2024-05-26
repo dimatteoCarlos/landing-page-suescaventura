@@ -1,16 +1,22 @@
 /* style-plans.css */
 :root {
   --MW-plans: 1000px;
-  --bg-image: 'image-038.png'; /*no funciona*/
-  --w: 81%;
+  --w: 81vw;
 }
+
 .section__plans {
   height: 100%;
+  width: 100vw;
   /* width: 85rem; */
   max-width: var(--MW-plans);
   margin: 0;
   padding: 0;
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .plans__page__container {
@@ -43,13 +49,19 @@
   padding: 0.5rem;
   text-align: justify;
   z-index: 10;
+
+  display: grid;
 }
 
 .seguro__medico {
   width: var(--w);
+  display: grid;
+  align-items: center;
+
   font-size: 1.2rem;
   margin-top: 8rem;
   margin-bottom: 5rem;
+  /* border: 10px solid red; */
 }
 
 .pagePlan__container {
@@ -88,6 +100,7 @@
   font-size: 1.2rem;
   font-weight: normal;
   margin-top: 1rem;
+  text-align: justify;
 }
 
 /*-----plan container---------*/
@@ -113,7 +126,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: end;
-  /* flex-wrap: wrap; */
+  gap: 1rem;
 }
 
 .card__plan__container {
@@ -199,3 +212,28 @@
   text-align-last: left;
   display: flex;
 }
+
+@media screen and (max-width: 700px) {
+  .plan__cards__container {
+    flex-wrap: wrap;
+  }
+}
+
+/*
+@media screen and (min-width: 1200px) {
+  * {
+    max-width: calc(var(--MW-plans));
+  }
+
+  .pagePlan__header {
+    width: 75%;
+
+    max-width: calc(var(--MW-plans) - 45px);
+  }
+
+  .plan__container .plan--title,
+  .plan__container .plan--title span {
+    max-width: calc(var(--MW-plans) - 45px);
+  }
+}
+*/

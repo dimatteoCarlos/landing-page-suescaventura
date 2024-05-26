@@ -22,7 +22,7 @@ function Plans() {
               <div
                 className={`plans__page__container plans__page__container--${pageId}`}
               >
-                {pageId === 1 && (
+                {pageId === 9 && (
                   <p className='plan__card  seguro__medico'>
                     Cada persona contará con seguro de asistencia médica, cada
                     uno estará equipado con los sistemas de seguridad
