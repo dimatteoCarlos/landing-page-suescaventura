@@ -4,7 +4,7 @@
   --w: 81vw;
 }
 .section__page {
-  height: 90rem;
+  height: 100rem;
   width: 100vw;
   max-width: var(--MW);
   margin: 0;
@@ -27,11 +27,11 @@
 
 .page__container--content {
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: center;
+  justify-content: start;
 
   /* border: 10px solid yellow; */
 }
@@ -59,7 +59,7 @@
 
 .page__card {
   padding: 0.5rem;
-  width: clamp(25%, 90vw, 90%);
+  /* width: clamp(25%, 90vw, 90%); */
 }
 
 /******TEXTS TITLE AND PAR******/
@@ -676,6 +676,7 @@
   .page__card--parr--1 {
     margin-top: 20rem;
   }
+  
   .page__texts--title {
     font-size: 1.5rem;
     font-size: clamp(1.5rem, calc(4vw), 3rem);
