@@ -671,7 +671,6 @@
   .page__container--content {
     /* border: 10px solid blue; */
     justify-content: center;
-    border: 10px solid red;
   }
 
   .page__card--parr--1 {
