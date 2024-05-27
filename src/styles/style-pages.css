@@ -21,12 +21,16 @@
   padding: 1rem 2rem;
 }
 
+.logo__container {
+  align-self: center;
+}
+
 .page__container--content {
   width: 100%;
   /* height: 100%; */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 
   /* border: 10px solid yellow; */
@@ -135,8 +139,8 @@
 }
 
 .page__container--2 .page__container--content {
-  align-items: start;
-  justify-content: start;
+  align-items: space-between;
+  justify-content: space-between;
 }
 
 .page__card--2 {
@@ -194,8 +198,8 @@
   /* border: 1px solid yellow; */
 }
 .page__container--3 .page__container--content {
-  align-items: start;
-  justify-content: start;
+  align-items: space-between;
+  justify-content: space-between;
 
   /* border: 10px solid blue; */
 }
@@ -257,8 +261,8 @@
 }
 
 .page__container--4 .page__container--content {
-  align-items: start;
-  justify-content: start;
+  align-items: space-between;
+  justify-content: space-between;
 
   /* border: 1px solid blue; */
 }
@@ -311,8 +315,8 @@
   /* border: 1px solid yellow; */
 }
 .page__container--5 .page__container--content {
-  align-items: start;
-  justify-content: start;
+  align-items: space-between;
+  justify-content: space-between;
 
   /* border: 1px solid blue; */
 }
@@ -382,8 +386,8 @@
 }
 .page__container--6 .page__container--content {
   /* border: 1px solid blue; */
-  align-items: start;
-  justify-content: start;
+  align-items: space-between;
+  justify-content: space-between;
 }
 
 .page__card--6 {
@@ -459,8 +463,8 @@
 }
 .page__container--7 .page__container--content {
   /* border: 1px solid blue; */
-  align-items: start;
-  justify-content: start;
+  align-items: space-between;
+  justify-content: space-between;
 }
 
 .page__card--7 {
@@ -541,8 +545,8 @@
   /* border: 1px solid yellow; */
 }
 .page__container--8 .page__container--content {
-  align-items: start;
-  justify-content: start;
+  align-items: space-between;
+  justify-content: space-between;
 }
 
 .page__card--8 {
@@ -653,6 +657,7 @@
   }
 
   /******PAGE 1***************/
+
   .logo {
     width: 18rem;
     margin-top: 6rem;
@@ -660,12 +665,13 @@
   }
 
   .page__container {
-    justify-content: start;
+    justify-content: space-between;
     /* border: 5px solid purple; */
   }
   .page__container--content {
     /* border: 10px solid blue; */
-    justify-content: start;
+    justify-content: center;
+    border: 10px solid red;
   }
 
   .page__card--parr--1 {

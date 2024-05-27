@@ -66,6 +66,7 @@
 
 .pagePlan__container {
   /* width: calc(var(--w) + 45px); */
+  width: 80%;
 
   padding: 1.5rem;
 
