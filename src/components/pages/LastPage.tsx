@@ -49,10 +49,10 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
               />
               {/* </div> */}
               <div className='managerData'>
-                {parr3?.map((_, ip) => (
+                {parr3?.map((p, ip) => (
                   <p
                     className='page__parr3--item'
-                    key={`page__parr3--item--${ip}`}
+                    key={`page__parr3--item--${ip}--${p}`} //avoid ts err for non using p
                   >
                     {parr3[ip]}
                   </p>
