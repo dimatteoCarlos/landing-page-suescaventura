@@ -56,7 +56,6 @@ function SocialMedia({ isColored }: SocialMediaPropType): JSX.Element {
           .substring(0, 2)
           .toLowerCase()}-${item.iconId.name.substring(2).toLowerCase()}`;
 
-        console.log(iconClass, item.iconId.name, item.iconId);
         return (
           <li key={`${item.iconId.name}--${indx}`}>
             <a

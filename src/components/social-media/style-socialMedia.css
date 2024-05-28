@@ -25,10 +25,6 @@ a {
   display: flex;
   gap: 2rem;
   z-index: 100;
-  /* flex: 0.25; */
-  /* justify-content: space-around; */
-  /* align-items: center; */
-  /* position: sticky; */
 }
 
 .icon > svg {
@@ -39,7 +35,7 @@ a {
 
 .icon > svg:hover {
   transform: scale(1.2);
-  border-radius: 50%;
+  border-radius: 20%;
   border: 1px solid white;
   background-color: white;
 }
@@ -59,21 +55,20 @@ a {
   color: black;
 }
 
-
 /********COLORED************/
 
-.icon.fa-facebook.colored> svg {
+.icon.fa-facebook.colored > svg {
   color: #0571e6;
 }
 
-.icon.fa-instagram.colored> svg {
+.icon.fa-instagram.colored > svg {
   color: #f15245;
 }
 
-.icon.fa-whatsapp.colored> svg {
+.icon.fa-whatsapp.colored > svg {
   color: #1ed95f;
 }
-.icon.fa-xtwitter.colored> svg {
+.icon.fa-xtwitter.colored > svg {
   color: black;
 }
 

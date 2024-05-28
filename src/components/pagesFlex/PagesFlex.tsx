@@ -34,6 +34,12 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
             texts: { title, parr, parr1, parr2 },
           } = pag;
 
+          // function handleLink(e) {
+          //   e.preventDefault();
+          //   console.log(e);
+          //   window.location.href = e.target.id;
+          // }
+
           return (
             <section
               className={`section__page section__page--${page}`}
@@ -90,6 +96,17 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
                           className={`page__parr2--item--${page} page__parr2--item`}
                           key={i}
                         >
+                          {/* <a
+                            href={`#${pageAddress}`}
+                            // href='#cabalgata'
+                            className={`${pageAddress}`}
+                            rel='noreferrer'
+
+                            onClick={(e)=>handleLink(e)}
+                          >
+                            {parr2Item}
+                          </a> */}
+
                           {parr2Item}
                         </li>
                       ))}
