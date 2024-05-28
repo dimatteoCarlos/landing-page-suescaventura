@@ -1,4 +1,3 @@
-import React from 'react';
 import SocialMedia from '../social-media/SocialMedia';
 import './style-navbar.css';
 
