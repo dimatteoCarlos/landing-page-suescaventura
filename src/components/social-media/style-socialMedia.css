@@ -29,7 +29,7 @@ a {
 
 .icon > svg {
   font-size: 2.5rem;
-  color: rgb(56, 54, 54);
+  /* color: rgb(56, 54, 54); */
   background-color: transparent;
 }
 
