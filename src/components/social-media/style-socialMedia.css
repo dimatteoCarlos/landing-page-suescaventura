@@ -57,18 +57,33 @@ a {
 
 /********COLORED************/
 
-.icon.fa-facebook.colored > svg {
+.icon.fa-facebook > svg {
   color: #0571e6;
 }
 
-.icon.fa-instagram.colored > svg {
+.icon.fa-instagram > svg {
   color: #f15245;
 }
 
-.icon.fa-whatsapp.colored > svg {
+.icon.fa-whatsapp > svg {
   color: #1ed95f;
 }
-.icon.fa-xtwitter.colored > svg {
+.icon.fa-xtwitter > svg {
+  color: black;
+}
+
+.icon.fa-facebook > svg {
+  color: #0571e6;
+}
+
+.icon.fa-instagram > svg {
+  color: #f15245;
+}
+
+.icon.fa-whatsapp > svg {
+  color: #1ed95f;
+}
+.icon.fa-xtwitter > svg {
   color: black;
 }
 
