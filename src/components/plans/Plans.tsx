@@ -2,10 +2,9 @@ import Card from './Card';
 import '../../styles/style-plans.css';
 
 import { dataPlans } from '../../data/data-plans/dataPlans.ts';
+import Navbar from '../navbar/Navbar.tsx';
 
 function Plans() {
-
-  
   return (
     <>
       {dataPlans &&
@@ -43,6 +42,7 @@ function Plans() {
                   className={`plan__card pagePlan__container pagePlan__container--${pageId}`}
                   key={keyPage}
                 >
+                  <Navbar />
                   <header
                     className={`pagePlan__header pagePlan__header--${pageId}`}
                   >
@@ -80,9 +80,7 @@ function Plans() {
                           {planTitle}
                         </div>
                         <div
-                          className={
-                            `plan__cards__container plan__cards__container--${iplan}`
-                          }
+                          className={`plan__cards__container plan__cards__container--${iplan}`}
                         >
                           {planCards.map((card, icard) => (
                             <Card

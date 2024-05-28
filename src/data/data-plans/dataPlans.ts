@@ -182,7 +182,7 @@ export const dataPlans: PlansType[] = [
     plans: [
       {
         planId: 8,
-        planTitle: '8. Asenso en vía Ferrata + Caminata',
+        planTitle: '8. Ascenso en vía Ferrata + Caminata',
         planCards: [
           //start of card
           {

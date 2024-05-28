@@ -19,7 +19,7 @@ export const pages: PageType[] = [
     photoGroup: [],
     texts: {
       title: 'SUESCA',
-      parr: 'Municipio ubicado a 60 kilómetros al norte de Bogotá, su altitud media es de 2585 msnm, primer lugar del país donde se   empezó a practicar el deporte de escalada en roca. Cuenta con unos farallones de roca arenisca ideales para practicar este cmo uno de los lugares más importantes para la práctica de actividades de aventura cerca a Bogotá',
+      parr: 'Municipio ubicado a 60 kilómetros al norte de Bogotá, su altitud media es de 2585 msnm, primer lugar del país donde se   empezó a practicar el deporte de escalada en roca. Cuenta con unos farallones de roca arenisca ideales para practicar este como uno de los lugares más importantes para la práctica de actividades de aventura cerca a Bogotá',
       parr1: '',
       parr2: [
         'En la salida planeada a Suesca los participantes tendrán la opción de practicar:',
@@ -101,7 +101,7 @@ export const pages: PageType[] = [
   {
     page: 8,
     idImg: 22,
-    photoGroup: [{ idImg: 23 }, { idImg: 24 }, { idImg: 25 }],
+    photoGroup: [{ idImg: 23 }, { idImg: 25 }, { idImg: 24 }],
     texts: {
       title: 'Travesía en cuevas (Espeleismo)',
       parr: '',

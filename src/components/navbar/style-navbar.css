@@ -1,0 +1,18 @@
+nav {
+  background-color: transparent;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  z-index: 30;
+
+  width: 100%;
+  padding: 1rem 1rem;
+
+  position: absolute;
+  top: 0rem;
+  right: 0;
+}

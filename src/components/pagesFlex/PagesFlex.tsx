@@ -1,29 +1,31 @@
 import '../../styles/style-pagesFlex.css';
 
 import { DataImageType, PageType } from '../../types/types.ts';
+import Navbar from '../navbar/Navbar.tsx';
 type PagesPropsType = {
   pages: PageType[];
   images: DataImageType;
 };
 
-function PagesFlex({ pages, images }: PagesPropsType) {
+function PagesFlex({ pages:pags, images }: PagesPropsType) {
   let logoIMg = '/logos/logoSuescaventuraWord-sinFondo.png';
 
   // let pags=[...pages]
 
-  // let pages = [
-  //   pags[0],
-  //   pags[1],
-  //   pags[2],
-  //   pags[3],
-  //   pags[4],
-  //   pags[5],
-  //   pags[6],
-  //   pags[7],
-  // ];
+  let pages = [
+    pags[0],
+    pags[1],
+    pags[2],
+    pags[3],
+    pags[4],
+    pags[5],
+    pags[6],
+    pags[7],
+  ];
 
   return (
     <>
+  
       {pages &&
         pages.map((pag, indx) => {
           const {
@@ -38,6 +40,8 @@ function PagesFlex({ pages, images }: PagesPropsType) {
               className={`section__page section__page--${page}`}
               key={`page-${indx}`}
             >
+
+              <Navbar/>
               {/* <div className={`page__bgImg__container page__bgImg--${page}`}> */}
 
               <img

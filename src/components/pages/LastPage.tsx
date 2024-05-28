@@ -1,6 +1,7 @@
 import '../../styles/style-lastPage.css';
 
 import { DataImageType, PageType } from '../../types/types.ts';
+import SocialMedia from '../social-media/SocialMedia.tsx';
 type LastPagePropsType = {
   lastPage: PageType;
   images: DataImageType;
@@ -70,6 +71,9 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
                   alt={`logoAcgme`}
                   className='logo__identity--logoAcgme'
                 />
+              </div>
+              <div className='contact'>
+                <SocialMedia isColored={true} />
               </div>
             </div>
           </div>
