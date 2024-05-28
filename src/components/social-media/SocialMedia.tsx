@@ -44,7 +44,6 @@ export const socialMediaInfo: SocialObjType[] = [
   },
 ];
 
-console.log();
 
 type SocialMediaPropType = {
   isColored: boolean;

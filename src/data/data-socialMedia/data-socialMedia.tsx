@@ -2,6 +2,7 @@ import {
   FaFacebook,
   FaInstagram,
   FaWhatsapp,
+
   // FaTwitter,
   // FaYoutube,
   // FaDiscord,
@@ -9,8 +10,9 @@ import {
   // FaBehance,
 } from 'react-icons/fa';
 
-import { FaXTwitter } from 'react-icons/fa6';
+import { IconType } from 'react-icons';
 
+import { FaXTwitter } from 'react-icons/fa6';
 type SocialObjType = {
   icon: JSX.Element;
   iconId: IconType;
@@ -27,8 +29,8 @@ export const socialObj: SocialObjType[] = [
     // iconUrl: 'https://facebook.com',
   },
   {
-    // icon: <FaInstagram />,
-    iconId: 'FaInstagram',
+    icon: <FaInstagram />,
+    iconId: FaInstagram,
     iconName: 'FaInstagram',
     iconUrl:
       'https://www.instagram.com/suescaventura/?igsh=MTVvemFneXRsdGJmNw%3D%3D',
@@ -36,14 +38,46 @@ export const socialObj: SocialObjType[] = [
   },
 
   {
-    // icon: <FaWhatsapp />,
-    iconId: 'FaWhatsapp',
+    icon: <FaWhatsapp />,
+    iconId: FaWhatsapp,
     iconName: 'FaWhatsapp',
     iconUrl: 'https://Whatsapp.com',
   },
   {
-    // icon: <FaXTwitter />,
-    iconId: 'FaXTwitter',
+    icon: <FaXTwitter />,
+    iconId: FaXTwitter,
+    iconName: 'FaTwitter',
+    iconUrl: 'https://twitter.com',
+  },
+];
+
+export const socialMediaInfo: SocialObjType[] = [
+  {
+    icon: <FaFacebook />,
+    iconId: FaFacebook,
+    iconName: 'FaFacebook',
+    iconUrl: 'https://www.facebook.com/p/SuescAventura-100063543973730/',
+  },
+  {
+    icon: <FaInstagram />,
+    iconId: FaInstagram,
+    iconName: 'FaInstagram',
+    // iconUrl:
+    //   'https://www.instagram.com/suescaventura/?igsh=MTVvemFneXRsdGJmNw%3D%3D',
+    iconUrl:
+      'https://www.instagram.com/explore/locations/101373551821898/suescaventura/',
+  },
+
+  {
+    icon: <FaWhatsapp />,
+    iconId: FaWhatsapp,
+    iconName: 'FaWhatsapp',
+    iconUrl: 'https://wa.me/573204543746',
+    // iconUrl: 'https://Whatsapp.com',
+  },
+  {
+    icon: <FaXTwitter />,
+    iconId: FaXTwitter,
     iconName: 'FaTwitter',
     iconUrl: 'https://twitter.com',
   },

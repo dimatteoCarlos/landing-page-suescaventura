@@ -1,4 +1,5 @@
 export type PageType = {
+  pageAddress:string,
   page: number;
   idImg: number;
   photoGroup?: {

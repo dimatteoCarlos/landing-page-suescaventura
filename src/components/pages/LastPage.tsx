@@ -13,6 +13,7 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
   const signature = '/logos/imageFirma.png';
 
   const {
+    pageAddress,
     page,
     idImg,
     photoGroup,
@@ -21,7 +22,9 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
 
   return (
     <>
-      <section className={`section__lastpage section__lastpage--${page}`}>
+      <section className={`section__lastpage section__lastpage--${page}`}
+         id={pageAddress.trim().toLowerCase()}
+      >
         <div className={`lastpage__container lastpage__container--${page}`}>
           <img
             src={`${images[idImg].imgUrl}`}

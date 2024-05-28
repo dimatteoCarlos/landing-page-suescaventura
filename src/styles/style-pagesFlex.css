@@ -1,6 +1,6 @@
 /* style-pages.css */
 
-/*FLEX USAGE - TRY TO MAKE IT RESPONSIVE*/
+/*FLEX-BOX USAGE -  RESPONSIVE*/
 :root {
   --MW: 1000px;
   --clamped-fsz-par: clamp(1.5rem, calc(3vw + 0.25rem), 2rem);

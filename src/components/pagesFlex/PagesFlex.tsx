@@ -7,11 +7,10 @@ type PagesPropsType = {
   images: DataImageType;
 };
 
-function PagesFlex({ pages:pags, images }: PagesPropsType) {
+function PagesFlex({ pages: pags, images }: PagesPropsType) {
   let logoIMg = '/logos/logoSuescaventuraWord-sinFondo.png';
 
-  // let pags=[...pages]
-
+  //Render each page while developing
   let pages = [
     pags[0],
     pags[1],
@@ -25,10 +24,10 @@ function PagesFlex({ pages:pags, images }: PagesPropsType) {
 
   return (
     <>
-  
       {pages &&
         pages.map((pag, indx) => {
           const {
+            pageAddress,
             page,
             idImg,
             photoGroup,
@@ -39,9 +38,9 @@ function PagesFlex({ pages:pags, images }: PagesPropsType) {
             <section
               className={`section__page section__page--${page}`}
               key={`page-${indx}`}
+              id={pageAddress.trim().toLowerCase()}
             >
-
-              <Navbar/>
+              <Navbar />
               {/* <div className={`page__bgImg__container page__bgImg--${page}`}> */}
 
               <img
@@ -61,6 +60,7 @@ function PagesFlex({ pages:pags, images }: PagesPropsType) {
                 >
                   <span
                     className={`page__texts--title page__texts--title--${page}`}
+                    id={title}
                   >
                     {title}
                   </span>
@@ -105,12 +105,12 @@ function PagesFlex({ pages:pags, images }: PagesPropsType) {
                         //   className={`page__photoGroup__photo page__photoGroup__photo--${page} `}
                         //   key={`photoGroup__${page}--${i}`}
                         // >
-                          <img
-                            key={`photoGroup__${page}__photo--${i}`}
-                            src={`${images[photo.idImg].imgUrl}`}
-                            alt={`${images[photo.idImg].imgUrl}`}
-                            className={`page__photoGroup page__photoGroup--${page} page__photoGroup--${page}--${i}`}
-                          />
+                        <img
+                          key={`photoGroup__${page}__photo--${i}`}
+                          src={`${images[photo.idImg].imgUrl}`}
+                          alt={`${images[photo.idImg].imgUrl}`}
+                          className={`page__photoGroup page__photoGroup--${page} page__photoGroup--${page}--${i}`}
+                        />
                         // </div>
                       ))}
                   </article>
