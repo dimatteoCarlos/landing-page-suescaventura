@@ -51,9 +51,10 @@ function SocialMedia({ isColored }: SocialMediaPropType): JSX.Element {
   return (
     <ul className='socialMedia'>
       {socialMediaInfo.map((item, indx) => {
-        const iconClass = `icon ${item.iconId.name
-          .substring(0, 2)
-          .toLowerCase()}-${item.iconId.name.substring(2).toLowerCase()}`;
+        //it depends on the name of the icon, in this case all names start with Fa
+        const iconClass = `icon ${item.iconId.name.substring(2).toLowerCase()}`;
+
+        // console.log(iconClass, item.iconId.name);
 
         return (
           <li key={`${item.iconId.name}--${indx}`}>

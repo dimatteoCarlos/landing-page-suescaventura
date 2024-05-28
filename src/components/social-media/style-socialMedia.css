@@ -40,74 +40,74 @@ a {
   background-color: white;
 }
 
-.icon.fa-facebook > svg:hover {
+.icon.facebook > svg:hover {
   color: #0571e6;
 }
 
-.icon.fa-instagram > svg:hover {
+.icon.instagram > svg:hover {
   color: #f15245;
 }
 
-.icon.fa-whatsapp > svg:hover {
+.icon.whatsapp > svg:hover {
   color: #1ed95f;
 }
-.icon.fa-xtwitter > svg:hover {
+.icon.xtwitter > svg:hover {
   color: black;
 }
 
 /********COLORED************/
 
-.icon.fa-facebook > svg {
+.icon.facebook > svg {
   color: #0571e6;
 }
 
-.icon.fa-instagram > svg {
+.icon.instagram > svg {
   color: #f15245;
 }
 
-.icon.fa-whatsapp > svg {
+.icon.whatsapp > svg {
   color: #1ed95f;
 }
-.icon.fa-xtwitter > svg {
+.icon.xtwitter > svg {
   color: black;
 }
 
-.icon.fa-facebook > svg {
+.icon.facebook > svg {
   color: #0571e6;
 }
 
-.icon.fa-instagram > svg {
+.icon.instagram > svg {
   color: #f15245;
 }
 
-.icon.fa-whatsapp > svg {
+.icon.whatsapp > svg {
   color: #1ed95f;
 }
-.icon.fa-xtwitter > svg {
+.icon.xtwitter > svg {
   color: black;
 }
 
 /* 
-.fa-twitter {
+.twitter {
   color: #1d9bf0;
   z-index: 1;
   background-color: transparent;
 }
-.fa-telegram {
+.telegram {
   color: #0a88c7;
   z-index: 1;
   background-color: transparent;
 } */
 
 /*
- .fa-globe {
+ .globe {
   color: #1ed95f;
 }
 
-.fa-youtube {
+.youtube {
   color: #e21;
 }
-.fa-discord {
+.discord {
   color: #404eed;
 } */
 /*****socialMedia*****/
