@@ -22,8 +22,9 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
 
   return (
     <>
-      <section className={`section__lastpage section__lastpage--${page}`}
-         id={pageAddress.trim().toLowerCase()}
+      <section
+        className={`section__lastpage section__lastpage--${page}`}
+        id={pageAddress.trim().toLowerCase()}
       >
         <div className={`lastpage__container lastpage__container--${page}`}>
           <img
@@ -76,7 +77,7 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
                 />
               </div>
               <div className='contact'>
-                <SocialMedia isColored={true} />
+                <SocialMedia />
               </div>
             </div>
           </div>

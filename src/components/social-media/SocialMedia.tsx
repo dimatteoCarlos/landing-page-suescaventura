@@ -44,10 +44,11 @@ export const socialMediaInfo: SocialObjType[] = [
   },
 ];
 
-type SocialMediaPropType = {
-  isColored: boolean;
-}
-function SocialMedia({ isColored }: SocialMediaPropType): JSX.Element {
+// type SocialMediaPropType = {
+//   isColored: boolean;
+// }
+// function SocialMedia({ isColored }: SocialMediaPropType): JSX.Element {
+function SocialMedia(): JSX.Element {
   return (
     <ul className='socialMedia'>
       {socialMediaInfo.map((item, indx) => {
