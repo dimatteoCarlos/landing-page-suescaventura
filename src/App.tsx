@@ -7,7 +7,6 @@ import PagesFlex from './components/pagesFlex/PagesFlex.tsx';
 function App() {
   return (
     <>
-
       <PagesFlex pages={pages} images={images} />
       <Plans />
       <LastPage lastPage={lastPage} images={images} />

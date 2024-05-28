@@ -7,7 +7,6 @@
 .section__plans {
   height: 100%;
   width: 100vw;
-  /* width: 85rem; */
   max-width: var(--MW-plans);
   margin: 0;
   padding: 0;
@@ -34,7 +33,7 @@
   width: 100%;
   height: 100%;
 
-  object-fit: cover/center;
+  object-fit: cover;
   z-index: 0;
   position: absolute;
   top: 0;
@@ -61,11 +60,9 @@
   font-size: 1.2rem;
   margin-top: 8rem;
   margin-bottom: 5rem;
-  /* border: 10px solid red; */
 }
 
 .pagePlan__container {
-  /* width: calc(var(--w) + 45px); */
   width: 80%;
 
   padding: 1.5rem;
@@ -151,7 +148,6 @@
 }
 .card__figure--rappel {
   height: 7rem;
-  /* width: 7rem; */
   padding-top: 1rem;
 }
 
@@ -219,22 +215,3 @@
     flex-wrap: wrap;
   }
 }
-
-/*
-@media screen and (min-width: 1200px) {
-  * {
-    max-width: calc(var(--MW-plans));
-  }
-
-  .pagePlan__header {
-    width: 75%;
-
-    max-width: calc(var(--MW-plans) - 45px);
-  }
-
-  .plan__container .plan--title,
-  .plan__container .plan--title span {
-    max-width: calc(var(--MW-plans) - 45px);
-  }
-}
-*/

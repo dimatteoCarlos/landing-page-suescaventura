@@ -13,7 +13,6 @@
   height: 100%;
 
   max-width: var(--MW);
-  /* width: calc(var(--w) + 45px); */
   margin: 0;
   position: relative;
 
@@ -23,6 +22,7 @@
 
 .lastpage__container {
   width: 80%;
+  width: 100vw;
   height: 100%;
 
   height: var(--section-height);
@@ -34,13 +34,12 @@
 .lastpage__bgImg {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
 
   width: 100%;
   height: 100%;
 
-  object-fit: cover/center;
+  object-fit: cover;
   z-index: -1;
   opacity: 0.6;
 }
@@ -104,25 +103,10 @@
   border-radius: 50%;
 }
 
-/*slider?*/
 .page__photoGroup {
   width: 80%;
   align-self: center;
 }
-/* 
-.page__photoGroup.photoGroup__container {
-  display: flex;
-  margin: 0;
-  padding: 0 2rem;
-  z-index: 20;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-  align-self: center;
-
-
-} */
 
 .page__photoGroup:hover {
   z-index: 30;
