@@ -39,7 +39,7 @@ a {
   border: 1px solid white;
   background-color: white;
 }
-
+/* 
 .icon.facebook > svg:hover {
   color: #0571e6;
 }
@@ -53,37 +53,37 @@ a {
 }
 .icon.xtwitter > svg:hover {
   color: black;
-}
+} */
 
 /********COLORED************/
 
-.icon.facebook > svg {
+.facebook > svg {
   color: #0571e6;
 }
 
-.icon.instagram > svg {
+.instagram > svg {
   color: #f15245;
 }
 
-.icon.whatsapp > svg {
+.whatsapp > svg {
   color: #1ed95f;
 }
-.icon.xtwitter > svg {
+.xtwitter > svg {
   color: black;
 }
 
-.icon.facebook > svg {
+.facebook > svg {
   color: #0571e6;
 }
 
-.icon.instagram > svg {
+.instagram > svg {
   color: #f15245;
 }
 
-.icon.whatsapp > svg {
+.whatsapp > svg {
   color: #1ed95f;
 }
-.icon.xtwitter > svg {
+.xtwitter > svg {
   color: black;
 }
 

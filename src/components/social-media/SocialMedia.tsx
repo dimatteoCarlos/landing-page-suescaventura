@@ -53,7 +53,7 @@ function SocialMedia(): JSX.Element {
     <ul className='socialMedia'>
       {socialMediaInfo.map((item, indx) => {
         //it depends on the name of the icon, in this case all names start with Fa
-        const iconClass = `icon ${item.iconId.name.substring(2).toLowerCase()}`;
+        const iconClass = `${item.iconId.name.substring(2).toLowerCase()} icon`;
 
         // console.log(iconClass, item.iconId.name);
 
