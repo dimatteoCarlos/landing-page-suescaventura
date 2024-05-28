@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <>
       <nav>
-        <SocialMedia isColored={false} />
+        <SocialMedia isColored={true} />
       </nav>
     </>
   );
