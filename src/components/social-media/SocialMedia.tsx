@@ -46,7 +46,7 @@ export const socialMediaInfo: SocialObjType[] = [
 
 type SocialMediaPropType = {
   isColored: boolean;
-};
+}
 function SocialMedia({ isColored }: SocialMediaPropType): JSX.Element {
   return (
     <ul className='socialMedia'>
@@ -60,7 +60,8 @@ function SocialMedia({ isColored }: SocialMediaPropType): JSX.Element {
           <li key={`${item.iconId.name}--${indx}`}>
             <a
               href={item.iconUrl}
-              className={`${iconClass} ${isColored ? '' : ''}`}
+              className={`${iconClass}`}
+              // className={`${iconClass} ${isColored ? '' : ''}`}
               rel='noreferrer'
               target='_blank'
             >
