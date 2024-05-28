@@ -6,6 +6,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 import './style-socialMedia.css';
 
 type SocialObjType = {
+  wtf: string;
   icon: JSX.Element;
   iconId: IconType;
   iconName: string;
@@ -14,12 +15,14 @@ type SocialObjType = {
 
 export const socialMediaInfo: SocialObjType[] = [
   {
+    wtf: 'sm1',
     icon: <FaFacebook />,
     iconId: FaFacebook,
     iconName: 'FaFacebook',
     iconUrl: 'https://www.facebook.com/p/SuescAventura-100063543973730/',
   },
   {
+    wtf: 'sm2',
     icon: <FaInstagram />,
     iconId: FaInstagram,
     iconName: 'FaInstagram',
@@ -30,6 +33,7 @@ export const socialMediaInfo: SocialObjType[] = [
   },
 
   {
+    wtf: 'sm3',
     icon: <FaWhatsapp />,
     iconId: FaWhatsapp,
     iconName: 'FaWhatsapp',
@@ -37,6 +41,7 @@ export const socialMediaInfo: SocialObjType[] = [
     // iconUrl: 'https://Whatsapp.com',
   },
   {
+    wtf: 'sm4',
     icon: <FaXTwitter />,
     iconId: FaXTwitter,
     iconName: 'FaTwitter',
@@ -53,9 +58,11 @@ function SocialMedia(): JSX.Element {
     <ul className='socialMedia'>
       {socialMediaInfo.map((item, indx) => {
         //it depends on the name of the icon, in this case all names start with Fa
-        const iconClass = `icon_${item.iconId.name
-          .substring(2)
-          .toLowerCase()} icon`;
+        // const iconClass = `icon_${item.iconId.name
+        //   .substring(2)
+        //   .toLowerCase()} icon`;
+
+        const iconClass = `icon_${item.wtf} icon`;
 
         // console.log(iconClass, item.iconId.name);
 

@@ -111,3 +111,21 @@ a {
   color: #404eed;
 } */
 /*****socialMedia*****/
+
+
+.icon_sm1 > svg {
+  color: #0571e6;
+}
+
+.icon_sm2 > svg {
+  color: #f15245;
+}
+
+.icon_sm3 > svg {
+  color: #1ed95f;
+}
+.icon_sm4 > svg {
+  color: black;
+}
+
+
