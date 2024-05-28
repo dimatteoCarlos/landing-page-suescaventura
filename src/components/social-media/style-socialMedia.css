@@ -27,13 +27,13 @@ a {
   z-index: 100;
 }
 
-.icon > svg {
+[class*='icon'] > svg {
   font-size: 2.5rem;
   /* color: rgb(56, 54, 54); */
   background-color: transparent;
 }
 
-.icon > svg:hover {
+[class*='icon'] > svg:hover {
   transform: scale(1.2);
   border-radius: 20%;
   border: 1px solid white;
@@ -57,22 +57,22 @@ a {
 
 /********COLORED************/
 
-.facebook > svg {
+.icon_facebook > svg {
   color: #0571e6;
 }
 
-.instagram > svg {
+.icon_instagram > svg {
   color: #f15245;
 }
 
-.whatsapp > svg {
+.icon_whatsapp > svg {
   color: #1ed95f;
 }
-.xtwitter > svg {
+.icon_xtwitter > svg {
   color: black;
 }
 
-.facebook > svg {
+.icon_facebook > svg {
   color: #0571e6;
 }
 
