@@ -52,7 +52,6 @@ export const socialMediaInfo: SocialObjType[] = [
 type SocialMediaPropType = {
   isColored: boolean;
 };
-// function SocialMedia(): JSX.Element {
 function SocialMedia({ isColored }: SocialMediaPropType): JSX.Element {
   return (
     <ul className='socialMedia'>
