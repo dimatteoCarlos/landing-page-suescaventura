@@ -1,4 +1,7 @@
 import { PageType } from '../../types/types';
+
+export const activities:string[]=['caminata','cabalgata','escalada','rappel','ferrata','espeleismo']
+
 export const pages: PageType[] = [
   {
     pageAddress:'portada',

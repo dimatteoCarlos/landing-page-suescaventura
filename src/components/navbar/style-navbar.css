@@ -3,16 +3,44 @@ nav {
 
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: end;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   z-index: 30;
+  gap: 2rem;
 
+  padding: 0.5rem 2rem;
   width: 100%;
-  padding: 1rem 1rem;
-
   position: absolute;
   top: 0rem;
   right: 0;
+  margin-bottom: 1rem;
+  /* border: 10px solid blue; */
+}
+
+.btnPlans__container {
+  display: flex;
+  justify-content: start;
+  flex: 0.5;
+  padding: 0.5rem;
+  /* border: 10px solid red; */
+}
+.btnPlans__container a {
+  font-size: 1.5rem;
+  background-color: rgb(240, 248, 255, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  vertical-align: middle;
+  text-transform: capitalize;
+  text-align: center;
+  color: rgb(46, 42, 42);
+  border: 1px solid white;
+}
+
+.btnPlans__container a:hover {
+  background-color: rgb(240, 248, 255, 0.9);
+  border-color: aliceblue;
+  color: rgb(0, 0, 62);
+  font-weight: 700;
 }

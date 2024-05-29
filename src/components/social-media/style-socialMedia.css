@@ -29,8 +29,10 @@ a {
 
 [class*='icon'] > svg {
   font-size: 2.5rem;
-  /* color: rgb(56, 54, 54); */
   background-color: transparent;
+  color: rgb(56, 54, 54);
+  border-radius: 50%;
+  border: 1px solid rgb(241, 218, 218);
 }
 
 [class*='icon'] > svg:hover {
@@ -39,24 +41,24 @@ a {
   border: 1px solid white;
   background-color: white;
 }
-/* 
-.icon.facebook > svg:hover {
+
+.icon_facebook > svg:hover {
   color: #0571e6;
 }
 
-.icon.instagram > svg:hover {
+.icon_instagram > svg:hover {
   color: #f15245;
 }
 
-.icon.whatsapp > svg:hover {
+.icon_whatsapp > svg:hover {
   color: #1ed95f;
 }
-.icon.xtwitter > svg:hover {
+.icon_xtwitter > svg:hover {
   color: black;
-} */
+} 
 
-/********COLORED************/
-
+/*permanent colored*/
+/*
 .icon_facebook > svg {
   color: #0571e6;
 }
@@ -71,8 +73,27 @@ a {
 .icon_xtwitter > svg {
   color: black;
 }
+*/
+/********COLORED************/
 
-.icon_facebook > svg {
+.icon_facebook.colored > svg {
+  color: #0571e6;
+}
+
+.icon_instagram.colored > svg {
+  color: #f15245;
+}
+
+.icon_whatsapp.colored > svg {
+  color: #1ed95f;
+}
+.icon_xtwitter.colored > svg {
+  color: black;
+}
+
+/********************/
+/* 
+.facebook > svg {
   color: #0571e6;
 }
 
@@ -85,7 +106,7 @@ a {
 }
 .xtwitter > svg {
   color: black;
-}
+} */
 
 /* 
 .twitter {
@@ -111,21 +132,3 @@ a {
   color: #404eed;
 } */
 /*****socialMedia*****/
-
-
-.icon_sm1 > svg {
-  color: #0571e6;
-}
-
-.icon_sm2 > svg {
-  color: #f15245;
-}
-
-.icon_sm3 > svg {
-  color: #1ed95f;
-}
-.icon_sm4 > svg {
-  color: black;
-}
-
-

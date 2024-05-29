@@ -1,6 +1,9 @@
 import '../../styles/style-pagesFlex.css';
 
 import { DataImageType, PageType } from '../../types/types.ts';
+
+import { activities } from '../../data/data-pages/dataPages.ts';
+
 import Navbar from '../navbar/Navbar.tsx';
 type PagesPropsType = {
   pages: PageType[];
@@ -22,6 +25,16 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
     pags[7],
   ];
 
+  function refAddress(text: string, activities: string[]) {
+    const matchedActivity = activities.find((activity) => {
+      const regEx = new RegExp(activity, 'ig');
+      const found = regEx.test(text);
+      return found;
+    });
+    const result = matchedActivity ?? '';
+    return result;
+  }
+
   return (
     <>
       {pages &&
@@ -33,12 +46,6 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
             photoGroup,
             texts: { title, parr, parr1, parr2 },
           } = pag;
-
-          // function handleLink(e) {
-          //   e.preventDefault();
-          //   console.log(e);
-          //   window.location.href = e.target.id;
-          // }
 
           return (
             <section
@@ -91,25 +98,28 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
                     className={`page__texts__paragraph page__text__paragraph__parr2 page__card page__card--parr2--${page}`}
                   >
                     {parr2.length > 0 &&
-                      parr2.map((parr2Item, i) => (
-                        <li
-                          className={`page__parr2--item--${page} page__parr2--item`}
-                          key={i}
-                        >
-                          {/* <a
-                            href={`#${pageAddress}`}
-                            // href='#cabalgata'
-                            className={`${pageAddress}`}
-                            rel='noreferrer'
+                      parr2.map((parr2Item, i) => {
+                        const anchorRef = refAddress(parr2Item, activities);
 
-                            onClick={(e)=>handleLink(e)}
+                        return (
+                          <li
+                            className={`page__parr2--item--${page} page__parr2--item`}
+                            key={i}
                           >
-                            {parr2Item}
-                          </a> */}
-
-                          {parr2Item}
-                        </li>
-                      ))}
+                            {page === 2 ? (
+                              <a
+                                href={`#${anchorRef}`}
+                                className={`page__parr2--item--${page} page__parr2--item page__parr2--item--${page}--${anchorRef}`}
+                                rel='noreferrer'
+                              >
+                                {parr2Item}
+                              </a>
+                            ) : (
+                              <span>{parr2Item}</span>
+                            )}
+                          </li>
+                        );
+                      })}
                   </ul>
                 )}
                 {photoGroup!.length > 0 && (

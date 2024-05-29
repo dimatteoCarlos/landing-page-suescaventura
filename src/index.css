@@ -14,10 +14,12 @@ body {
   font-family: 'Segoe UI', sans-serif, 'Nanum Gothic';
 
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
+  cursor:pointer;
 }
 
 body {

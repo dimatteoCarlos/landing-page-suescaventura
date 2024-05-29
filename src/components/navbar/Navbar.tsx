@@ -5,8 +5,15 @@ function Navbar() {
   return (
     <>
       <nav>
-        <SocialMedia  />
-        {/* <SocialMedia isColored={true} /> */}
+      <span className='btnPlans__container'>
+          {/* <button className=' btnPlans'> */}
+            <a href='#planes' rel='noreferrer'>
+              planes
+            </a>
+          {/* </button> */}
+        </span>
+        <SocialMedia isColored={false} />
+
       </nav>
     </>
   );

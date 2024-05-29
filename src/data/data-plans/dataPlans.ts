@@ -1,5 +1,14 @@
 import { PlansType } from '../../types/types';
 
+export const figureNames: string[] = [
+  'caminata',
+  'cabalgata',
+  'escalada',
+  'rappel',
+  'ferrata',
+  'espeleismo',
+];
+
 export const dataPlans: PlansType[] = [
   //page
   {

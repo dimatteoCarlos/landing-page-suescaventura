@@ -6,7 +6,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 import './style-socialMedia.css';
 
 type SocialObjType = {
-  wtf: string;
+  nameClass: string;
   icon: JSX.Element;
   iconId: IconType;
   iconName: string;
@@ -15,14 +15,14 @@ type SocialObjType = {
 
 export const socialMediaInfo: SocialObjType[] = [
   {
-    wtf: 'sm1',
+    nameClass: 'facebook',
     icon: <FaFacebook />,
     iconId: FaFacebook,
     iconName: 'FaFacebook',
     iconUrl: 'https://www.facebook.com/p/SuescAventura-100063543973730/',
   },
   {
-    wtf: 'sm2',
+    nameClass: 'instagram',
     icon: <FaInstagram />,
     iconId: FaInstagram,
     iconName: 'FaInstagram',
@@ -33,7 +33,7 @@ export const socialMediaInfo: SocialObjType[] = [
   },
 
   {
-    wtf: 'sm3',
+    nameClass: 'whatsapp',
     icon: <FaWhatsapp />,
     iconId: FaWhatsapp,
     iconName: 'FaWhatsapp',
@@ -41,10 +41,10 @@ export const socialMediaInfo: SocialObjType[] = [
     // iconUrl: 'https://Whatsapp.com',
   },
   {
-    wtf: 'sm4',
+    nameClass: 'xtwitter',
     icon: <FaXTwitter />,
     iconId: FaXTwitter,
-    iconName: 'FaTwitter',
+    iconName: 'FaxTwitter',
     iconUrl: 'https://twitter.com',
   },
 ];
@@ -52,8 +52,8 @@ export const socialMediaInfo: SocialObjType[] = [
 // type SocialMediaPropType = {
 //   isColored: boolean;
 // }
-// function SocialMedia({ isColored }: SocialMediaPropType): JSX.Element {
-function SocialMedia(): JSX.Element {
+// function SocialMedia(): JSX.Element {
+function SocialMedia({ isColored }: SocialMediaPropType): JSX.Element {
   return (
     <ul className='socialMedia'>
       {socialMediaInfo.map((item, indx) => {
@@ -62,16 +62,17 @@ function SocialMedia(): JSX.Element {
         //   .substring(2)
         //   .toLowerCase()} icon`;
 
-        const iconClass = `icon_${item.wtf} icon`;
+        const iconClass = `icon_${item.nameClass} icon`;
 
-        // console.log(iconClass, item.iconId.name);
+        // console.log('🚀 ~ {socialMediaInfo.map ~ iconClass:', iconClass);
+        // console.log(iconClass, item.iconId.name, item.iconId);
 
         return (
           <li key={`${item.iconId.name}--${indx}`}>
             <a
               href={item.iconUrl}
-              className={iconClass}
-              // className={`${iconClass} ${isColored ? '' : ''}`}
+              // className={iconClass}
+              className={`${iconClass} ${isColored ? 'colored' : ''}`}
               rel='noreferrer'
               target='_blank'
             >

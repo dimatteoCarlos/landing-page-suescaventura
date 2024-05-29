@@ -110,24 +110,39 @@
 }
 
 /*****PAGE 2*******/
-.page__parr2--item--2 {
+.page__parr2--item--2{
   margin-left: 40%;
   text-align: left;
   list-style-type: disc;
   font-size: clamp(1.5rem, 3vw, 2rem);
-}
+  
 
-.page__parr2--item--2:hover {
+}
+/* .page__parr2--item--2,
+.page__parr2--item--2--caminata{
+  /* background: orange; */
+  
+
+} */
+
+
+
+.page__parr2--item--2:hover a {
   font-weight: bold;
+  color:black;
+
 }
 
-.page__parr2--item--2:first-child {
+
+
+.page__parr2--item--2:first-child a {
   list-style-type: none;
   align-self: center;
   margin: 0;
   padding: 1rem;
   color: black;
   font-weight: normal;
+  cursor: default;
 }
 /*****PAGE 3, 4*******/
 .page__card--parr1--3,
@@ -159,10 +174,18 @@
 .page__card--parr1--6 {
   margin-top: 10rem;
 }
+/*****PAGE 7*******/
+.page__parr2--item span {
+  font-size: clamp(1rem, 4vw, 2rem);
+}
+
 /*****PAGE 8*******/
 
-.page__card--8 {
-  background-color: rgb(0, 0, 0, 0.5);
+.page__card.page__card--parr2--8 {
+  background-color: transparent;
+}
+.page__card--parr--8{
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .page__texts--title--8 {
@@ -215,4 +238,12 @@
   .page__card.gallery__photoGroup > img:first-child {
     display: block;
   }
+
+  /*******PAGE 6 MEDIA****/
+  .page__bgImg--6 {
+    object-fit: fill;
+  }
 }
+/* .icon_facebook {
+  display:none;
+} */

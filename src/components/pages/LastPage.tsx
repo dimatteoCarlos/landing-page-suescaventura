@@ -77,7 +77,7 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
                 />
               </div>
               <div className='contact'>
-                <SocialMedia />
+                <SocialMedia isColored={true}/>
               </div>
             </div>
           </div>

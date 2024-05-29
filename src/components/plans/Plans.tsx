@@ -17,7 +17,10 @@ function Plans() {
             <section
               className={`section__plans section__plans--${pageId}`}
               key={`page-${ipage}`}
+              id={`${pageId === 9 ? 'planes' : pageId}`}
             >
+
+<Navbar />
               <div
                 className={`plans__page__container plans__page__container--${pageId}`}
               >
@@ -42,7 +45,7 @@ function Plans() {
                   className={`plan__card pagePlan__container pagePlan__container--${pageId}`}
                   key={keyPage}
                 >
-                  <Navbar />
+                
                   <header
                     className={`pagePlan__header pagePlan__header--${pageId}`}
                   >
