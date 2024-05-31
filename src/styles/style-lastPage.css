@@ -107,20 +107,17 @@
   border-radius: 50%;
 }
 
-.page__photoGroup{
-  width: 70%;
-  max-height:7rem;
-
+.lastpage__photoGroup--12{
+  width: 50%;
+  max-width: 60rem;
+  max-height:10rem;
   align-self: center;
-  max-width: 80%;
-  border: 10px solid orange;
+  margin-bottom: 1rem;
+
+  aspect-ratio: auto;
+
 }
 
-.page__photoGroup:hover {
-  z-index: 30;
-  /* scale: 1.05; */
-  transition: all 0.5s ease;
-  border-radius: 2rem;
-  opacity: 0.95;
-  /* border: 10px solid orange; */
+.lastpage__photoGroup--12:hover{
+scale:1.1;
 }

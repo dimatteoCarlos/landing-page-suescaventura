@@ -88,10 +88,10 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
             {photoGroup!.length > 0 &&
               photoGroup?.map((photo, i) => (
                 <img
-                  key={`photoGroup__${page}__photo--${i}`}
+                  key={`lastpage__photoGroup__${page}__photo--${i}`}
                   src={`${images[photo.idImg].imgUrl}`}
                   alt={`${images[idImg]}`}
-                  className={`page__photoGroup page__photoGroup--${page} page__photoGroup--${page}--${i}`}
+                  className={`lastpage__photoGroup lastpage__photoGroup--${page} lastpage__photoGroup--${page}--${i}`}
                 />
               ))}
           </div>
