@@ -55,7 +55,7 @@ a {
 }
 .icon_xtwitter > svg:hover {
   color: black;
-} 
+}
 
 /*permanent colored*/
 /*
@@ -132,3 +132,26 @@ a {
   color: #404eed;
 } */
 /*****socialMedia*****/
+@media all and (max-width: 490px) {
+  .socialMedia {
+    gap: 0.5rem;
+    flex: 1 1 auto;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .icon_xtwitter,
+  .icon_xtwitter > svg {
+    display: none;
+  }
+}
+
+@media all and (max-width: 385px) {
+  .icon_instagram {
+    display: none;
+  }
+
+  .socialMedia {
+    justify-content: center;
+  }
+}

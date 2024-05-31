@@ -2,19 +2,16 @@
 
 /*FLEX-BOX USAGE -  RESPONSIVE*/
 :root {
-  --MW: 1000px;
-  --clamped-fsz-par: clamp(1.5rem, calc(3vw + 0.25rem), 2rem);
+  --MW: 1024px;
+  --clamped-fsz-par: clamp(2rem, calc(4vw + 0.25rem), 3.5rem);
 }
 
 .section__page {
   height: 100%;
-  width: 100vw;
-  height: 100rem;
-  max-width: var(--MW);
+max-width: var(--Mw);
   margin: 0;
   padding: 0;
   position: relative;
-  scroll-behavior: smooth;
 }
 
 .page__bgImg {
@@ -51,16 +48,13 @@
   border-radius: 2rem;
   z-index: 10;
   padding: 1rem;
-  margin: 0rem 3rem;
-}
-
-.page__container {
-  padding-top: 6rem;
+  margin: 3rem;
+  /* border:10px solid orange; */
 }
 
 .page__texts--title {
   font-weight: 600;
-  line-height: clamp(2rem, calc(6vw), 4.5rem);
+  line-height: clamp(3rem, calc(6vw), 4.5rem);
   letter-spacing: 1.5px;
   font-size: clamp(2.5rem, calc(6vw), 4.5rem);
   color: black;
@@ -71,8 +65,14 @@
   font-weight: 500;
   color: rgb(40, 41, 42);
   font-size: var(--clamped-fsz-par);
+  padding: 1rem;
 }
 
+.visualBox {
+  height: 40rem;
+  width: 100%;
+  /* border: 10px solid blue; */
+}
 .page__parr2--item {
   list-style-type: disc;
   font-size: clamp(1rem, 4vw, 2rem);
@@ -83,17 +83,35 @@
   align-self: center;
   margin: 0;
   padding: 1rem;
-  font-size: var(--clamped-fsz-par);
 }
 
 .gallery__photoGroup {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  gap: 0.5rem;
-  width: 100%;
+  gap: 0.75rem;
+  max-width: 85%;
   background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 3rem;
+
 }
+
+.gallery__photoGroup > div {
+  margin: 0;
+  padding: 0;
+ flex:1 1 auto;
+}
+
+.gallery__photoGroup > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+
+}
+
+
+
 
 /*****PAGE 1*******/
 .logo {
@@ -102,6 +120,7 @@
   border-radius: 50%;
   background-color: rgb(255, 255, 255, 0.6);
   border: 0.75px solid black;
+  margin-bottom: 3rem;
 }
 
 .page__texts--title--1 {
@@ -110,30 +129,19 @@
 }
 
 /*****PAGE 2*******/
-.page__parr2--item--2{
-  margin-left: 40%;
+.page__parr2--item--2 {
+  margin-left: 20%;
   text-align: left;
   list-style-type: disc;
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  
-
+  font-size: clamp(2rem, calc(2vw + 0.25rem), 2.5rem);
+  line-height: 3.5rem;
 }
-/* .page__parr2--item--2,
-.page__parr2--item--2--caminata{
-  /* background: orange; */
-  
-
-/* }  */
-
 
 
 .page__parr2--item--2:hover a {
   font-weight: bold;
-  color:black;
-
+  color: black;
 }
-
-
 
 .page__parr2--item--2:first-child a {
   list-style-type: none;
@@ -143,17 +151,19 @@
   color: black;
   font-weight: normal;
   cursor: default;
+
+
 }
 /*****PAGE 3, 4*******/
 .page__card--parr1--3,
 .page__card--parr1--4 {
-  margin-bottom: 6rem;
+  /* margin-bottom: 6rem; */
 }
 /*****PAGE 5*******/
 .page__texts__paragraph__parr1--5 {
   background-color: rgb(255, 255, 255, 0.5);
   width: 90%;
-  margin-bottom: 33rem;
+  /* margin-bottom: 33rem; */
   justify-self: left;
 }
 
@@ -163,16 +173,22 @@
 
 .page__photoGroup:hover {
   z-index: 30;
-  scale: 1.1;
+  scale: 1.25;
   transition: all 0.5s ease;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: 1px solid white;
   opacity: 0.9;
+  gap:0;
+
 }
 
 /*****PAGE 6*******/
+.page__bgImg--6{
+  object-position: right;
+}
 .page__card--parr1--6 {
   margin-top: 10rem;
+
 }
 /*****PAGE 7*******/
 .page__parr2--item span {
@@ -184,7 +200,7 @@
 .page__card.page__card--parr2--8 {
   background-color: transparent;
 }
-.page__card--parr--8{
+.page__card--parr--8 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -226,17 +242,33 @@
   padding: 2rem 0;
 }
 
-.section__page .page__container {
-  margin-bottom: 30rem;
-}
+@media all and (max-width: 550px) {
+  /* .gallery__photoGroup > img {
+    display: none;
+  } */
 
-@media (max-width: 550px) {
-  .page__card.gallery__photoGroup > img {
+  .gallery__photoGroup > div {
     display: none;
   }
 
-  .page__card.gallery__photoGroup > img:first-child {
+  /* .gallery__photoGroup.page__photoGroup__photo > img:first-child {
     display: block;
+    height: 14rem;
+    width: auto;
+    padding-bottom: 1rem;
+  } */
+
+  .gallery__photoGroup > div:first-child {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    /* height: 14rem; */
+  }
+
+  /*******PAGE 6 MEDIA****/
+  .page__bgImg--5 {
+    object-position: 75%;
   }
 
   /*******PAGE 6 MEDIA****/
@@ -244,6 +276,3 @@
     object-fit: fill;
   }
 }
-/* .icon_facebook {
-  display:none;
-} */

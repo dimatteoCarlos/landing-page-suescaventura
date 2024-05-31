@@ -1,13 +1,13 @@
 /* style-plans.css */
 :root {
-  --MW-plans: 1000px;
+  --MW: 2500px;
   --w: 81vw;
 }
 
 .section__plans {
   height: 100%;
   width: 100vw;
-  max-width: var(--MW-plans);
+  /* max-width: var(--MW-plans); */
   margin: 0;
   padding: 0;
   position: relative;

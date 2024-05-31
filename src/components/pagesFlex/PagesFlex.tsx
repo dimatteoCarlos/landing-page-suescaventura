@@ -1,10 +1,9 @@
 import '../../styles/style-pagesFlex.css';
 
 import { DataImageType, PageType } from '../../types/types.ts';
-
 import { activities } from '../../data/data-pages/dataPages.ts';
-
 import Navbar from '../navbar/Navbar.tsx';
+import VisualBox from '../visualBox/VisualBox.tsx';
 type PagesPropsType = {
   pages: PageType[];
   images: DataImageType;
@@ -13,7 +12,7 @@ type PagesPropsType = {
 function PagesFlex({ pages: pags, images }: PagesPropsType) {
   let logoIMg = '/logos/logoSuescaventuraWord-sinFondo.png';
 
-  //Render each page while developing
+  //Help rendering one single page while developing
   let pages = [
     pags[0],
     pags[1],
@@ -25,12 +24,17 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
     pags[7],
   ];
 
+  //visualBox: page layout for back photo visualization
+  const pageVisualBox1 = [1, 2, 5,],
+    pageVisualBox2 = [3, 4, 6, 7,8]; 
+
   function refAddress(text: string, activities: string[]) {
     const matchedActivity = activities.find((activity) => {
       const regEx = new RegExp(activity, 'ig');
       const found = regEx.test(text);
       return found;
     });
+
     const result = matchedActivity ?? '';
     return result;
   }
@@ -73,18 +77,18 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
                 >
                   <span
                     className={`page__texts--title page__texts--title--${page}`}
-                    id={title}
                   >
                     {title}
                   </span>
 
-                  <p
+                {parr &&  <p
                     className={`page__texts__paragraph page__text__paragraph__parr page__texts_paragraph__parr--${page}`}
                   >
                     {parr}
-                  </p>
+                  </p>}
                 </div>
 
+                {<VisualBox page={page} layoutPattern={pageVisualBox2} />}
                 {parr1 && (
                   <p
                     className={`page__card page__card--parr1--${page} page__texts__paragraph page__texts__paragraph__parr1 page__texts__paragraph__parr1--${page}`}
@@ -92,6 +96,7 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
                     {parr1}
                   </p>
                 )}
+                {<VisualBox page={page} layoutPattern={pageVisualBox1} />}
 
                 {parr2.length > 0 && (
                   <ul
@@ -115,7 +120,7 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
                                 {parr2Item}
                               </a>
                             ) : (
-                              <span>{parr2Item}</span>
+                              <>{parr2Item}</>
                             )}
                           </li>
                         );
@@ -124,21 +129,23 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
                 )}
                 {photoGroup!.length > 0 && (
                   <article
-                    className={`page__card gallery__photoGroup gallery__photoGroup--page--${page}`}
+                    className={`gallery__photoGroup gallery__photoGroup--page--${page}`}
                   >
                     {photoGroup!.length > 0 &&
                       photoGroup?.map((photo, i) => (
-                        // <div
-                        //   className={`page__photoGroup__photo page__photoGroup__photo--${page} `}
-                        //   key={`photoGroup__${page}--${i}`}
-                        // >
+                        <div
+                          className={`page__photoGroup__photo page__photoGroup__photo--${page} `}
+                          key={`photoGroup__${page}--${i}`}
+                        >
                         <img
                           key={`photoGroup__${page}__photo--${i}`}
                           src={`${images[photo.idImg].imgUrl}`}
                           alt={`${images[photo.idImg].imgUrl}`}
-                          className={`page__photoGroup page__photoGroup--${page} page__photoGroup--${page}--${i}`}
+                          className={`page__photoGroup page__photoGroup--${page} page__photoGroup--${page}--${i}
+                         
+                          `}
                         />
-                        // </div>
+                        </div>
                       ))}
                   </article>
                 )}

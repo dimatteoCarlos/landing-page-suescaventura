@@ -5,7 +5,9 @@ export const activities:string[]=['caminata','cabalgata','escalada','rappel','fe
 export const pages: PageType[] = [
   {
     pageAddress:'portada',
+ 
     page: 1,
+    visualBox:1,
     idImg: 1,
     photoGroup: [{ idImg: 2 }, { idImg: 3 }, { idImg: 4 }, { idImg: 5 }],
 
@@ -20,6 +22,7 @@ export const pages: PageType[] = [
   {
     pageAddress:'suesca',
     page: 2,
+    visualBox:1,
     idImg: 6,
     photoGroup: [],
     texts: {
@@ -41,6 +44,7 @@ export const pages: PageType[] = [
   {
     pageAddress:'caminata',
     page: 3,
+    visualBox:2,
     idImg: 30,
     photoGroup: [],
     texts: {
@@ -55,6 +59,7 @@ export const pages: PageType[] = [
   {
     pageAddress:'cabalgata',
     page: 4,
+    visualBox:2,
     idImg: 8,
     photoGroup: [],
     texts: {
@@ -68,6 +73,7 @@ export const pages: PageType[] = [
   {
     pageAddress:'escalada',
     page: 5,
+    visualBox:1,
     idImg: 9,
     photoGroup: [{ idImg: 12 }, { idImg: 10 }, { idImg: 11 }, { idImg: 13 }],
     texts: {
@@ -82,6 +88,7 @@ export const pages: PageType[] = [
   {
     pageAddress:'rappel',
     page: 6,
+    visualBox:2,
     idImg: 14,
     photoGroup: [{ idImg: 16 }, { idImg: 15 }, { idImg: 17 }],
 
@@ -96,6 +103,7 @@ export const pages: PageType[] = [
   {
     pageAddress:'ferrata',
     page: 7,
+    visualBox:1,
     idImg: 18,
     photoGroup: [{ idImg: 21 }, { idImg: 19 }, { idImg: 20 }],
     texts: {
@@ -111,6 +119,7 @@ export const pages: PageType[] = [
   {
     pageAddress:'espeleismo',
     page: 8,
+    visualBox:2,
     idImg: 22,
     photoGroup: [{ idImg: 23 }, { idImg: 25 }, { idImg: 24 }],
     texts: {
@@ -128,6 +137,7 @@ export const pages: PageType[] = [
 export const lastPage: PageType = {
   pageAddress:'contact',
   page: 12,
+  visualBox:1,
   idImg: 27,
   photoGroup: [{ idImg: 29 }],
   texts: {

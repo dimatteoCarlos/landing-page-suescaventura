@@ -19,7 +19,7 @@ body {
 
 a {
   text-decoration: none;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 body {
@@ -28,4 +28,11 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+}
+
+.app__container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

@@ -1,5 +1,6 @@
 export type PageType = {
   pageAddress:string,
+  visualBox?:number,
   page: number;
   idImg: number;
   photoGroup?: {
