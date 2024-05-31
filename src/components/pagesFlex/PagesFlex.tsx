@@ -60,11 +60,11 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
               <Navbar />
               {/* <div className={`page__bgImg__container page__bgImg--${page}`}> */}
 
-              {/* <img
+              <img
                 src={`${images[idImg].imgUrl}`}
                 alt={`${images[idImg].imgUrl}`}
                 className={`page__bgImg page__bgImg--${page}`}
-              /> */}
+              />
 
 <img
                 src={`${images[idImg].imgUrl}`}
