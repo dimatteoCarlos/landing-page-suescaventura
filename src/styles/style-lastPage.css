@@ -108,15 +108,16 @@
 }
 
 .page__photoGroup {
-  /* width: 60%; */
+  width: 70%;
   align-self: center;
+  max-width: 80%;
 }
 
 .page__photoGroup:hover {
   z-index: 30;
-  scale: 1.1;
+  /* scale: 1.05; */
   transition: all 0.5s ease;
   border-radius: 2rem;
   opacity: 0.95;
-  border: 10px solid orange;
+  /* border: 10px solid orange; */
 }
