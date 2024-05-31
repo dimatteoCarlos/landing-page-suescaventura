@@ -107,10 +107,13 @@
   border-radius: 50%;
 }
 
-.page__photoGroup {
+.page__photoGroup{
   width: 70%;
+  max-height:7rem;
+
   align-self: center;
   max-width: 80%;
+  border: 10px solid orange;
 }
 
 .page__photoGroup:hover {
