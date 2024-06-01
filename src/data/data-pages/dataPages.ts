@@ -1,18 +1,26 @@
 import { PageType } from '../../types/types';
 
-export const activities:string[]=['caminata','cabalgata','escalada','rappel','ferrata','espeleismo']
+export const activities: string[] = [
+  'planes',
+  'caminata',
+  'cabalgata',
+  'escalada',
+  'rappel',
+  'ferrata',
+  'espeleismo',
+];
 
 export const pages: PageType[] = [
   {
-    pageAddress:'portada',
- 
+    pageAddress: 'portada',
+
     page: 1,
-    visualBox:1,
+    visualBox: 1,
     idImg: 1,
     photoGroup: [{ idImg: 2 }, { idImg: 3 }, { idImg: 4 }, { idImg: 5 }],
 
     texts: {
-      title: 'Suescaventura RNT: 64563',
+      title: 'Suescaventura RNT:64563',
       parr: 'somos operadores turísticos en el municipio de Suesca (Cundinamarca) desde el 2015, legalmente constituidos; nos especializamos en actividades al aire libre, turismo de naturaleza y turismo de aventura con todos los requerimiento de seguridad necesarios para brindar un excelente servicio y así generar una experiencia inolvidable en nuestros visitantes.',
       parr1: '',
       parr2: [],
@@ -20,17 +28,17 @@ export const pages: PageType[] = [
   },
 
   {
-    pageAddress:'suesca',
+    pageAddress: 'suesca',
     page: 2,
-    visualBox:1,
+    visualBox: 1,
     idImg: 6,
     photoGroup: [],
     texts: {
       title: 'SUESCA',
-      parr: 'Municipio ubicado a 60 kilómetros al norte de Bogotá, su altitud media es de 2585 msnm, primer lugar del país donde se   empezó a practicar el deporte de escalada en roca. Cuenta con unos farallones de roca arenisca ideales para practicar este como uno de los lugares más importantes para la práctica de actividades de aventura cerca a Bogotá',
+      parr: 'Municipio ubicado a 60 kilómetros al norte de Bogotá, su altitud media es de 2585 msnm, primer lugar del país donde se   empezó a practicar el deporte de escalada en roca. Cuenta con unos farallones de roca arenisca ideales para practicar este como uno de los lugares más importantes para la práctica de actividades de aventura cerca de Bogotá',
       parr1: '',
       parr2: [
-        'En la salida planeada a Suesca los participantes tendrán la opción de practicar:',
+        'Con los planes de actividades organizados por Suescaventura los participantes tendrán la opción de practicar:',
         'Caminatas',
         'Cabalgatas',
         'Escalada en roca',
@@ -42,9 +50,9 @@ export const pages: PageType[] = [
   },
 
   {
-    pageAddress:'caminata',
+    pageAddress: 'caminata',
     page: 3,
-    visualBox:2,
+    visualBox: 2,
     idImg: 30,
     photoGroup: [],
     texts: {
@@ -57,9 +65,9 @@ export const pages: PageType[] = [
   },
 
   {
-    pageAddress:'cabalgata',
+    pageAddress: 'cabalgata',
     page: 4,
-    visualBox:2,
+    visualBox: 2,
     idImg: 8,
     photoGroup: [],
     texts: {
@@ -71,9 +79,9 @@ export const pages: PageType[] = [
     },
   },
   {
-    pageAddress:'escalada',
+    pageAddress: 'escalada',
     page: 5,
-    visualBox:1,
+    visualBox: 1,
     idImg: 9,
     photoGroup: [{ idImg: 12 }, { idImg: 10 }, { idImg: 11 }, { idImg: 13 }],
     texts: {
@@ -86,9 +94,9 @@ export const pages: PageType[] = [
   },
 
   {
-    pageAddress:'rappel',
+    pageAddress: 'rappel',
     page: 6,
-    visualBox:2,
+    visualBox: 2,
     idImg: 14,
     photoGroup: [{ idImg: 16 }, { idImg: 15 }, { idImg: 17 }],
 
@@ -101,9 +109,9 @@ export const pages: PageType[] = [
     },
   },
   {
-    pageAddress:'ferrata',
+    pageAddress: 'ferrata',
     page: 7,
-    visualBox:1,
+    visualBox: 1,
     idImg: 18,
     photoGroup: [{ idImg: 21 }, { idImg: 19 }, { idImg: 20 }],
     texts: {
@@ -117,9 +125,9 @@ export const pages: PageType[] = [
     },
   },
   {
-    pageAddress:'espeleismo',
+    pageAddress: 'espeleismo',
     page: 8,
-    visualBox:2,
+    visualBox: 2,
     idImg: 22,
     photoGroup: [{ idImg: 23 }, { idImg: 25 }, { idImg: 24 }],
     texts: {
@@ -135,9 +143,9 @@ export const pages: PageType[] = [
 ];
 
 export const lastPage: PageType = {
-  pageAddress:'contact',
+  pageAddress: 'contact',
   page: 12,
-  visualBox:1,
+  visualBox: 1,
   idImg: 27,
   photoGroup: [{ idImg: 29 }],
   texts: {

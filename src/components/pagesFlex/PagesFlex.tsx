@@ -25,17 +25,17 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
   ];
 
   //visualBox: page layout for back photo visualization
-  const pageVisualBox1 = [1, 2, 5,],
-    pageVisualBox2 = [3, 4, 6, 7,8]; 
+  const pageVisualBox1 = [1, 2, 5],
+    pageVisualBox2 = [3, 4, 6, 7, 8];
 
-  function refAddress(text: string, activities: string[]) {
-    const matchedActivity = activities.find((activity) => {
-      const regEx = new RegExp(activity, 'ig');
+  function refAddress(text: string, menu: string[]) {
+    const matchedMenuItem = menu.find((menuItem) => {
+      const regEx = new RegExp(menuItem, 'ig');
       const found = regEx.test(text);
       return found;
     });
 
-    const result = matchedActivity ?? '';
+    const result = matchedMenuItem ?? '';
     return result;
   }
 
@@ -56,21 +56,17 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
               className={`section__page section__page--${page}`}
               key={`page-${indx}`}
               id={pageAddress.trim().toLowerCase()}
+              style={{ backgroundImage: `url(${images[idImg].imgUrl})` }}
             >
               <Navbar />
               {/* <div className={`page__bgImg__container page__bgImg--${page}`}> */}
 
+              {/* 
               <img
                 src={`${images[idImg].imgUrl}`}
                 alt={`${images[idImg].imgUrl}`}
                 className={`page__bgImg page__bgImg--${page}`}
-              />
-
-<img
-                src={`${images[idImg].imgUrl}`}
-                alt={`${images[idImg].imgUrl}`}
-                className={`page__bgImg page__bgImg--${page}`}
-              />
+              /> */}
 
               {/* </div> */}
 
@@ -82,17 +78,19 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
                 <div
                   className={`page__card page__card--${page} page__card--parr--${page}`}
                 >
-                  <span
+                  <div
                     className={`page__texts--title page__texts--title--${page}`}
                   >
                     {title}
-                  </span>
+                  </div>
 
-                {parr &&  <p
-                    className={`page__texts__paragraph page__text__paragraph__parr page__texts_paragraph__parr--${page}`}
-                  >
-                    {parr}
-                  </p>}
+                  {parr && (
+                    <p
+                      className={`page__texts__paragraph page__text__paragraph__parr page__texts_paragraph__parr--${page}`}
+                    >
+                      {parr}
+                    </p>
+                  )}
                 </div>
 
                 {<VisualBox page={page} layoutPattern={pageVisualBox2} />}
@@ -144,14 +142,12 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
                           className={`page__photoGroup__photo page__photoGroup__photo--${page} `}
                           key={`photoGroup__${page}--${i}`}
                         >
-                        <img
-                          key={`photoGroup__${page}__photo--${i}`}
-                          src={`${images[photo.idImg].imgUrl}`}
-                          alt={`${images[photo.idImg].imgUrl}`}
-                          className={`page__photoGroup page__photoGroup--${page} page__photoGroup--${page}--${i}
-                         
-                          `}
-                        />
+                          <img
+                            key={`photoGroup__${page}__photo--${i}`}
+                            src={`${images[photo.idImg].imgUrl}`}
+                            alt={`${images[photo.idImg].imgUrl}`}
+                            className={`page__photoGroup page__photoGroup--${page} page__photoGroup--${page}--${i}`}
+                          />
                         </div>
                       ))}
                   </article>

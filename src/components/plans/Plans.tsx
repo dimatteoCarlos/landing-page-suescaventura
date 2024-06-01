@@ -18,9 +18,9 @@ function Plans() {
               className={`section__plans section__plans--${pageId}`}
               key={`page-${ipage}`}
               id={`${pageId === 9 ? 'planes' : pageId}`}
+              style={{backgroundImage:`url(/planBgImg/${pageBgImage})`}}
             >
-
-<Navbar />
+              <Navbar />
               <div
                 className={`plans__page__container plans__page__container--${pageId}`}
               >
@@ -33,19 +33,18 @@ function Plans() {
                   </p>
                 )}
 
-                <div className={`plan__bgImg plan__bgImg--${pageId}`}>
+                {/* <div className={`plan__bgImg plan__bgImg--${pageId}`}>
                   <img
                     src={`/planBgImg/${pageBgImage}`}
                     alt={`${pageBgImage}-page-${pageId}`}
                     className={`plan__bgImg plan__bgImg--${pageId}`}
                   />
-                </div>
+                </div> */}
 
                 <div
                   className={`plan__card pagePlan__container pagePlan__container--${pageId}`}
                   key={keyPage}
                 >
-                
                   <header
                     className={`pagePlan__header pagePlan__header--${pageId}`}
                   >
@@ -73,11 +72,11 @@ function Plans() {
                       >
                         <div
                           className={`plan--title plan--title--${planId}`}
-                          style={
-                            planTitle.split(' ').length <= 8
-                              ? { fontSize: '1.5rem' }
-                              : { fontSize: '1.25rem' }
-                          }
+                          // style={
+                          //   planTitle.split(' ').length <= 10
+                          //     ? { fontSize: '1.25rem' }
+                          //     : { fontSize: '1.25rem' }
+                          // }
                         >
                           {/* <span>{planId}. </span> */}
                           {planTitle}
