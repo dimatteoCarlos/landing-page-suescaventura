@@ -20,7 +20,6 @@
   margin: 0;
   padding: 0;
   position: relative;
-
 }
 
 .section__page {
@@ -72,7 +71,7 @@
 }
 .onlyTitle {
   width: var(--width);
-  max-width:min(var(--width), max-content)
+  max-width: min(var(--width), max-content);
 }
 
 .page__texts--title {
@@ -89,7 +88,6 @@
 }
 
 .page__card .page__texts--title {
-
   padding: 0 1rem;
   /* width: max-content; */
 
@@ -263,8 +261,6 @@
 .page__parr2--item--8 {
   color: white;
 }
-
-
 
 @media all and (max-width: 650px) {
   /* .gallery__photoGroup > img {
