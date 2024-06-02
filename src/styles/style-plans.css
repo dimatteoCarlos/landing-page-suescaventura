@@ -16,6 +16,7 @@
 
   /**recommended: --width: clamp(45ch, 50%, 75ch); */
   --width: clamp(45ch, 75%, 85ch);
+  --width: clamp(min(65%, 40ch), 70%, max(80%, 85ch));
 }
 
 .section__plans {
@@ -47,6 +48,8 @@
   justify-content: center;
   align-items: center;
   text-align: left;
+
+  border:10px solid blue;
 }
 
 /* .plan__bgImg {
@@ -68,7 +71,7 @@
   padding: 0.5rem;
   z-index: 10;
 
-  margin: 0 3rem 3rem 3rem;
+  margin: 0 2rem 2rem 2rem;
 }
 
 .seguro__medico {
@@ -81,7 +84,7 @@
 }
 
 .pagePlan__container {
-  width: 75%;
+  width: 85%;
 
   padding: 1.5rem;
 
@@ -96,7 +99,6 @@
   margin-top: 6rem;
   margin-bottom: 3rem;
   /* border:10px solid green; */
-
 }
 
 .pagePlan__header {
@@ -160,43 +162,54 @@
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  
+  justify-content: center; 
+   /* flex-wrap: wrap; */
+
+
+
   align-items: end;
-  gap: 1rem;
+  /* gap: 0.5rem; */
 
-  
-
-  /* border:10px solid green; */
+  border: 10px solid rgb(16, 244, 244);
 }
 
 .card__plan__container {
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* width: max-content; */
+  /* height: 100%; */
+  width: 50%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border:10px solid green; */
-}
 
+  border: 10px solid red;
+}
+/*-----figures-------*/
 .card__figure {
+  --maxH--figure:6rem;
+  --minH--figure:2rem;
+  --normH--figure:5rem;
   height: 5rem;
-  width: auto;
+
+  /* width: auto; */
   aspect-ratio: auto;
 }
 
 .card__figure--plus {
   height: 2rem;
   width: 2rem;
-  margin: 0 1.5rem;
+  margin: 0 0.5rem;
   margin-bottom: 1.75rem;
 }
 .card__figure--rappel {
   height: 7rem;
+  height: calc(var(--normH--figure) * 1.4);
+
   padding-top: 1rem;
 }
-
+/*--------------------*/
 .card__plans__box {
   display: flex;
   flex-direction: column;
@@ -205,9 +218,12 @@
   text-align: center;
   align-items: center;
   justify-content: start;
-  min-width: 16rem;
-  max-width:100%;
+  /* min-width: 70%; */
+  width: 90%;
+  /* min-width: 100%; */
   font-weight: bold;
+
+  border:4px solid black;
 }
 
 .card__plans__box:last-child {
@@ -218,19 +234,25 @@
   font-size: 1.25rem;
   border-top: 4px solid rgb(117, 195, 113);
   background-color: rgb(213, 235, 210);
-  align-items: center;
+  justify-content: center;
   width: 100%;
+
+
+ 
 }
 
 .card__row__col,
 .currency,
 .card__plans__row {
-  font-size: clamp(1rem, 0.808rem + 0.769vw, 1.5rem);
+  font-size: clamp(1rem, 0.8rem + 0.8vw, 1.5rem);
+  /* font-size: 1rem; */
   font-weight: bold;
 }
 .card__plans__row {
   display: flex;
   width: 100%;
+  margin:0 1rem;
+  border:4px solid rgb(247, 0, 255);
 }
 .card__plans__row {
   display: flex;
@@ -239,10 +261,14 @@
 }
 
 .card__row__col {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   min-width: max-content;
-  width: 10rem;
+  /* width: 10rem; */
+  width: 50%;
+  /* width: 100%; */
   align-self: center;
+  align-items: center;
+  border:4px solid rgb(0, 4, 255);
 }
 .card__row__col--left {
   text-align: left;
@@ -254,7 +280,8 @@
 
 .currency {
   margin: 0 0.5rem;
-  font-weight: bold;
+
+
 }
 
 .card__row__col--right {
@@ -262,8 +289,16 @@
   display: flex;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 550px) {
   .plan__cards__container {
     flex-wrap: wrap;
+    /* border:10px dashed rebeccapurple; */
+    background:orange;
+    width: 100%;
   }
+
+  .card__plan__container {
+    width: 100%;
+    width: max-content;
+    height: 100%;
 }

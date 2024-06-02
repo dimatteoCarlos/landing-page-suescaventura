@@ -2,8 +2,8 @@
 
 /*FLEX-BOX USAGE -  RESPONSIVE*/
 :root {
-  --MW: 1228px;
-  --max--width: 550rem;
+  --MW: 1024px;
+  --max--width: 450rem;
   /*--clamp--*/
   --fsz--par: clamp(1rem, 0.423rem + 2.308vw, 2.5rem);
   --lh--par: clamp(1.5rem, 0.923rem + 2.308vw, 3rem);
@@ -11,15 +11,16 @@
   --lh--tit: clamp(3rem, 2.231rem + 3.077vw, 5rem);
   /**recommended: --width: clamp(45ch, 50%, 75ch); */
   --width: clamp(40ch, 70%, 85ch);
-  --width: clamp(75%, 70%, 80%);
+  --width: clamp(min(75%, 40ch), 70%, max(80%, 85ch));
 }
 
 .section__page {
   height: 100%;
-  max-width: var(--Mw);
+  /* max-width: var(--MW); */
   margin: 0;
   padding: 0;
   position: relative;
+
 }
 
 .section__page {
@@ -64,9 +65,14 @@
   z-index: 10;
   padding: 0.5rem;
   margin: 0 3rem 3rem 3rem;
+
   width: var(--width);
   max-width: var(--max--width);
   /* border: 10px solid blue; */
+}
+.onlyTitle {
+  width: var(--width);
+  width: max-content;
 }
 
 .page__texts--title {
@@ -83,9 +89,10 @@
 }
 
 .page__card .page__texts--title {
+
   padding: 0 1rem;
-  /* border:10px solid yellow; */
   width: max-content;
+  /* border:10px solid yellow; */
 }
 
 .page__texts__paragraph {

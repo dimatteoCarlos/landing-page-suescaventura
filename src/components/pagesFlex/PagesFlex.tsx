@@ -75,8 +75,10 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
                   <img src={`${logoIMg}`} alt={`logo`} className='logo' />
                 ) : null}
 
-                <div
-                  className={`page__card page__card--${page} page__card--parr--${page}`}
+                {<div
+                  className={`page__card  page__card--${page}   page__card--parr--${page} 
+                  ${parr?"":"onlyTitle"}
+                  `}
                 >
                   <div
                     className={`page__texts--title page__texts--title--${page}`}
@@ -92,7 +94,7 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
                     </p>
                   )}
                 </div>
-
+}
                 {<VisualBox page={page} layoutPattern={pageVisualBox2} />}
                 {parr1 && (
                   <p
