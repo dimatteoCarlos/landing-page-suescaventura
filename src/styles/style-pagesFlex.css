@@ -85,7 +85,7 @@
 
   text-align: center;
   /* margin: auto; */
-  border: 10px solid red;
+  /* border: 10px solid red; */
 }
 
 .page__card .page__texts--title {
@@ -93,7 +93,7 @@
   padding: 0 1rem;
   /* width: max-content; */
 
-  border:10px solid yellow;
+  /* border:10px solid yellow; */
 }
 
 .page__texts__paragraph {
