@@ -16,7 +16,7 @@
 
 .section__page {
   height: 100%;
-  max-width: var(--MW);
+  /* max-width: var(--MW); */
   margin: 0;
   padding: 0;
   position: relative;
@@ -72,6 +72,8 @@
 }
 .onlyTitle {
   width: var(--width);
+  width:max-content;
+  max-width:min(var(--width), max-content)
 }
 
 .page__texts--title {
