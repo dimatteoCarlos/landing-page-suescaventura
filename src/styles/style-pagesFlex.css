@@ -3,7 +3,7 @@
 /*FLEX-BOX USAGE -  RESPONSIVE*/
 :root {
   --MW: 1024px;
-  --max--width: 450rem;
+  --max--width: 350rem;
   /*--clamp--*/
   --fsz--par: clamp(1rem, 0.423rem + 2.308vw, 2.5rem);
   --lh--par: clamp(1.5rem, 0.923rem + 2.308vw, 3rem);
@@ -72,7 +72,6 @@
 }
 .onlyTitle {
   width: var(--width);
-  width:max-content;
   max-width:min(var(--width), max-content)
 }
 
