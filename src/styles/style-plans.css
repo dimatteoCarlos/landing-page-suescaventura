@@ -172,7 +172,6 @@
 }
 
 .card__plan__container {
-
   width: 50%;
 
   display: flex;
@@ -215,7 +214,7 @@
   align-items: center;
   justify-content: start;
 
-  width: 85%;
+  width: 100%;
   min-width: max(100%, max-content);
   font-weight: bold;
 
@@ -257,12 +256,12 @@
 }
 
 .card__row__col {
-  /* font-size: 1.2rem; */
   min-width: max-content;
   width: 50%;
   align-self: center;
   align-items: center;
   /* border: 4px solid rgb(0, 4, 255); */
+  /* font-size: 1.2rem; */
 }
 
 .card__row__col--left {
