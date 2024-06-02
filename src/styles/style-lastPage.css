@@ -22,6 +22,16 @@
   justify-content: center;
 }
 
+.section__lastpage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* .visualBox{
+  border:10px solid red;
+} */
+
 .lastpage__container {
   width: 80%;
   width: 100vw;
@@ -32,7 +42,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
+/* 
 .lastpage__bgImg {
   position: absolute;
   top: 0;
@@ -44,9 +54,9 @@
   object-fit: cover;
   /* object-position: right; */
 
-  z-index: -1;
-  opacity: 0.6;
-}
+/* z-index: -1;
+  opacity: 0.6; */
+/* }  */
 
 /*-----flex layout---------*/
 .page__content {
@@ -107,17 +117,16 @@
   border-radius: 50%;
 }
 
-.lastpage__photoGroup--12{
+.lastpage__photoGroup--12 {
   width: 50%;
   max-width: 60rem;
-  max-height:10rem;
+  max-height: 10rem;
   align-self: center;
   margin-bottom: 1rem;
 
   aspect-ratio: auto;
-
 }
 
-.lastpage__photoGroup--12:hover{
-scale:1.1;
+.lastpage__photoGroup--12:hover {
+  scale: 1.1;
 }

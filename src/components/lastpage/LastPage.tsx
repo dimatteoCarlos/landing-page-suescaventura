@@ -2,6 +2,7 @@ import '../../styles/style-lastPage.css';
 
 import { DataImageType, PageType } from '../../types/types.ts';
 import SocialMedia from '../social-media/SocialMedia.tsx';
+import VisualBox from '../visualBox/VisualBox.tsx';
 type LastPagePropsType = {
   lastPage: PageType;
   images: DataImageType;
@@ -25,13 +26,15 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
       <section
         className={`section__lastpage section__lastpage--${page}`}
         id={pageAddress.trim().toLowerCase()}
+        
+        style={{ backgroundImage: `url(${images[idImg].imgUrl})` }}
       >
         <div className={`lastpage__container lastpage__container--${page}`}>
-          <img
+          {/* <img
             src={`${images[idImg].imgUrl}`}
             alt={`${images[idImg].imgUrl}`}
             className={`lastpage__bgImg lastpage__bgImg--${page}`}
-          />
+          /> */}
 
           <div className='page__content'>
             <div className='page__content--parr2'>
@@ -77,10 +80,12 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
                 />
               </div>
               <div className='contact'>
-                <SocialMedia isColored={true}/>
+                <SocialMedia isColored={true} />
               </div>
             </div>
           </div>
+
+          {<VisualBox page={page} layoutPattern={[page]} />}
 
           <div
             className={`photoGroup__container photoGroup__container--page--${page}`}

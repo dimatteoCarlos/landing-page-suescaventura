@@ -3,6 +3,7 @@
 /*FLEX-BOX USAGE -  RESPONSIVE*/
 :root {
   --MW: 1228px;
+  --max--width: 550rem;
   /*--clamp--*/
   --fsz--par: clamp(1rem, 0.423rem + 2.308vw, 2.5rem);
   --lh--par: clamp(1.5rem, 0.923rem + 2.308vw, 3rem);
@@ -26,7 +27,7 @@
   background-size: cover;
   background-position: center center;
 }
-
+/* 
 .page__bgImg {
   width: 100%;
   height: 100%;
@@ -36,11 +37,12 @@
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
 .section__page .page__container {
   width: 100%;
   height: 100%;
+  max-width: var(--max--width);
 
   display: flex;
   flex-direction: column;
@@ -63,6 +65,8 @@
   padding: 0.5rem;
   margin: 0 3rem 3rem 3rem;
   width: var(--width);
+  max-width: var(--max--width);
+  /* border: 10px solid blue; */
 }
 
 .page__texts--title {
@@ -72,7 +76,16 @@
   font-size: var(--fsz--tit);
   color: black;
   font-weight: normal;
-  /* border:10px solid red; */
+
+  text-align: center;
+  margin: auto;
+  /* border: 10px solid red; */
+}
+
+.page__card .page__texts--title {
+  padding: 0 1rem;
+  /* border:10px solid yellow; */
+  width: max-content;
 }
 
 .page__texts__paragraph {
@@ -84,11 +97,11 @@
   font-weight: normal;
 }
 
-.visualBox {
-  height: 40rem;
-  width: 100%;
-  /* border: 10px solid blue; */
-}
+/* .visualBox { */
+/* height: 40rem;
+  width: 100%; */
+/* border: 10px solid blue; */
+/* } */
 
 .page__parr2--item {
   font-size: var(--fsz--par);
@@ -147,8 +160,8 @@
   list-style-type: disc;
   line-height: 1.5;
   font-size: clamp(1rem, 0.423rem + 2.25vw, 2.5rem);
-  /* line-height: clamp(1rem, 1.372rem + 2.92vw, 4rem); */
-font-weight: normal;
+
+  font-weight: normal;
   color: black;
 }
 
@@ -229,7 +242,7 @@ font-weight: normal;
   border-radius: 1.5rem;
 
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
   font-weight: normal;
 }
@@ -251,7 +264,7 @@ font-weight: normal;
   padding: 2rem 0;
 }
 
-@media all and (max-width: 550px) {
+@media all and (max-width: 650px) {
   /* .gallery__photoGroup > img {
     display: none;
   } */
