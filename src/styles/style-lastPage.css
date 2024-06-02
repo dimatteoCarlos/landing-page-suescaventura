@@ -120,18 +120,21 @@
 .lastpage__photoGroup--12 {
   width: 50%;
   max-width: 60rem;
-  max-height: 10rem;
   align-self: center;
   margin-bottom: 1rem;
+  
+  transition:all 750ms  ease-in-out;
+  scale:0.9;
 
-  aspect-ratio: auto;
 }
 
 .lastpage__photoGroup--12:hover {
   scale: 1.1;
+
+
 }
 
 .contact {
   margin-top: 1rem;
-  
+
 }
