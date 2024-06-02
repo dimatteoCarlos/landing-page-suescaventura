@@ -16,7 +16,7 @@
 
 .section__page {
   height: 100%;
-  /* max-width: var(--MW); */
+  max-width: var(--MW);
   margin: 0;
   padding: 0;
   position: relative;
@@ -72,7 +72,6 @@
 }
 .onlyTitle {
   width: var(--width);
-  width: max-content;
 }
 
 .page__texts--title {
@@ -84,15 +83,16 @@
   font-weight: normal;
 
   text-align: center;
-  margin: auto;
-  /* border: 10px solid red; */
+  /* margin: auto; */
+  border: 10px solid red;
 }
 
 .page__card .page__texts--title {
 
   padding: 0 1rem;
-  width: max-content;
-  /* border:10px solid yellow; */
+  /* width: max-content; */
+
+  border:10px solid yellow;
 }
 
 .page__texts__paragraph {
@@ -263,13 +263,7 @@
   color: white;
 }
 
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 2rem 0;
-}
+
 
 @media all and (max-width: 650px) {
   /* .gallery__photoGroup > img {
