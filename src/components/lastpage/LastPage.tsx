@@ -26,7 +26,6 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
       <section
         className={`section__lastpage section__lastpage--${page}`}
         id={pageAddress.trim().toLowerCase()}
-        
         style={{ backgroundImage: `url(${images[idImg].imgUrl})` }}
       >
         <div className={`lastpage__container lastpage__container--${page}`}>
