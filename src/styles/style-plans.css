@@ -285,17 +285,17 @@
   display: flex;
 }
 
-@media all and (max-width: 550px){
+@media screen and (max-width:550px) {
   .plan__cards__container {
     flex-wrap: wrap;
     background:orange;
     width: 100%;
-    /* border:10px dashed rebeccapurple; */
+    border:10px dashed rebeccapurple;
   }
 
-  .card__plan__container {
+  .card__plan__container {  
     width: 100%;
     width: max-content;
     height: 100%;
-}
+  }
 }
