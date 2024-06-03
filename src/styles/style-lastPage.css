@@ -127,26 +127,28 @@
 }
 
 /*****socialMedia*****/
+
 @media all and (max-width: 490px) {
-  .socialMedia {
+  .contact.socialMedia {
     gap: 0.5rem;
     flex: 1 1 auto;
   }
 }
 
 @media all and (max-width: 400px) {
-  .icon_xtwitter,
-  .icon_xtwitter > svg {
+  a.icon_xtwitter.icon.colored,
+  a.icon_xtwitter.icon.colored > svg {
     display: block;
   }
 }
 
 @media all and (max-width: 385px) {
-  .icon_instagram {
+  a.icon_instagram.icon.colored,
+  a.icon_instagram.icon.colored > svg {
     display: block;
   }
 
-  .socialMedia {
+  .contact .socialMedia {
     justify-content: center;
   }
 }
