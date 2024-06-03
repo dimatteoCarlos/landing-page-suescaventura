@@ -51,17 +51,6 @@
   /* border:10px solid blue; */
 }
 
-/* .plan__bgImg {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
-
 .plan__card {
   background-color: rgb(255, 255, 255, 0.6);
   outline: none;
@@ -146,8 +135,6 @@
 .plan__container .plan--title span {
   font-weight: bold;
   text-align: left;
-  /* line-height: 1.8rem; */
-  /* font-size: 1.25rem; */
 
   line-height: var(--lh--tit--plan);
   font-size: var(--fsz--tit--plan);
@@ -182,12 +169,11 @@
 }
 /*-----figures-------*/
 .card__figure {
-  --maxH--figure: 6rem;
+  --maxH--figure: 5rem;
   --minH--figure: 2rem;
   --normH--figure: 5rem;
   height: 5rem;
 
-  /* width: auto; */
   aspect-ratio: auto;
 }
 
@@ -198,7 +184,7 @@
   margin-bottom: 1.75rem;
 }
 .card__figure--rappel {
-  height: 7rem;
+  /* height: 7rem; */
   height: calc(var(--normH--figure) * 1.4);
 
   padding-top: 1rem;
@@ -236,7 +222,6 @@
 .currency,
 .card__plans__row {
   font-size: clamp(1rem, 0.8rem + 0.8vw, 1.5rem);
-  /* font-size: 1rem; */
   font-weight: bold;
 }
 
@@ -260,7 +245,6 @@
   align-self: center;
   align-items: center;
   /* border: 4px solid rgb(0, 4, 255); */
-  /* font-size: 1.2rem; */
 }
 
 .card__row__col--left {

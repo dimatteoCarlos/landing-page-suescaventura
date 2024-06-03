@@ -33,14 +33,6 @@ function Plans() {
                   </p>
                 )}
 
-                {/* <div className={`plan__bgImg plan__bgImg--${pageId}`}>
-                  <img
-                    src={`/planBgImg/${pageBgImage}`}
-                    alt={`${pageBgImage}-page-${pageId}`}
-                    className={`plan__bgImg plan__bgImg--${pageId}`}
-                  />
-                </div> */}
-
                 <div
                   className={`plan__card pagePlan__container pagePlan__container--${pageId}`}
                   key={keyPage}
@@ -72,13 +64,8 @@ function Plans() {
                       >
                         <div
                           className={`plan--title plan--title--${planId}`}
-                          // style={
-                          //   planTitle.split(' ').length <= 10
-                          //     ? { fontSize: '1.25rem' }
-                          //     : { fontSize: '1.25rem' }
-                          // }
+
                         >
-                          {/* <span>{planId}. </span> */}
                           {planTitle}
                         </div>
                         <div
