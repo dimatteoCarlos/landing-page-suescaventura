@@ -1,5 +1,5 @@
 # check the Demo
-https://react-landingpage-test-01.netlify.app
+(https://react-landingpage-test-02.netlify.app/)
 
 
 # React + TypeScript + Vite
