@@ -59,16 +59,6 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
               style={{ backgroundImage: `url(${images[idImg].imgUrl})` }}
             >
               <Navbar />
-              {/* <div className={`page__bgImg__container page__bgImg--${page}`}> */}
-
-              {/* 
-              <img
-                src={`${images[idImg].imgUrl}`}
-                alt={`${images[idImg].imgUrl}`}
-                className={`page__bgImg page__bgImg--${page}`}
-              /> */}
-
-              {/* </div> */}
 
               <div className={`page__container page__container--${page}`}>
                 {page === 1 ? (

@@ -38,7 +38,7 @@ export const pages: PageType[] = [
       parr: 'Municipio ubicado a 60 kilómetros al norte de Bogotá, su altitud media es de 2585 msnm, primer lugar del país donde se   empezó a practicar el deporte de escalada en roca. Cuenta con unos farallones de roca arenisca ideales para practicar este como uno de los lugares más importantes para la práctica de actividades de aventura cerca de Bogotá',
       parr1: '',
       parr2: [
-        'Con los planes de actividades organizados por Suescaventura los participantes tendrán la opción de practicar:',
+        'Con los planes organizados por Suescaventura los participantes tendrán la opción de practicar:',
         'Caminatas',
         'Cabalgatas',
         'Escalada en roca',
