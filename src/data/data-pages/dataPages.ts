@@ -144,7 +144,7 @@ export const pages: PageType[] = [
 
 export const lastPage: PageType = {
   pageAddress: 'contact',
-  page: 12,
+  page: 13,
   visualBox: 1,
   idImg: 27,
   photoGroup: [{ idImg: 29 }],
