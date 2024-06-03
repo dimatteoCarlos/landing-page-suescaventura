@@ -1,15 +1,5 @@
 <html lang="es">
   <head>
-    <script type="module">
-      import RefreshRuntime from '/@react-refresh';
-      RefreshRuntime.injectIntoGlobalHook(window);
-      window.$RefreshReg$ = () => {};
-      window.$RefreshSig$ = () => (type) => type;
-      window.__vite_plugin_react_preamble_installed__ = true;
-    </script>
-
-    <script type="module" src="/@vite/client"></script>
-
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./logos/favicon-96x96.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,1061 +12,12 @@
     <meta name="author" content="CADR" />
 
     <title>Planes | Suescaventura</title>
-    <style
-      type="text/css"
-      data-vite-dev-id="C:/AA1-WEB DEVELOPER/REACT/apps/suescadventure/landing-page-parallax/src/styles/style-plans.css"
-    >
-      /* style-plans.css */
-      :root {
-        --MW: 2440px;
-        --w: 81vw;
-      }
-      :root {
-        /*--clamp--*/
-        --fsz--par--plan: clamp(1rem, 0.808rem + 0.769vw, 1.5rem);
-        --lh--par--plan: clamp(1.25rem, 1.058rem + 0.769vw, 1.75rem);
-
-        --fsz--tit--header: clamp(1rem, 0.87rem + 1.538vw, 2.25rem);
-        --lh--tit--header: clamp(1.5rem, 0.429rem + 2.857vw, 3rem);
-
-        --fsz--tit--plan: clamp(1rem, 0.7996rem + 0.7782vw, 1.5rem);
-        --lh--tit--plan: clamp(1rem, 0.6rem + 1.5vw, 2.25rem);
-
-        /**recommended: --width: clamp(45ch, 50%, 75ch); */
-        --width: clamp(45ch, 75%, 85ch);
-        --width: clamp(min(65%, 40ch), 70%, max(80%, 85ch));
-      }
-
-      .section__plans {
-        height: 100%;
-        width: 100vw;
-        /* max-width: var(--MW-plans); */
-        margin: 0;
-        padding: 0;
-        position: relative;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .section__plans {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
-
-      .plans__page__container {
-        width: 100%;
-        height: 100%;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: left;
-      }
-
-      .plan__card {
-        background-color: rgb(255, 255, 255, 0.6);
-        outline: none;
-        border: none;
-        border-radius: 1.25rem;
-        padding: 0.5rem;
-        z-index: 10;
-
-        margin: 0 2rem 2rem 2rem;
-      }
-
-      .seguro__medico {
-        font-size: 1.2rem;
-        margin-top: 6rem;
-        margin-bottom: 3rem;
-        width: var(--width);
-        font-size: var(--fsz--par--plan);
-        font-weight: normal;
-      }
-
-      .pagePlan__container {
-        width: 85%;
-
-        padding: 1.5rem;
-
-        display: flex;
-        flex-direction: column;
-        align-items: space-between;
-
-        justify-content: center;
-        gap: 1.5rem;
-
-        background-color: rgb(255, 255, 255, 0.6);
-        margin-top: 6rem;
-        margin-bottom: 3rem;
-        /* border:10px solid green; */
-      }
-
-      .pagePlan__header {
-        text-align-last: left;
-        line-height: 2rem;
-        font-weight: bold;
-      }
-
-      .pagePlan__header--title {
-        font-size: 1.5rem;
-        font-weight: bold;
-
-        font-size: var(--fsz--tit--header);
-
-        line-height: var(--lh--tit--header);
-      }
-
-      .pagePlan__header--parr {
-        font-size: 1.25rem;
-        font-weight: bold;
-
-        font-size: var(--fsz--tit--header);
-
-        line-height: var(--lh--tit--header);
-      }
-
-      .pagePlan__parr1 {
-        font-weight: normal;
-        margin-top: 1rem;
-        text-align: left;
-        font-size: 1.2rem;
-
-        font-size: var(--fsz--par--plan);
-        line-height: var(--lh--tit--header);
-      }
-
-      /*-----plan container---------*/
-      .plan__container {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        /* border:10px solid red; */
-      }
-
-      .plan__container .plan--title,
-      .plan__container .plan--title span {
-        font-weight: bold;
-        text-align: left;
-        /* line-height: 1.8rem; */
-        /* font-size: 1.25rem; */
-
-        line-height: var(--lh--tit--plan);
-        font-size: var(--fsz--tit--plan);
-
-        /* border:10px solid blue; */
-      }
-
-      /******CARD STYLE****/
-      .plan__cards__container {
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-self: center;
-
-        align-items: end;
-        gap: 1.5rem;
-
-        /* border: 10px solid rgb(16, 244, 244); */
-      }
-
-      .card__plan__container {
-        width: 50%;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        /* border: 10px solid red; */
-      }
-      /*-----figures-------*/
-      .card__figure {
-        --maxH--figure: 6rem;
-        --minH--figure: 2rem;
-        --normH--figure: 5rem;
-        height: 5rem;
-
-        /* width: auto; */
-        aspect-ratio: auto;
-      }
-
-      .card__figure--plus {
-        height: 2rem;
-        width: 2rem;
-        margin: 0 0.5rem;
-        margin-bottom: 1.75rem;
-      }
-      .card__figure--rappel {
-        height: 7rem;
-        height: calc(var(--normH--figure) * 1.4);
-
-        padding-top: 1rem;
-      }
-      /*--------------------*/
-      .card__plans__box {
-        display: flex;
-        flex-direction: column;
-        gap: 0.125rem;
-        padding: 0.125rem 0;
-        text-align: center;
-        align-items: center;
-        justify-content: start;
-
-        width: 100%;
-        min-width: max(100%, max-content);
-        font-weight: bold;
-
-        /* border: 4px solid black; */
-      }
-
-      .card__plans__box:last-child {
-        border-bottom: 3px solid rgb(100, 169, 96);
-      }
-
-      .card__plans__box .cardTableHead {
-        font-size: 1.25rem;
-        border-top: 4px solid rgb(117, 195, 113);
-        background-color: rgb(213, 235, 210);
-        justify-content: center;
-        width: 100%;
-      }
-
-      .card__row__col,
-      .currency,
-      .card__plans__row {
-        font-size: clamp(1rem, 0.8rem + 0.8vw, 1.5rem);
-        /* font-size: 1rem; */
-        font-weight: bold;
-      }
-
-      .card__plans__row {
-        display: flex;
-        width: 100%;
-        margin: 0 1rem;
-        align-self: center;
-        /* border: 4px solid rgb(247, 0, 255); */
-      }
-
-      .card__plans__row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .card__row__col {
-        min-width: max-content;
-        width: 50%;
-        align-self: center;
-        align-items: center;
-        /* border: 4px solid rgb(0, 4, 255); */
-        /* font-size: 1.2rem; */
-      }
-
-      .card__row__col--left {
-        text-align: left;
-        margin-left: 1rem;
-      }
-
-      .card__row__col--changeToright {
-        text-align: center;
-      }
-
-      .currency {
-        margin: 0 0.5rem;
-      }
-
-      .card__row__col--right {
-        text-align-last: left;
-        display: flex;
-      }
-
-      @media screen and (max-width: 568px) {
-        .plan__cards__container {
-          flex-wrap: wrap;
-          width: 100%;
-          /* background: orange; */
-          /* border:10px dashed rebeccapurple; */
-        }
-
-        .card__plan__container {
-          width: 100%;
-          width: max-content;
-          height: 100%;
-        }
-      }
-    </style>
-    <style
-      type="text/css"
-      data-vite-dev-id="C:/AA1-WEB DEVELOPER/REACT/apps/suescadventure/landing-page-parallax/src/components/social-media/style-socialMedia.css"
-    >
-      /*style-socialMedia.css*/
-
-      /* * {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-color: inherit;
-list-style-type: none;
-} */
-
-      a {
-        text-decoration: none;
-        cursor: pointer;
-      }
-
-      /* [class*='fa'], a{
-background-color: orange;
-
-} */
-
-      /*****socialMedia*****/
-
-      .socialMedia {
-        display: flex;
-        gap: 1.5rem;
-        z-index: 100;
-        align-items: center;
-        justify-content: space-around;
-        /* border:10px solid red; */
-      }
-
-      [class*='icon'] > svg {
-        font-size: 2.5rem;
-        background-color: transparent;
-        color: rgb(56, 54, 54);
-        /* border: 1px solid rgb(241, 218, 218); */
-      }
-
-      .icon_xtwitter > svg {
-        color: black;
-        font-size: 2.2rem;
-      }
-
-      [class*='icon'] > svg:hover {
-        transform: scale(1.2);
-        border-radius: 20%;
-        border: 1px solid white;
-        background-color: white;
-      }
-
-      .icon_facebook > svg:hover {
-        color: #0571e6;
-      }
-
-      .icon_instagram > svg:hover {
-        color: #f15245;
-      }
-
-      .icon_whatsapp > svg:hover {
-        color: #1ed95f;
-      }
-      .icon_xtwitter > svg:hover {
-        color: black;
-      }
-
-      /*permanent colored*/
-      /*
-.icon_facebook > svg {
-color: #0571e6;
-}
-
-.icon_instagram > svg {
-color: #f15245;
-}
-
-.icon_whatsapp > svg {
-color: #1ed95f;
-}
-.icon_xtwitter > svg {
-color: black;
-}
-*/
-      /********COLORED************/
-
-      .icon_facebook.colored > svg {
-        color: #0571e6;
-      }
-
-      .icon_instagram.colored > svg {
-        color: #f15245;
-      }
-
-      .icon_whatsapp.colored > svg {
-        color: #1ed95f;
-      }
-      .icon_xtwitter.colored > svg {
-        color: black;
-      }
-
-      /********************/
-      /* 
-.facebook > svg {
-color: #0571e6;
-}
-
-.instagram > svg {
-color: #f15245;
-}
-
-.whatsapp > svg {
-color: #1ed95f;
-}
-.xtwitter > svg {
-color: black;
-} */
-
-      /* 
-.twitter {
-color: #1d9bf0;
-z-index: 1;
-background-color: transparent;
-}
-.telegram {
-color: #0a88c7;
-z-index: 1;
-background-color: transparent;
-} */
-
-      /*
-.globe {
-color: #1ed95f;
-}
-
-.youtube {
-color: #e21;
-}
-.discord {
-color: #404eed;
-} */
-
-      /*****socialMedia*****/
-      /* 
-@media all and (max-width: 490px) {
-.socialMedia {
-  gap: 0.5rem;
-  flex: 1 1 auto;
-}
-}
-
-@media all and (max-width: 400px) {
-.icon_xtwitter,
-.icon_xtwitter > svg {
-  display: none;
-}
-}
-
-@media all and (max-width: 385px) {
-.icon_instagram {
-  display: none;
-}
-
-.socialMedia {
-  justify-content: center;
-}
-} */
-    </style>
-    <style
-      type="text/css"
-      data-vite-dev-id="C:/AA1-WEB DEVELOPER/REACT/apps/suescadventure/landing-page-parallax/src/components/navbar/style-navbar.css"
-    >
-      nav {
-        background-color: transparent;
-
-        display: flex;
-        flex-direction: row;
-        /* flex-wrap: wrap; */
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        z-index: 30;
-        gap: 2rem;
-
-        padding: 0.5rem 2rem;
-        width: 100%;
-        /* position: absolute;
-top: 0rem;
-right: 0; */
-        /* margin-bottom: 1rem; */
-      }
-
-      .btnPlans__container {
-        display: flex;
-        justify-content: start;
-        flex: 0.5;
-        padding: 0.5rem;
-        /* border: 10px solid red; */
-      }
-
-      .btnPlans__container a {
-        font-size: 1.25rem;
-        padding: 0.6rem 0.75rem;
-        border-radius: 0.5rem;
-        vertical-align: middle;
-        text-transform: capitalize;
-        text-align: center;
-        background-color: rgb(240, 248, 255, 0.5);
-        color: rgb(54, 53, 58);
-        border: 1px solid rgba(240, 248, 255, 0.75);
-      }
-
-      .btnPlans__container a:hover {
-        background-color: rgb(240, 248, 255, 0.9);
-        border-color: aliceblue;
-        color: rgb(0, 0, 0);
-        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-        scale: 1.2;
-      }
-    </style>
-    <style
-      type="text/css"
-      data-vite-dev-id="C:/AA1-WEB DEVELOPER/REACT/apps/suescadventure/landing-page-parallax/src/styles/style-lastPage.css"
-    >
-      /* style-pages.css */
-      :root {
-        --MW: 2500px;
-        --section-height: 80rem;
-        --section-width: 85rem;
-        --w: 81vw;
-      }
-
-      * {
-        font-weight: 500;
-      }
-      .section__lastpage {
-        height: 100%;
-        width: 100%;
-
-        /* max-width: var(--MW); */
-        width: 100vw;
-        margin: 0;
-        position: relative;
-
-        display: flex;
-        justify-content: center;
-      }
-
-      .section__lastpage {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
-
-      /* .visualBox{
-border:10px solid red;
-} */
-
-      .lastpage__container {
-        width: 80%;
-        width: 100vw;
-        height: 100%;
-
-        height: var(--section-height);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      /* 
-.lastpage__bgImg {
-position: absolute;
-top: 0;
-left: 0;
-
-width: 100%;
-height: 100%;
-
-object-fit: cover;
-/* object-position: right; */
-
-      /* z-index: -1;
-opacity: 0.6; */
-      /* }  */
-
-      /*-----flex layout---------*/
-      .page__content {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        width: 80%;
-        height: 100%;
-        /* margin-left: 2rem; */
-        justify-content: start;
-      }
-
-      .page__content--parr2,
-      .page__content--parr {
-        margin-left: 4rem;
-        margin-top: 3rem;
-        margin-bottom: 2rem;
-        text-align-last: start;
-        line-height: 1.5rem;
-        font-size: 1.25rem;
-
-        /* border:10px solid red; */
-      }
-
-      .parr2--item {
-        font-size: 1.25rem;
-        font-weight: 400;
-        line-height: 2rem;
-        text-align: left;
-        /* border:10px solid cyan; */
-      }
-
-      .page__content--identity {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 3rem;
-      }
-
-      .logo__identity--signature {
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
-      }
-      .managerData {
-        margin-top: 0.5rem;
-      }
-
-      .logo__identity {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5rem;
-        margin-top: 0.5rem;
-      }
-
-      .logo__identity--logoImg,
-      .logo__identity--logoAcgme {
-        height: 4rem;
-        border-radius: 50%;
-      }
-      .contact {
-        margin-top: 1rem;
-      }
-
-      .lastpage__photoGroup--12 {
-        width: 50%;
-        max-width: 60rem;
-        align-self: center;
-        margin-bottom: 1rem;
-        height: auto;
-        transition: all 750ms ease-in-out;
-        scale: 0.9;
-      }
-
-      .lastpage__photoGroup--12:hover {
-        scale: 1.1;
-      }
-
-      /*****socialMedia*****/
-      @media all and (max-width: 490px) {
-        .socialMedia {
-          gap: 0.5rem;
-          flex: 1 1 auto;
-        }
-      }
-
-      @media all and (max-width: 400px) {
-        .icon_xtwitter,
-        .icon_xtwitter > svg {
-          display: block;
-        }
-      }
-
-      @media all and (max-width: 385px) {
-        .icon_instagram {
-          display: block;
-        }
-
-        .socialMedia {
-          justify-content: center;
-        }
-      }
-    </style>
-    <style
-      type="text/css"
-      data-vite-dev-id="C:/AA1-WEB DEVELOPER/REACT/apps/suescadventure/landing-page-parallax/src/components/visualBox/visualBox.css"
-    >
-      /*visualBox.css*/
-
-      .visualBox {
-        width: 100%;
-        height: 30rem;
-        min-height: 25rem;
-        background-color: transparent;
-        margin: 0;
-        padding: 0;
-
-        height: clamp(25rem, -47.647rem + 152.941vw, 100rem);
-
-        /* border:10px solid orangered; */
-      }
-    </style>
-    <style
-      type="text/css"
-      data-vite-dev-id="C:/AA1-WEB DEVELOPER/REACT/apps/suescadventure/landing-page-parallax/src/styles/style-pagesFlex.css"
-    >
-      /* style-pages.css */
-
-      /*FLEX-BOX USAGE -  RESPONSIVE*/
-      :root {
-        /* --MW: 1024px; */
-        --max--width: 350rem;
-        /*--clamp--*/
-        --fsz--par: clamp(1rem, 0.423rem + 2.308vw, 2.5rem);
-        --lh--par: clamp(1.5rem, 0.923rem + 2.308vw, 3rem);
-        --fsz--tit: clamp(2.5rem, 1.731rem + 3.077vw, 4.5rem);
-        --lh--tit: clamp(3rem, 2.231rem + 3.077vw, 5rem);
-        /**recommended: --width: clamp(45ch, 50%, 75ch); */
-        --width: clamp(40ch, 70%, 85ch);
-        --width: clamp(min(75%, 40ch), 70%, max(80%, 85ch));
-      }
-
-      .section__page {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        /* max-width: var(--MW); */
-      }
-
-      .section__page {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
-      /* 
-.page__bgImg {
-width: 100%;
-height: 100%;
-object-fit: cover;
-object-position: center center;
-z-index: -1;
-position: absolute;
-top: 0;
-left: 0;
-} */
-
-      .section__page .page__container {
-        width: 100%;
-        height: 100%;
-        max-width: var(--max--width);
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 10;
-      }
-
-      .page__container {
-        padding-top: 6rem;
-        padding-bottom: 2rem;
-      }
-
-      .page__card {
-        background-color: rgb(255, 255, 255, 0.5);
-        outline: none;
-        border: none;
-        border-radius: 2rem;
-        z-index: 10;
-        padding: 0.5rem;
-        margin: 0 3rem 3rem 3rem;
-
-        width: var(--width);
-        max-width: var(--max--width);
-        /* border: 10px solid blue; */
-      }
-      .onlyTitle {
-        width: var(--width);
-        max-width: min(var(--width), max-content);
-      }
-
-      .page__texts--title {
-        /* font-weight: 600; */
-        line-height: var(--lh--tit);
-        letter-spacing: 1.5px;
-        font-size: var(--fsz--tit);
-        color: black;
-        font-weight: normal;
-
-        text-align: center;
-        /* margin: auto; */
-        /* border: 10px solid red; */
-      }
-
-      .page__card .page__texts--title {
-        padding: 0 1rem;
-
-        /* border:10px solid yellow; */
-      }
-
-      .page__texts__paragraph {
-        color: rgb(40, 41, 42);
-        /* font-weight: 500; */
-        font-size: var(--fsz--par);
-        line-height: var(--lh--par);
-        padding: 1rem;
-        font-weight: normal;
-
-        /* border:10px solid yellow; */
-      }
-
-      .page__parr2--item {
-        font-size: var(--fsz--par);
-        line-height: var(--lh--par);
-      }
-
-      .page__parr2--item--2--planes span {
-        font-weight: bold;
-      }
-
-      .page__parr2--item:first-child {
-        list-style-type: none;
-        align-self: center;
-        margin: 0;
-        padding: 1rem;
-      }
-
-      .gallery__photoGroup {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.75rem;
-        max-width: 85%;
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 2rem;
-        border-radius: 2rem;
-      }
-
-      .gallery__photoGroup > div {
-        margin: 0;
-        padding: 0;
-        flex: 1 1 auto;
-      }
-
-      .gallery__photoGroup > div > img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      /*****PAGE 1*******/
-      .logo {
-        width: 20rem;
-        height: auto;
-        border-radius: 50%;
-        background-color: rgb(255, 255, 255, 0.6);
-        border: 1px solid black;
-        margin-bottom: 3rem;
-      }
-
-      .page__texts--title--1 {
-        font-size: clamp(1rem, 0.372rem + 2.92vw, 3rem);
-        line-height: clamp(1.5rem, 0.872rem + 2.92vw, 3.5rem);
-      }
-
-      /*****PAGE 2*******/
-      .page__parr2--item--2 {
-        margin-left: 20%;
-        text-align: left;
-        list-style-type: disc;
-        line-height: 1.5;
-        font-size: clamp(1rem, 0.423rem + 2.25vw, 2.5rem);
-
-        font-weight: normal;
-        color: black;
-      }
-
-      .page__parr2--item--2:not(:first-child) {
-        line-height: clamp(1rem, 1.372rem + 2.92vw, 4rem);
-      }
-
-      .page__parr2--item--2:hover a {
-        font-weight: bold;
-        color: black;
-      }
-
-      .page__parr2--item--2:first-child a {
-        list-style-type: none;
-        align-self: center;
-        margin: 0;
-        padding: 1rem;
-        color: black;
-        font-weight: normal;
-      }
-
-      /*****PAGE 5*******/
-      .page__texts__paragraph__parr1--5 {
-        background-color: rgb(255, 255, 255, 0.6);
-        width: 90%;
-        justify-self: left;
-      }
-
-      .page__photoGroup--5 {
-        height: 11rem;
-      }
-
-      .page__photoGroup:hover {
-        z-index: 30;
-        scale: 1.25;
-        transition: all 0.5s ease;
-        border-radius: 1rem;
-        border: 1px solid white;
-        opacity: 0.9;
-        gap: 0;
-      }
-
-      /*****PAGE 6*******/
-      /* .page__bgImg--6 {
-object-position: right;
-} */
-      .page__card--parr1--6 {
-        margin-top: 5rem;
-        /* border:1px solid red; */
-      }
-      /*****PAGE 7*******/
-      .page__parr2--item span {
-        font-size: clamp(1rem, 4vw, 2rem);
-      }
-
-      /*****PAGE 8*******/
-
-      .page__card.page__card--parr2--8 {
-        background-color: transparent;
-      }
-      .page__card--parr--8 {
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-
-      .page__texts--title--8 {
-        color: white;
-        font-weight: normal;
-      }
-
-      .page__card--8 {
-        border-radius: 2rem;
-      }
-
-      .page__card--parr1--8,
-      .page__card--parr2--8,
-      .page__parr2--item--8 {
-        height: auto;
-        border-radius: 1.5rem;
-
-        color: white;
-        background-color: rgba(0, 0, 0, 0.6);
-        text-align: center;
-        font-weight: normal;
-      }
-
-      .page__card--parr1--8 {
-        color: rgb(249, 164, 7, 1);
-        line-height: clamp(2rem, calc(6vw), 4.5rem);
-      }
-
-      .page__parr2--item--8 {
-        color: white;
-      }
-
-      @media all and (max-width: 650px) {
-        .gallery__photoGroup > div {
-          display: none;
-        }
-
-        .gallery__photoGroup > div:first-child {
-          display: block;
-          width: 100%;
-          height: 100%;
-
-          /* height: 14rem; */
-        }
-
-        .section__page--6 {
-          background-position: 80% center;
-        }
-      }
-
-      /*****socialMedia*****/
-      @media all and (max-width: 490px) {
-        .socialMedia {
-          gap: 0.5rem;
-          flex: 1 1 auto;
-        }
-      }
-
-      @media all and (max-width: 400px) {
-        .icon_xtwitter,
-        .icon_xtwitter > svg {
-          display: none;
-        }
-      }
-
-      @media all and (max-width: 385px) {
-        .icon_instagram {
-          display: none;
-        }
-
-        .socialMedia {
-          justify-content: center;
-        }
-      }
-    </style>
-    <style
-      type="text/css"
-      data-vite-dev-id="C:/AA1-WEB DEVELOPER/REACT/apps/suescadventure/landing-page-parallax/src/index.css"
-    >
-      @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-
-      *,
-      *::before,
-      *::after,
-      body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-align: center;
-        list-style: none;
-        font-size: 16px;
-        font-weight: normal;
-
-        font-family: 'Segoe UI', sans-serif, 'Nanum Gothic';
-
-        font-style: normal;
-        scroll-behavior: smooth;
-      }
-
-      a {
-        text-decoration: none;
-        cursor: pointer;
-      }
-
-      body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: transparent;
-      }
-
-      .app__container {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
+    <script
+      type="module"
+      crossorigin=""
+      src="/assets/index-BSBG6ucm.js"
+    ></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/index-T9w-is5l.css" />
   </head>
   <body>
     <div id="root">
@@ -1084,7 +25,7 @@ object-position: right;
         <section
           class="section__page section__page--1"
           id="portada"
-          style="background-image: url('/public/images/image-000.png')"
+          style="background-image: url('/images/image-000.png')"
         >
           <nav>
             <span class="btnPlans__container"
@@ -1175,7 +116,7 @@ object-position: right;
           </nav>
           <div class="page__container page__container--1">
             <img
-              src="/public/logos/logoSuescaventuraWord-sinFondo.png"
+              src="/logos/logoSuescaventuraWord-sinFondo.png"
               alt="logo"
               class="logo"
             />
@@ -1198,29 +139,29 @@ object-position: right;
             <article class="gallery__photoGroup gallery__photoGroup--page--1">
               <div class="page__photoGroup__photo page__photoGroup__photo--1">
                 <img
-                  src="/public/images/image-001.png"
-                  alt="/public/images/image-001.png"
+                  src="/images/image-001.png"
+                  alt="/images/image-001.png"
                   class="page__photoGroup page__photoGroup--1 page__photoGroup--1--0"
                 />
               </div>
               <div class="page__photoGroup__photo page__photoGroup__photo--1">
                 <img
-                  src="/public/images/image-003.png"
-                  alt="/public/images/image-003.png"
+                  src="/images/image-003.png"
+                  alt="/images/image-003.png"
                   class="page__photoGroup page__photoGroup--1 page__photoGroup--1--1"
                 />
               </div>
               <div class="page__photoGroup__photo page__photoGroup__photo--1">
                 <img
-                  src="/public/images/image-005.png"
-                  alt="/public/images/image-005.png"
+                  src="/images/image-005.png"
+                  alt="/images/image-005.png"
                   class="page__photoGroup page__photoGroup--1 page__photoGroup--1--2"
                 />
               </div>
               <div class="page__photoGroup__photo page__photoGroup__photo--1">
                 <img
-                  src="/public/images/image-007.png"
-                  alt="/public/images/image-007.png"
+                  src="/images/image-007.png"
+                  alt="/images/image-007.png"
                   class="page__photoGroup page__photoGroup--1 page__photoGroup--1--3"
                 />
               </div>
@@ -1230,7 +171,7 @@ object-position: right;
         <section
           class="section__page section__page--2"
           id="suesca"
-          style="background-image: url('/public/images/image-011.jpg')"
+          style="background-image: url('/images/image-011.jpg')"
         >
           <nav>
             <span class="btnPlans__container"
@@ -1342,7 +283,7 @@ object-position: right;
                   href="#planes"
                   class="page__parr2--item--2 page__parr2--item page__parr2--item--2--planes"
                   rel="noreferrer"
-                  >Con los <span>planes</span> organizados por Suescaventura los
+                  >Con los planes organizados por Suescaventura los
                   participantes tendrán la opción de practicar:</a
                 >
               </li>
@@ -1400,7 +341,7 @@ object-position: right;
         <section
           class="section__page section__page--3"
           id="caminata"
-          style="background-image: url('/public/images/image_page03.jpg')"
+          style="background-image: url('/images/image_page03.jpg')"
         >
           <nav>
             <span class="btnPlans__container"
@@ -1509,7 +450,7 @@ object-position: right;
         <section
           class="section__page section__page--4"
           id="cabalgata"
-          style="background-image: url('/public/images/image-013.jpg')"
+          style="background-image: url('/images/image-013.jpg')"
         >
           <nav>
             <span class="btnPlans__container"
@@ -1617,7 +558,7 @@ object-position: right;
         <section
           class="section__page section__page--5"
           id="escalada"
-          style="background-image: url('/public/images/image-014.png')"
+          style="background-image: url('/images/image-014.png')"
         >
           <nav>
             <span class="btnPlans__container"
@@ -1723,29 +664,29 @@ object-position: right;
             <article class="gallery__photoGroup gallery__photoGroup--page--5">
               <div class="page__photoGroup__photo page__photoGroup__photo--5">
                 <img
-                  src="/public/images/image-018.jpg"
-                  alt="/public/images/image-018.jpg"
+                  src="/images/image-018.jpg"
+                  alt="/images/image-018.jpg"
                   class="page__photoGroup page__photoGroup--5 page__photoGroup--5--0"
                 />
               </div>
               <div class="page__photoGroup__photo page__photoGroup__photo--5">
                 <img
-                  src="/public/images/image-015.png"
-                  alt="/public/images/image-015.png"
+                  src="/images/image-015.png"
+                  alt="/images/image-015.png"
                   class="page__photoGroup page__photoGroup--5 page__photoGroup--5--1"
                 />
               </div>
               <div class="page__photoGroup__photo page__photoGroup__photo--5">
                 <img
-                  src="/public/images/image-017.jpg"
-                  alt="/public/images/image-017.jpg"
+                  src="/images/image-017.jpg"
+                  alt="/images/image-017.jpg"
                   class="page__photoGroup page__photoGroup--5 page__photoGroup--5--2"
                 />
               </div>
               <div class="page__photoGroup__photo page__photoGroup__photo--5">
                 <img
-                  src="/public/images/image-019.jpg"
-                  alt="/public/images/image-019.jpg"
+                  src="/images/image-019.jpg"
+                  alt="/images/image-019.jpg"
                   class="page__photoGroup page__photoGroup--5 page__photoGroup--5--3"
                 />
               </div>
@@ -1755,7 +696,7 @@ object-position: right;
         <section
           class="section__page section__page--6"
           id="rappel"
-          style="background-image: url('/public/images/image-020.jpg')"
+          style="background-image: url('/images/image-020.jpg')"
         >
           <nav>
             <span class="btnPlans__container"
@@ -1858,22 +799,22 @@ object-position: right;
             <article class="gallery__photoGroup gallery__photoGroup--page--6">
               <div class="page__photoGroup__photo page__photoGroup__photo--6">
                 <img
-                  src="/public/images/image-022.jpg"
-                  alt="/public/images/image-022.jpg"
+                  src="/images/image-022.jpg"
+                  alt="/images/image-022.jpg"
                   class="page__photoGroup page__photoGroup--6 page__photoGroup--6--0"
                 />
               </div>
               <div class="page__photoGroup__photo page__photoGroup__photo--6">
                 <img
-                  src="/public/images/image-021.jpg"
-                  alt="/public/images/image-021.jpg"
+                  src="/images/image-021.jpg"
+                  alt="/images/image-021.jpg"
                   class="page__photoGroup page__photoGroup--6 page__photoGroup--6--1"
                 />
               </div>
               <div class="page__photoGroup__photo page__photoGroup__photo--6">
                 <img
-                  src="/public/images/image-023.jpg"
-                  alt="/public/images/image-023.jpg"
+                  src="/images/image-023.jpg"
+                  alt="/images/image-023.jpg"
                   class="page__photoGroup page__photoGroup--6 page__photoGroup--6--2"
                 />
               </div>
@@ -1883,7 +824,7 @@ object-position: right;
         <section
           class="section__page section__page--7"
           id="ferrata"
-          style="background-image: url('/public/images/image-024.png')"
+          style="background-image: url('/images/image-024.png')"
         >
           <nav>
             <span class="btnPlans__container"
@@ -1999,22 +940,22 @@ object-position: right;
             <article class="gallery__photoGroup gallery__photoGroup--page--7">
               <div class="page__photoGroup__photo page__photoGroup__photo--7">
                 <img
-                  src="/public/images/image-029.png"
-                  alt="/public/images/image-029.png"
+                  src="/images/image-029.png"
+                  alt="/images/image-029.png"
                   class="page__photoGroup page__photoGroup--7 page__photoGroup--7--0"
                 />
               </div>
               <div class="page__photoGroup__photo page__photoGroup__photo--7">
                 <img
-                  src="/public/images/image-025.png"
-                  alt="/public/images/image-025.png"
+                  src="/images/image-025.png"
+                  alt="/images/image-025.png"
                   class="page__photoGroup page__photoGroup--7 page__photoGroup--7--1"
                 />
               </div>
               <div class="page__photoGroup__photo page__photoGroup__photo--7">
                 <img
-                  src="/public/images/image-027.png"
-                  alt="/public/images/image-027.png"
+                  src="/images/image-027.png"
+                  alt="/images/image-027.png"
                   class="page__photoGroup page__photoGroup--7 page__photoGroup--7--2"
                 />
               </div>
@@ -2024,7 +965,7 @@ object-position: right;
         <section
           class="section__page section__page--8"
           id="espeleismo"
-          style="background-image: url('/public/images/image-031.png')"
+          style="background-image: url('/images/image-031.png')"
         >
           <nav>
             <span class="btnPlans__container"
@@ -2141,22 +1082,22 @@ object-position: right;
             <article class="gallery__photoGroup gallery__photoGroup--page--8">
               <div class="page__photoGroup__photo page__photoGroup__photo--8">
                 <img
-                  src="/public/images/image-032.png"
-                  alt="/public/images/image-032.png"
+                  src="/images/image-032.png"
+                  alt="/images/image-032.png"
                   class="page__photoGroup page__photoGroup--8 page__photoGroup--8--0"
                 />
               </div>
               <div class="page__photoGroup__photo page__photoGroup__photo--8">
                 <img
-                  src="/public/images/image-036.png"
-                  alt="/public/images/image-036.png"
+                  src="/images/image-036.png"
+                  alt="/images/image-036.png"
                   class="page__photoGroup page__photoGroup--8 page__photoGroup--8--1"
                 />
               </div>
               <div class="page__photoGroup__photo page__photoGroup__photo--8">
                 <img
-                  src="/public/images/image-034.png"
-                  alt="/public/images/image-034.png"
+                  src="/images/image-034.png"
+                  alt="/images/image-034.png"
                   class="page__photoGroup page__photoGroup--8 page__photoGroup--8--2"
                 />
               </div>
@@ -2166,7 +1107,7 @@ object-position: right;
         <section
           class="section__plans section__plans--9"
           id="planes"
-          style="background-image: url('/public/planBgImg/image-038.png')"
+          style="background-image: url('/planBgImg/image-038.png')"
         >
           <nav>
             <span class="btnPlans__container"
@@ -2281,7 +1222,7 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--caminata"
-                          src="/public/figures/caminata-removebg-preview.svg"
+                          src="/figures/caminata-removebg-preview.svg"
                           alt="figure-caminata-0"
                         />
                       </div>
@@ -2312,7 +1253,7 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--cabalgata"
-                          src="/public/figures/cabalgata-removebg-preview.svg"
+                          src="/figures/cabalgata-removebg-preview.svg"
                           alt="figure-cabalgata-0"
                         />
                       </div>
@@ -2340,7 +1281,7 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--escalada"
-                          src="/public/figures/escalada-removebg-preview.svg"
+                          src="/figures/escalada-removebg-preview.svg"
                           alt="figure-escalada-0"
                         />
                       </div>
@@ -2375,7 +1316,7 @@ object-position: right;
         <section
           class="section__plans section__plans--10"
           id="10"
-          style="background-image: url('/public/planBgImg/image-038.png')"
+          style="background-image: url('/planBgImg/image-038.png')"
         >
           <nav>
             <span class="btnPlans__container"
@@ -2483,7 +1424,7 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--rappel"
-                          src="/public/figures/rappel-removebg-preview.svg"
+                          src="/figures/rappel-removebg-preview.svg"
                           alt="figure-rappel-0"
                         />
                       </div>
@@ -2512,15 +1453,15 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--escalada"
-                          src="/public/figures/escalada-removebg-preview.svg"
+                          src="/figures/escalada-removebg-preview.svg"
                           alt="figure-escalada-0"
                         /><img
                           class="card__figure card__figure--plus"
-                          src="/public/figures/plus-removebg-preview.svg"
+                          src="/figures/plus-removebg-preview.svg"
                           alt="figure-plus-1"
                         /><img
                           class="card__figure card__figure--cabalgata"
-                          src="/public/figures/cabalgata-removebg-preview.svg"
+                          src="/figures/cabalgata-removebg-preview.svg"
                           alt="figure-cabalgata-2"
                         />
                       </div>
@@ -2552,15 +1493,15 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--rappel"
-                          src="/public/figures/rappel-removebg-preview.svg"
+                          src="/figures/rappel-removebg-preview.svg"
                           alt="figure-rappel-0"
                         /><img
                           class="card__figure card__figure--plus"
-                          src="/public/figures/plus-removebg-preview.svg"
+                          src="/figures/plus-removebg-preview.svg"
                           alt="figure-plus-1"
                         /><img
                           class="card__figure card__figure--cabalgata"
-                          src="/public/figures/cabalgata-removebg-preview.svg"
+                          src="/figures/cabalgata-removebg-preview.svg"
                           alt="figure-cabalgata-2"
                         />
                       </div>
@@ -2600,15 +1541,15 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--escalada"
-                          src="/public/figures/escalada-removebg-preview.svg"
+                          src="/figures/escalada-removebg-preview.svg"
                           alt="figure-escalada-0"
                         /><img
                           class="card__figure card__figure--plus"
-                          src="/public/figures/plus-removebg-preview.svg"
+                          src="/figures/plus-removebg-preview.svg"
                           alt="figure-plus-1"
                         /><img
                           class="card__figure card__figure--rappel"
-                          src="/public/figures/rappel-removebg-preview.svg"
+                          src="/figures/rappel-removebg-preview.svg"
                           alt="figure-rappel-2"
                         />
                       </div>
@@ -2640,7 +1581,7 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--escalada"
-                          src="/public/figures/escalada-removebg-preview.svg"
+                          src="/figures/escalada-removebg-preview.svg"
                           alt="figure-escalada-0"
                         />
                       </div>
@@ -2680,15 +1621,15 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--escalada"
-                          src="/public/figures/escalada-removebg-preview.svg"
+                          src="/figures/escalada-removebg-preview.svg"
                           alt="figure-escalada-0"
                         /><img
                           class="card__figure card__figure--plus"
-                          src="/public/figures/plus-removebg-preview.svg"
+                          src="/figures/plus-removebg-preview.svg"
                           alt="figure-plus-1"
                         /><img
                           class="card__figure card__figure--caminata"
-                          src="/public/figures/caminata-removebg-preview.svg"
+                          src="/figures/caminata-removebg-preview.svg"
                           alt="figure-caminata-2"
                         />
                       </div>
@@ -2720,15 +1661,15 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--rappel"
-                          src="/public/figures/rappel-removebg-preview.svg"
+                          src="/figures/rappel-removebg-preview.svg"
                           alt="figure-rappel-0"
                         /><img
                           class="card__figure card__figure--plus"
-                          src="/public/figures/plus-removebg-preview.svg"
+                          src="/figures/plus-removebg-preview.svg"
                           alt="figure-plus-1"
                         /><img
                           class="card__figure card__figure--caminata"
-                          src="/public/figures/caminata-removebg-preview.svg"
+                          src="/figures/caminata-removebg-preview.svg"
                           alt="figure-caminata-2"
                         />
                       </div>
@@ -2763,7 +1704,7 @@ object-position: right;
         <section
           class="section__plans section__plans--11"
           id="11"
-          style="background-image: url('/public/planBgImg/image-038.png')"
+          style="background-image: url('/planBgImg/image-038.png')"
         >
           <nav>
             <span class="btnPlans__container"
@@ -2871,15 +1812,15 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--ferrata"
-                          src="/public/figures/ferrata-removebg-preview.svg"
+                          src="/figures/ferrata-removebg-preview.svg"
                           alt="figure-ferrata-0"
                         /><img
                           class="card__figure card__figure--plus"
-                          src="/public/figures/plus-removebg-preview.svg"
+                          src="/figures/plus-removebg-preview.svg"
                           alt="figure-plus-1"
                         /><img
                           class="card__figure card__figure--caminata"
-                          src="/public/figures/caminata-removebg-preview.svg"
+                          src="/figures/caminata-removebg-preview.svg"
                           alt="figure-caminata-2"
                         />
                       </div>
@@ -2919,7 +1860,7 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--escalada"
-                          src="/public/figures/escalada-removebg-preview.svg"
+                          src="/figures/escalada-removebg-preview.svg"
                           alt="figure-escalada-0"
                         />
                       </div>
@@ -2958,15 +1899,15 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--caminata"
-                          src="/public/figures/caminata-removebg-preview.svg"
+                          src="/figures/caminata-removebg-preview.svg"
                           alt="figure-caminata-0"
                         /><img
                           class="card__figure card__figure--plus"
-                          src="/public/figures/plus-removebg-preview.svg"
+                          src="/figures/plus-removebg-preview.svg"
                           alt="figure-plus-1"
                         /><img
                           class="card__figure card__figure--espeleismo"
-                          src="/public/figures/espeleismo-removebg-preview.svg"
+                          src="/figures/espeleismo-removebg-preview.svg"
                           alt="figure-espeleismo-2"
                         />
                       </div>
@@ -3006,23 +1947,23 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--escalada"
-                          src="/public/figures/escalada-removebg-preview.svg"
+                          src="/figures/escalada-removebg-preview.svg"
                           alt="figure-escalada-0"
                         /><img
                           class="card__figure card__figure--plus"
-                          src="/public/figures/plus-removebg-preview.svg"
+                          src="/figures/plus-removebg-preview.svg"
                           alt="figure-plus-1"
                         /><img
                           class="card__figure card__figure--rappel"
-                          src="/public/figures/rappel-removebg-preview.svg"
+                          src="/figures/rappel-removebg-preview.svg"
                           alt="figure-rappel-2"
                         /><img
                           class="card__figure card__figure--plus"
-                          src="/public/figures/plus-removebg-preview.svg"
+                          src="/figures/plus-removebg-preview.svg"
                           alt="figure-plus-3"
                         /><img
                           class="card__figure card__figure--cabalgata"
-                          src="/public/figures/cabalgata-removebg-preview.svg"
+                          src="/figures/cabalgata-removebg-preview.svg"
                           alt="figure-cabalgata-4"
                         />
                       </div>
@@ -3057,7 +1998,7 @@ object-position: right;
         <section
           class="section__plans section__plans--12"
           id="12"
-          style="background-image: url('/public/planBgImg/image-038.png')"
+          style="background-image: url('/planBgImg/image-038.png')"
         >
           <nav>
             <span class="btnPlans__container"
@@ -3166,23 +2107,23 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--escalada"
-                          src="/public/figures/escalada-removebg-preview.svg"
+                          src="/figures/escalada-removebg-preview.svg"
                           alt="figure-escalada-0"
                         /><img
                           class="card__figure card__figure--plus"
-                          src="/public/figures/plus-removebg-preview.svg"
+                          src="/figures/plus-removebg-preview.svg"
                           alt="figure-plus-1"
                         /><img
                           class="card__figure card__figure--rappel"
-                          src="/public/figures/rappel-removebg-preview.svg"
+                          src="/figures/rappel-removebg-preview.svg"
                           alt="figure-rappel-2"
                         /><img
                           class="card__figure card__figure--plus"
-                          src="/public/figures/plus-removebg-preview.svg"
+                          src="/figures/plus-removebg-preview.svg"
                           alt="figure-plus-3"
                         /><img
                           class="card__figure card__figure--caminata"
-                          src="/public/figures/caminata-removebg-preview.svg"
+                          src="/figures/caminata-removebg-preview.svg"
                           alt="figure-caminata-4"
                         />
                       </div>
@@ -3221,23 +2162,23 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--escalada"
-                          src="/public/figures/escalada-removebg-preview.svg"
+                          src="/figures/escalada-removebg-preview.svg"
                           alt="figure-escalada-0"
                         /><img
                           class="card__figure card__figure--plus"
-                          src="/public/figures/plus-removebg-preview.svg"
+                          src="/figures/plus-removebg-preview.svg"
                           alt="figure-plus-1"
                         /><img
                           class="card__figure card__figure--caminata"
-                          src="/public/figures/caminata-removebg-preview.svg"
+                          src="/figures/caminata-removebg-preview.svg"
                           alt="figure-caminata-2"
                         /><img
                           class="card__figure card__figure--plus"
-                          src="/public/figures/plus-removebg-preview.svg"
+                          src="/figures/plus-removebg-preview.svg"
                           alt="figure-plus-3"
                         /><img
                           class="card__figure card__figure--espeleismo"
-                          src="/public/figures/espeleismo-removebg-preview.svg"
+                          src="/figures/espeleismo-removebg-preview.svg"
                           alt="figure-espeleismo-4"
                         />
                       </div>
@@ -3277,31 +2218,31 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--escalada"
-                          src="/public/figures/escalada-removebg-preview.svg"
+                          src="/figures/escalada-removebg-preview.svg"
                           alt="figure-escalada-0"
                         /><img
                           class="card__figure card__figure--plus"
-                          src="/public/figures/plus-removebg-preview.svg"
+                          src="/figures/plus-removebg-preview.svg"
                           alt="figure-plus-1"
                         /><img
                           class="card__figure card__figure--rappel"
-                          src="/public/figures/rappel-removebg-preview.svg"
+                          src="/figures/rappel-removebg-preview.svg"
                           alt="figure-rappel-2"
                         /><img
                           class="card__figure card__figure--plus"
-                          src="/public/figures/plus-removebg-preview.svg"
+                          src="/figures/plus-removebg-preview.svg"
                           alt="figure-plus-3"
                         /><img
                           class="card__figure card__figure--caminata"
-                          src="/public/figures/caminata-removebg-preview.svg"
+                          src="/figures/caminata-removebg-preview.svg"
                           alt="figure-caminata-4"
                         /><img
                           class="card__figure card__figure--plus"
-                          src="/public/figures/plus-removebg-preview.svg"
+                          src="/figures/plus-removebg-preview.svg"
                           alt="figure-plus-5"
                         /><img
                           class="card__figure card__figure--espeleismo"
-                          src="/public/figures/espeleismo-removebg-preview.svg"
+                          src="/figures/espeleismo-removebg-preview.svg"
                           alt="figure-espeleismo-6"
                         />
                       </div>
@@ -3340,7 +2281,7 @@ object-position: right;
                       <div class="card__figure__container">
                         <img
                           class="card__figure card__figure--escalada"
-                          src="/public/figures/escalada-removebg-preview.svg"
+                          src="/figures/escalada-removebg-preview.svg"
                           alt="figure-escalada-0"
                         />
                       </div>
@@ -3373,11 +2314,11 @@ object-position: right;
           </div>
         </section>
         <section
-          class="section__lastpage section__lastpage--12"
+          class="section__lastpage section__lastpage--13"
           id="contact"
-          style="background-image: url('/public/images/image-042.png')"
+          style="background-image: url('/images/image-042.png')"
         >
-          <div class="lastpage__container lastpage__container--12">
+          <div class="lastpage__container lastpage__container--13">
             <div class="page__content">
               <div class="page__content--parr2">
                 <p class="parr2--item">No incluye parqueadero</p>
@@ -3387,7 +2328,7 @@ object-position: right;
               <p class="page__content--parr">Cordialmente:</p>
               <div class="page__content--identity">
                 <img
-                  src="/public/logos/imageFirma.png"
+                  src="/logos/imageFirma.png"
                   alt="signature"
                   class="logo__identity--signature"
                 />
@@ -3402,11 +2343,11 @@ object-position: right;
                 </div>
                 <div class="logo__identity">
                   <img
-                    src="/public/logos/logoSuescaventuraWord-sinFondo.png"
+                    src="/logos/logoSuescaventuraWord-sinFondo.png"
                     alt="logo"
                     class="logo__identity--logoImg"
                   /><img
-                    src="/public/logos/LOGOacgme.png"
+                    src="/logos/LOGOacgme.png"
                     alt="logoAcgme"
                     class="logo__identity--logoAcgme"
                   />
@@ -3498,17 +2439,16 @@ object-position: right;
               </div>
             </div>
             <div class="visualBox"></div>
-            <div class="photoGroup__container photoGroup__container--page--12">
+            <div class="photoGroup__container photoGroup__container--page--13">
               <img
-                src="/public/images/image-047.png"
-                alt="[object Object]"
-                class="lastpage__photoGroup lastpage__photoGroup--12 lastpage__photoGroup--12--0"
+                src="/images/image-047.png"
+                alt="/images/image-047.png"
+                class="lastpage__photoGroup lastpage__photoGroup--13 lastpage__photoGroup--13--0"
               />
             </div>
           </div>
         </section>
       </div>
     </div>
-    <script type="module" src="/src/main.tsx?t=1717376713746"></script>
   </body>
 </html>
