@@ -96,7 +96,7 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
                 <img
                   key={`lastpage__photoGroup__${page}__photo--${i}`}
                   src={`${images[photo.idImg].imgUrl}`}
-                  alt={`${images[idImg]}`}
+                  alt={`${images[photo.idImg].imgUrl}`}
                   className={`lastpage__photoGroup lastpage__photoGroup--${page} lastpage__photoGroup--${page}--${i}`}
                 />
               ))}

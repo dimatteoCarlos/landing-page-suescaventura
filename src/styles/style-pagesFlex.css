@@ -19,7 +19,7 @@
   margin: 0;
   padding: 0;
   position: relative;
-  /* max-width: var(--MW); */
+  width: 100vw;
 }
 
 .section__page {
