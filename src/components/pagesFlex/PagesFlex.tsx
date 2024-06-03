@@ -12,7 +12,7 @@ type PagesPropsType = {
 function PagesFlex({ pages: pags, images }: PagesPropsType) {
   let logoIMg = '/logos/logoSuescaventuraWord-sinFondo.png';
 
-  //Help rendering one single page while developing
+  //Helps rendering one single page while developing
   let pages = [
     pags[0],
     pags[1],
@@ -75,26 +75,27 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
                   <img src={`${logoIMg}`} alt={`logo`} className='logo' />
                 ) : null}
 
-                {<div
-                  className={`page__card  page__card--${page}   page__card--parr--${page} 
-                  ${parr?"":"onlyTitle"}
-                  `}
-                >
+                {
                   <div
-                    className={`page__texts--title page__texts--title--${page}`}
+                    className={`page__card  page__card--${page}   page__card--parr--${page} 
+                  ${parr ? '' : 'onlyTitle'}
+                  `}
                   >
-                    {title}
-                  </div>
-
-                  {parr && (
-                    <p
-                      className={`page__texts__paragraph page__text__paragraph__parr page__texts_paragraph__parr--${page}`}
+                    <div
+                      className={`page__texts--title page__texts--title--${page}`}
                     >
-                      {parr}
-                    </p>
-                  )}
-                </div>
-}
+                      {title}
+                    </div>
+
+                    {parr && (
+                      <p
+                        className={`page__texts__paragraph page__text__paragraph__parr page__texts_paragraph__parr--${page}`}
+                      >
+                        {parr}
+                      </p>
+                    )}
+                  </div>
+                }
                 {<VisualBox page={page} layoutPattern={pageVisualBox2} />}
                 {parr1 && (
                   <p

@@ -1,4 +1,6 @@
 import '../../styles/style-lastPage.css';
+import '../social-media/style-socialMedia.css';
+
 
 import { DataImageType, PageType } from '../../types/types.ts';
 import SocialMedia from '../social-media/SocialMedia.tsx';

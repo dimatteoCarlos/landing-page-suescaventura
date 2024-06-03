@@ -87,7 +87,6 @@
   line-height: 2rem;
   text-align: left;
   /* border:10px solid cyan; */
-
 }
 
 .page__content--identity {
@@ -130,7 +129,7 @@
   max-width: 60rem;
   align-self: center;
   margin-bottom: 1rem;
-height: auto;
+  height: auto;
   transition: all 750ms ease-in-out;
   scale: 0.9;
 }
@@ -138,3 +137,30 @@ height: auto;
 .lastpage__photoGroup--12:hover {
   scale: 1.1;
 }
+
+
+/*****socialMedia*****/
+@media all and (max-width: 490px) {
+  .socialMedia {
+    gap: 0.5rem;
+    flex: 1 1 auto;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .icon_xtwitter,
+  .icon_xtwitter > svg {
+    display: block;
+  }
+}
+
+@media all and (max-width: 385px) {
+  .icon_instagram {
+    display: block ;
+  }
+
+  .socialMedia {
+    justify-content: center;
+  }
+}
+
