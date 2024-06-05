@@ -1,8 +1,8 @@
 .navbar__layout {
   position: fixed;
   /* position: sticky;  */
-  top: 0%;
-  /* bottom: 33%; */
+  /* top: 0%; */
+  bottom: 33%;
   height: 10lvh;
   height: 10vh;
 
