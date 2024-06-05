@@ -11,7 +11,7 @@
   background-color: rgb(105, 182, 231, 0.17);
 }
 .navbar__layout:hover {
-  background-color: rgb(105, 182, 231, 0.7);
+  background-color: rgba(161, 199, 223, 0.7);
   z-index: 200;
 }
 
@@ -20,16 +20,16 @@ nav {
 
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
   text-align: center;
   z-index: 30;
   gap: 2rem;
-
+  
   padding: 0.5rem 2rem;
   width: 98%;
   align-self: center;
+  /* flex-wrap: nowrap; */
   /* border:10px solid blue; */
 }
 
@@ -56,6 +56,6 @@ nav {
   background-color: rgb(240, 248, 255, 0.9);
   border-color: aliceblue;
   color: rgb(0, 0, 0);
-  box-shadow: 0px 0px 3px rgba(105, 182, 231, 0.5);
+  box-shadow: 0px 1px 3px rgba(105, 182, 231, 0.5);
   scale: 1.2;
 }
