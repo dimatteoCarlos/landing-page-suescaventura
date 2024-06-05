@@ -2,8 +2,8 @@ import '../../styles/style-pagesFlex.css';
 
 import { DataImageType, PageType } from '../../types/types.ts';
 import { activities } from '../../data/data-pages/dataPages.ts';
-import Navbar from '../navbar/Navbar.tsx';
 import VisualBox from '../visualBox/VisualBox.tsx';
+// import Navbar from '../navbar/Navbar.tsx';
 type PagesPropsType = {
   pages: PageType[];
   images: DataImageType;
@@ -58,7 +58,7 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
               id={pageAddress.trim().toLowerCase()}
               style={{ backgroundImage: `url(${images[idImg].imgUrl})` }}
             >
-              <Navbar />
+              {/* <Navbar /> */}
 
               <div className={`page__container page__container--${page}`}>
                 {page === 1 ? (

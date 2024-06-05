@@ -2,7 +2,7 @@ import Card from './Card';
 import '../../styles/style-plans.css';
 
 import { dataPlans } from '../../data/data-plans/dataPlans.ts';
-import Navbar from '../navbar/Navbar.tsx';
+// import Navbar from '../navbar/Navbar.tsx';
 
 function Plans() {
   return (
@@ -20,7 +20,7 @@ function Plans() {
               id={`${pageId === 9 ? 'planes' : pageId}`}
               style={{backgroundImage:`url(/planBgImg/${pageBgImage})`}}
             >
-              <Navbar />
+              {/* <Navbar /> */}
               <div
                 className={`plans__page__container plans__page__container--${pageId}`}
               >

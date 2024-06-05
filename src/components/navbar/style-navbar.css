@@ -1,3 +1,20 @@
+.navbar__layout {
+  position: fixed;
+  /* position: sticky;  */
+  top: 0%;
+  /* bottom: 33%; */
+
+  width: 100%;
+  z-index: 2;
+  transition: ease-in-out 800ms;
+
+  background-color: rgb(105, 182, 231, 0.17);
+}
+.navbar__layout:hover {
+  background-color: rgb(105, 182, 231, 0.7);
+  z-index: 200;
+}
+
 nav {
   background-color: transparent;
 
@@ -12,9 +29,8 @@ nav {
 
   padding: 0.5rem 2rem;
   width: 98%;
-  /* border:10px solid blue; */
   align-self: center;
-
+  /* border:10px solid blue; */
 }
 
 .btnPlans__container {
@@ -22,7 +38,6 @@ nav {
   justify-content: start;
   flex: 0.5;
   padding: 0.5rem;
-
 }
 
 .btnPlans__container a {
@@ -41,6 +56,6 @@ nav {
   background-color: rgb(240, 248, 255, 0.9);
   border-color: aliceblue;
   color: rgb(0, 0, 0);
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 3px rgba(105, 182, 231, 0.5);
   scale: 1.2;
 }
