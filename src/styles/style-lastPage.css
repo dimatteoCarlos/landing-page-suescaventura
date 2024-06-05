@@ -57,10 +57,12 @@
 .page__content {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   height: 100%;
   justify-content: start;
   align-items: start;
+
+  /* border:10px solid red; */
 }
 
 .page__content--parr2,
@@ -148,8 +150,18 @@
   scale: 1.1;
 }
 /***********************/
+
+
 @media all and (max-width: 490px) {
-  .lastpage__container {
+  .lastpage__container,
+  .page__content {
+    align-items: center;
+  }
+}
+
+@media all and (min-width: 845px) {
+  .lastpage__container,
+  .page__content {
     align-items: center;
   }
 }
