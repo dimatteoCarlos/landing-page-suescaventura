@@ -1,7 +1,7 @@
 .navbar__layout {
   position: fixed;
-  /* position: sticky;  */
-  top: 0%;
+  position: sticky; 
+  top: 1%;
   /* bottom: 33%; */
 
   width: 100%;
@@ -9,6 +9,9 @@
   transition: ease-in-out 800ms;
 
   background-color: rgb(105, 182, 231, 0.17);
+height: 8svh;
+  /* border:10px solid red; */
+  
 }
 .navbar__layout:hover {
   background-color: rgba(161, 199, 223, 0.7);
@@ -26,7 +29,7 @@ nav {
   z-index: 30;
   gap: 2rem;
   
-  padding: 0.5rem 2rem;
+  padding: 0.25rem 2rem;
   width: 98%;
   align-self: center;
   /* flex-wrap: nowrap; */

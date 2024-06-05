@@ -29,16 +29,16 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  /* width: 100vw; */
+  width: 100svw;
   overflow-x:hidden;
 }
 
-.app__container {
+/* .app__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .app__container {
   width: 100%;
