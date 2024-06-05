@@ -15,7 +15,7 @@
   --lh--tit--plan: clamp(1rem, 0.6rem + 1.5vw, 2.25rem);
 
   /**recommended: --width: clamp(45ch, 50%, 75ch); */
-  --width: clamp(45ch, 75%, 85ch);
+  /* --width: clamp(45ch, 75%, 85ch); */
   --width: clamp(min(65%, 40ch), 70%, max(80%, 85ch));
 }
 
