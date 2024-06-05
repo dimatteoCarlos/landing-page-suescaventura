@@ -3,7 +3,8 @@
   /* position: sticky;  */
   top: 0%;
   /* bottom: 33%; */
-  height: 20svh;
+  height: 10lvh;
+  height: 10vh;
 
   width: 100%;
   z-index: 2;
@@ -17,10 +18,8 @@
 }
 
 nav {
-
-
   background-color: transparent;
-
+height: 10svh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,7 +27,7 @@ nav {
   text-align: center;
   z-index: 30;
   gap: 2rem;
-  
+
   padding: 0.5rem 2rem;
   width: 98%;
   align-self: center;
