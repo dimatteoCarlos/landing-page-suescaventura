@@ -2,6 +2,8 @@
 
 /*FLEX-BOX USAGE -  RESPONSIVE*/
 :root {
+  /* --MW: 1024px; */
+  --max--width: 350rem;
   /*--clamp--*/
   --fsz--par: clamp(1rem, 0.423rem + 2.308vw, 2.5rem);
   --lh--par: clamp(1.5rem, 0.923rem + 2.308vw, 3rem);
@@ -16,7 +18,7 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  position: relative;
+  /* position: relative; */
   /* width: 100vw; */
   width: 100%;
 
@@ -47,7 +49,7 @@
 }
 
 .page__card {
-  background-color: rgb(255, 255, 255, 0.7);
+  background-color: rgb(255, 255, 255, 0.5);
 
   border-radius: 2rem;
   z-index: 10;
@@ -267,27 +269,6 @@
   }
 }
 
-/*****socialMedia*****/
-@media all and (max-width: 490px) {
-  .socialMedia {
-    gap: 0.5rem;
-    flex: 1 1 auto;
-  }
-}
-
-@media all and (max-width: 400px) {
-  .icon_xtwitter,
-  .icon_xtwitter > svg {
-    display: none;
-  }
-}
-
-@media all and (max-width: 385px) {
-  .icon_instagram {
-    display: none;
-  }
-
-  .socialMedia {
-    justify-content: center;
-  }
-}
+/* [class]{
+  border:1px solid red;
+} */

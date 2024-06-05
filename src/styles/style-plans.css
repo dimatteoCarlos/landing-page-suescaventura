@@ -180,8 +180,8 @@
 .card__figure--plus {
   height: 2rem;
   width: 2rem;
-  margin: 0 0.5rem;
   margin-bottom: 1.75rem;
+  /* margin: 0 0.5rem; */
 }
 .card__figure--rappel {
   /* height: 7rem; */
