@@ -28,14 +28,14 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
       <section
         className={`section__lastpage section__lastpage--${page}`}
         id={pageAddress.trim().toLowerCase()}
-        style={{ backgroundImage: `url(${images[idImg].imgUrl})` }}
+        // style={{ backgroundImage: `url(${images[idImg].imgUrl})` }}
       >
         <div className={`lastpage__container lastpage__container--${page}`}>
-          {/* <img
+          <img
             src={`${images[idImg].imgUrl}`}
             alt={`${images[idImg].imgUrl}`}
             className={`lastpage__bgImg lastpage__bgImg--${page}`}
-          /> */}
+          />
 
           <div className='page__content'>
             <div className='page__content--parr2'>
