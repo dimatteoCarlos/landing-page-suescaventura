@@ -6,11 +6,11 @@ import PagesFlex from './components/pagesFlex/PagesFlex.tsx';
 function App() {
   return (
     <>
-      <div className='app__container'>
+      {/* <div className='app__container'> */}
         <PagesFlex pages={pages} images={images} />
         <Plans />
         <LastPage lastPage={lastPage} images={images} />
-      </div>
+      {/* </div> */}
     </>
   );
 }

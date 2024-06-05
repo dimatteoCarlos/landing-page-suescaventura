@@ -170,6 +170,7 @@ export const lastPage: PageType = {
 
 export const images = {
   1: { imgUrl: '/images/image-000.png' },
+  // 1: { imgUrl: '/images/Rocas_de_Suesca_2.png' },
   2: { imgUrl: '/images/image-001.png' },
   3: { imgUrl: '/images/image-003.png' },
   4: { imgUrl: '/images/image-005.png' },

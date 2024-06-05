@@ -2,8 +2,6 @@
 
 /*FLEX-BOX USAGE -  RESPONSIVE*/
 :root {
-  /* --MW: 1024px; */
-  --max--width: 350rem;
   /*--clamp--*/
   --fsz--par: clamp(1rem, 0.423rem + 2.308vw, 2.5rem);
   --lh--par: clamp(1.5rem, 0.923rem + 2.308vw, 3rem);
@@ -19,8 +17,11 @@
   margin: 0;
   padding: 0;
   position: relative;
-  width: 100vw;
+  /* width: 100vw; */
+  width: 100%;
+
 }
+
 
 .section__page {
   background-repeat: no-repeat;
@@ -46,9 +47,8 @@
 }
 
 .page__card {
-  background-color: rgb(255, 255, 255, 0.5);
-  outline: none;
-  border: none;
+  background-color: rgb(255, 255, 255, 0.7);
+
   border-radius: 2rem;
   z-index: 10;
   padding: 0.5rem;
@@ -56,7 +56,8 @@
 
   width: var(--width);
   max-width: var(--max--width);
-  /* border: 10px solid blue; */
+  outline: none;
+  border: none;
 }
 .onlyTitle {
   width: var(--width);
@@ -200,6 +201,11 @@
   margin-top: 5rem;
   /* border:1px solid red; */
 }
+.section__page--6 {
+  background-position: 80% center;
+}
+
+
 /*****PAGE 7*******/
 .page__parr2--item span {
   font-size: clamp(1rem, 4vw, 2rem);

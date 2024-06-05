@@ -29,24 +29,18 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  /* width: 100vw; */
+  /* overflow-x:hidden; */
 }
 
 .app__container {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-align-items: center
+  align-items: center;
 }
 
-/* 
-div{
-  border:1px solid red;
+.app__container {
+  width: 100%;
 }
-
-p, section{border:10px solid rebeccapurple;}
-
-li, a{
-  border:10px solid green;
-} */
 

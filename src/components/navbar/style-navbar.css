@@ -11,7 +11,10 @@ nav {
   gap: 2rem;
 
   padding: 0.5rem 2rem;
-  width: 100%;
+  width: 98%;
+  /* border:10px solid blue; */
+  align-self: center;
+
 }
 
 .btnPlans__container {
@@ -19,7 +22,7 @@ nav {
   justify-content: start;
   flex: 0.5;
   padding: 0.5rem;
-  /* border: 10px solid red; */
+
 }
 
 .btnPlans__container a {
