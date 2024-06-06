@@ -60,18 +60,8 @@ export const dataPlans: PlansType[] = [
           }, //card
         ], //planCards
       }, //plan
-    ], //plans
-  }, //end page
 
-  //start page
-  {
-    pageId: 10,
-    pageTitle: '',
-    parr: '',
-    parr1: '',
-    pageBgImage: 'image-038.png',
-
-    plans: [
+      //start plan
       {
         planId: 4,
         planTitle: '4. Rappel (25m), una línea de descenso',
@@ -84,7 +74,18 @@ export const dataPlans: PlansType[] = [
           }, //end card
         ], //end planCards
       }, //end plan
+    ], //plans
+  }, //end page
 
+  //start page
+  {
+    pageId: 10,
+    pageTitle: '',
+    parr: '',
+    parr1: '',
+    pageBgImage: 'image-038.png',
+
+    plans: [
       //start plan
       {
         planId: 5,
