@@ -15,6 +15,16 @@ type SocialObjType = {
 
 export const socialMediaInfo: SocialObjType[] = [
   {
+    nameClass: 'whatsapp',
+    icon: <FaWhatsapp />,
+    iconId: FaWhatsapp,
+    iconName: 'FaWhatsapp',
+    iconUrl: 'https://wa.me/573204543746',
+    // iconUrl: 'https://Whatsapp.com',
+  },
+  
+  
+  {
     nameClass: 'facebook',
     icon: <FaFacebook />,
     iconId: FaFacebook,
@@ -32,14 +42,7 @@ export const socialMediaInfo: SocialObjType[] = [
       'https://www.instagram.com/explore/locations/101373551821898/suescaventura/',
   },
 
-  {
-    nameClass: 'whatsapp',
-    icon: <FaWhatsapp />,
-    iconId: FaWhatsapp,
-    iconName: 'FaWhatsapp',
-    iconUrl: 'https://wa.me/573204543746',
-    // iconUrl: 'https://Whatsapp.com',
-  },
+  
   {
     nameClass: 'xtwitter',
     icon: <FaXTwitter />,

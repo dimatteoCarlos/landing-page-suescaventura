@@ -23,6 +23,12 @@ type SocialObjType = {
 
 export const socialObj: SocialObjType[] = [
   {
+    icon: <FaWhatsapp />,
+    iconId: FaWhatsapp,
+    iconName: 'FaWhatsapp',
+    iconUrl: 'https://Whatsapp.com',
+  },
+  {
     icon: <FaFacebook />,
     iconId: FaFacebook,
     iconName: 'FaFacebook',
@@ -38,12 +44,7 @@ export const socialObj: SocialObjType[] = [
     // iconUrl: 'https://instagram.com',
   },
 
-  {
-    icon: <FaWhatsapp />,
-    iconId: FaWhatsapp,
-    iconName: 'FaWhatsapp',
-    iconUrl: 'https://Whatsapp.com',
-  },
+  
   {
     icon: <FaXTwitter />,
     iconId: FaXTwitter,
@@ -54,6 +55,15 @@ export const socialObj: SocialObjType[] = [
 
 export const socialMediaInfo: SocialObjType[] = [
   {
+    icon: <FaWhatsapp />,
+    iconId: FaWhatsapp,
+    iconName: 'FaWhatsapp',
+    iconUrl: 'https://wa.me/573204543746',
+    // iconUrl: 'https://Whatsapp.com',
+  },
+  
+  {
+    
     icon: <FaFacebook />,
     iconId: FaFacebook,
     iconName: 'FaFacebook',
@@ -69,13 +79,7 @@ export const socialMediaInfo: SocialObjType[] = [
       'https://www.instagram.com/explore/locations/101373551821898/suescaventura/',
   },
 
-  {
-    icon: <FaWhatsapp />,
-    iconId: FaWhatsapp,
-    iconName: 'FaWhatsapp',
-    iconUrl: 'https://wa.me/573204543746',
-    // iconUrl: 'https://Whatsapp.com',
-  },
+  
   {
     icon: <FaXTwitter />,
     iconId: FaXTwitter,
