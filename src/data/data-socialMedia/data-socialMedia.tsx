@@ -1,3 +1,5 @@
+//data-socialMedia.tsx
+
 import {
   FaFacebook,
   FaInstagram,
@@ -44,7 +46,6 @@ export const socialObj: SocialObjType[] = [
     // iconUrl: 'https://instagram.com',
   },
 
-  
   {
     icon: <FaXTwitter />,
     iconId: FaXTwitter,
@@ -61,9 +62,8 @@ export const socialMediaInfo: SocialObjType[] = [
     iconUrl: 'https://wa.me/573204543746',
     // iconUrl: 'https://Whatsapp.com',
   },
-  
+
   {
-    
     icon: <FaFacebook />,
     iconId: FaFacebook,
     iconName: 'FaFacebook',
@@ -79,7 +79,6 @@ export const socialMediaInfo: SocialObjType[] = [
       'https://www.instagram.com/explore/locations/101373551821898/suescaventura/',
   },
 
-  
   {
     icon: <FaXTwitter />,
     iconId: FaXTwitter,

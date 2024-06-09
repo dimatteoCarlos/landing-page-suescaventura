@@ -1,3 +1,6 @@
+//VisualBox.tsx
+//Parent: PagesFlex.tsx, LastPage.tsx
+
 import './visualBox.css';
 
 type VisualBoxPropType = {

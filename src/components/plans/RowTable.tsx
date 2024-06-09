@@ -1,11 +1,14 @@
+//Row.tsx
+//Parent: CardPlansBox.tsx
+
 import { PlanRowsType } from '../../types/types';
 
 type RowPropsType = {
   planRow: PlanRowsType;
-  cardId: number;
+  cardId: number | undefined;
 };
 
-function Row({ planRow, cardId }: RowPropsType) {
+function RowTable({ planRow, cardId }: RowPropsType) {
   const { rowId, concept, cost } = planRow;
 
   const keyRow = `card-${cardId}-${rowId}`;
@@ -61,4 +64,4 @@ function Row({ planRow, cardId }: RowPropsType) {
   );
 }
 
-export default Row;
+export default RowTable;

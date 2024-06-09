@@ -1,25 +1,24 @@
 .navbar__layout {
   position: fixed;
   /* position: sticky;  */
-  /* top: 0%; */
-  bottom: 0%;
-  height: 12lvh;
-  height: 12vh;
+  bottom: 1%;
+
+  height: auto;
 
   width: 100%;
   z-index: 2;
   transition: ease-in-out 800ms;
 
-  /* background-color: rgb(105, 182, 231, 0.17); */
+  border: 2px solid rgba(166, 210, 238, 0.1);
 }
 .navbar__layout:hover {
   background-color: rgba(166, 210, 238, 0.7);
+  border: 2px solid rgba(166, 210, 238, 1);
   z-index: 200;
 }
 
 nav {
   background-color: transparent;
-height: 10svh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -31,6 +30,7 @@ height: 10svh;
   padding: 0.5rem 2rem;
   width: 98%;
   align-self: center;
+
   /* flex-wrap: nowrap; */
   /* border:10px solid blue; */
 }
@@ -51,13 +51,13 @@ height: 10svh;
   text-align: center;
   background-color: rgb(240, 248, 255, 0.5);
   color: rgb(54, 53, 58);
-  border: 1px solid rgba(240, 248, 255, 0.75);
+  border: 1px solid rgba(240, 248, 255, 0.8);
 }
 
 .btnPlans__container a:hover {
   background-color: rgb(240, 248, 255, 0.9);
   border-color: aliceblue;
   color: rgb(0, 0, 0);
-  box-shadow: 0px 1px 3px rgba(105, 182, 231, 0.5);
+  box-shadow: 0px 3px 3px rgba(105, 182, 231, 0.5);
   scale: 1.2;
 }

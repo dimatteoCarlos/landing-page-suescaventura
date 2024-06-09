@@ -1,3 +1,5 @@
+//dataPages.ts
+
 import { PageType } from '../../types/types';
 
 export const activities: string[] = [

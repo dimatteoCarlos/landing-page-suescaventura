@@ -1,3 +1,6 @@
+//PagesFlex.tsx
+//Parent:App.tsx
+
 import '../../styles/style-pagesFlex.css';
 
 import { DataImageType, PageType } from '../../types/types.ts';

@@ -56,6 +56,7 @@ export type PlansEntity = {
   planCards?: PlanCardsType[];
   // | null
 };
+
 export type PlanCardsType = {
   cardId: number;
   cardFigurePlan?: string[] | null;

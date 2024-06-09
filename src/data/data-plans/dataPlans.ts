@@ -1,3 +1,5 @@
+//dataPlans.ts
+
 import { PlansType } from '../../types/types';
 
 export const figureNames: string[] = [

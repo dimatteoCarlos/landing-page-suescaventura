@@ -1,6 +1,10 @@
+//CardFigure.tsx
+//Parent: Card.tsx
+
 type CardFigurePropType = {
   cardFigurePlan: string[];
 };
+
 export default function CardFigure({ cardFigurePlan }: CardFigurePropType) {
   return (
     <>

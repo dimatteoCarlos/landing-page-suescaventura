@@ -1,3 +1,6 @@
+//App.tsx
+//Parent:main.tsx
+
 import { pages, images, lastPage } from './data/data-pages/dataPages.ts';
 import Plans from './components/plans/Plans.tsx';
 import LastPage from './components/lastpage/LastPage.tsx';

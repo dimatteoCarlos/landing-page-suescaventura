@@ -1,7 +1,10 @@
+//Plans.tsx
+//Parent:App.tsx
+
 import Card from './Card';
 import '../../styles/style-plans.css';
-
 import { dataPlans } from '../../data/data-plans/dataPlans.ts';
+
 // import Navbar from '../navbar/Navbar.tsx';
 
 function Plans() {
@@ -18,7 +21,7 @@ function Plans() {
               className={`section__plans section__plans--${pageId}`}
               key={`page-${ipage}`}
               id={`${pageId === 9 ? 'planes' : pageId}`}
-              style={{backgroundImage:`url(/planBgImg/${pageBgImage})`}}
+              style={{ backgroundImage: `url(/planBgImg/${pageBgImage})` }}
             >
               {/* <Navbar /> */}
               <div
@@ -62,10 +65,7 @@ function Plans() {
                         className={`plan__container plan__container--${planId}`}
                         key={keyPlan}
                       >
-                        <div
-                          className={`plan--title plan--title--${planId}`}
-
-                        >
+                        <div className={`plan--title plan--title--${planId}`}>
                           {planTitle}
                         </div>
                         <div
