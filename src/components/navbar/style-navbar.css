@@ -6,7 +6,7 @@
   height: auto;
 
   width: 100%;
-  z-index: 2;
+  /* z-index: 2; */
   transition: ease-in-out 800ms;
 
   border: 2px solid rgba(166, 210, 238, 0.1);
@@ -14,7 +14,7 @@
 .navbar__layout:hover {
   background-color: rgba(166, 210, 238, 0.7);
   border: 2px solid rgba(166, 210, 238, 1);
-  z-index: 200;
+  /* z-index: 200; */
 }
 
 nav {
