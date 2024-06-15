@@ -61,7 +61,7 @@ export const pages: PageType[] = [
       title: 'CAMINATA',
       parr: '',
       parr1:
-        'Se llevará a cabo en los alrededores del parque rocas de Suesca en entornos Naturales increíbles, rodeados de la fauna y flora nativa de La zona, donde los  participantes aprenderán de historia y biodiversidad.',
+        'Se llevará a cabo en los alrededores del parque rocas de Suesca en entornos Naturales increíbles, rodeados de la fauna y flora nativas de la zona, donde los  participantes aprenderán de historia y biodiversidad.',
       parr2: [],
     },
   },
