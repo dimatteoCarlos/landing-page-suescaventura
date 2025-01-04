@@ -1,4 +1,6 @@
 //SocialMedia.tsx
+//Parent: NavBar.tsx, LastPage.tsx
+
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { IconType } from 'react-icons';
 import { FaXTwitter } from 'react-icons/fa6';
@@ -22,8 +24,7 @@ export const socialMediaInfo: SocialObjType[] = [
     iconUrl: 'https://wa.me/573204543746',
     // iconUrl: 'https://Whatsapp.com',
   },
-  
-  
+
   {
     nameClass: 'facebook',
     icon: <FaFacebook />,
@@ -42,7 +43,6 @@ export const socialMediaInfo: SocialObjType[] = [
       'https://www.instagram.com/explore/locations/101373551821898/suescaventura/',
   },
 
-  
   {
     nameClass: 'xtwitter',
     icon: <FaXTwitter />,
@@ -73,7 +73,6 @@ function SocialMedia({ isColored }: SocialMediaPropType): JSX.Element {
           <li key={`${item.iconId.name}--${indx}`}>
             <a
               href={item.iconUrl}
-              // className={iconClass}
               className={`${iconClass} ${isColored ? 'colored' : ''}`}
               rel='noreferrer'
               target='_blank'

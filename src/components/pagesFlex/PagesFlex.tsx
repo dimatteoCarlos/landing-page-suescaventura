@@ -7,6 +7,7 @@ import { DataImageType, PageType } from '../../types/types.ts';
 import { activities } from '../../data/data-pages/dataPages.ts';
 import VisualBox from '../visualBox/VisualBox.tsx';
 // import Navbar from '../navbar/Navbar.tsx';
+
 type PagesPropsType = {
   pages: PageType[];
   images: DataImageType;
@@ -27,7 +28,9 @@ function PagesFlex({ pages: pags, images }: PagesPropsType) {
     pags[7],
   ];
 
-  //visualBox: page layout for back photo visualization
+  //visualBox: set a void space for fallback photo visualization on the page
+  //pageVisualBox set which pages and where to render VisualBox on the pages
+
   const pageVisualBox1 = [1, 2, 5],
     pageVisualBox2 = [3, 4, 6, 7, 8];
 

@@ -18,7 +18,7 @@ export type CardTypeProp = {
   };
 };
 
-const isCostShown = false;
+const isCostShown = true; //show cost
 
 function Card({ planCard }: CardTypeProp) {
   const { cardId, cardFigurePlan, cardTableHead, planRows } = planCard;

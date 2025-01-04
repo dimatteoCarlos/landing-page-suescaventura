@@ -27,11 +27,11 @@ function RowTable({ planRow, cardId }: RowPropsType) {
           <div className={`card__plans__row`}>
             <span className='currency'> $</span>
             {new Intl.NumberFormat(
-              'es-ES'
-              //  {
-              //   style: 'currency',
-              //   currency: 'COP',
-              // }
+              'es-ES',
+               {
+                style: 'currency',
+                currency: 'COP',
+              }
             ).format(cost)}
           </div>
         </div>
@@ -51,11 +51,11 @@ function RowTable({ planRow, cardId }: RowPropsType) {
           <div className={`card__row__col card__row__col--right`}>
             <span className='currency'> $</span>
             {new Intl.NumberFormat(
-              'es-ES'
-              //  {
-              //   style: 'currency',
-              //   currency: 'COP',
-              // }
+              'es-ES',
+               {
+                style: 'currency',
+                currency: 'COP',
+              }
             ).format(cost)}
           </div>
         </div>

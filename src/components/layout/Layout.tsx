@@ -1,3 +1,6 @@
+//Layout.tsx
+//Parent: App.tsx
+
 import Navbar from '../navbar/Navbar.tsx';
 
 type LayoutPropsType = {

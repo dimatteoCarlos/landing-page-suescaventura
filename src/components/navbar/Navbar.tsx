@@ -1,4 +1,4 @@
-import SocialMedia from '../social-media/SocialMedia';
+import SocialMedia from '../social-media/SocialMedia.tsx';
 import './style-navbar.css';
 
 function Navbar() {
