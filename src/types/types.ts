@@ -1,4 +1,6 @@
 export type PageType = {
+  pageAddress:string,
+  visualBox?:number,
   page: number;
   idImg: number;
   photoGroup?: {
@@ -54,6 +56,7 @@ export type PlansEntity = {
   planCards?: PlanCardsType[];
   // | null
 };
+
 export type PlanCardsType = {
   cardId: number;
   cardFigurePlan?: string[] | null;

@@ -1,6 +1,11 @@
-import '../../styles/style-lastPage.css';
+//LastPage.tsx
+//Parent:App.tsx
 
+import '../../styles/style-lastPage.css';
+import '../social-media/style-socialMedia.css';
 import { DataImageType, PageType } from '../../types/types.ts';
+import SocialMedia from '../social-media/SocialMedia.tsx';
+import VisualBox from '../visualBox/VisualBox.tsx';
 type LastPagePropsType = {
   lastPage: PageType;
   images: DataImageType;
@@ -12,6 +17,7 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
   const signature = '/logos/imageFirma.png';
 
   const {
+    pageAddress,
     page,
     idImg,
     photoGroup,
@@ -20,7 +26,11 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
 
   return (
     <>
-      <section className={`section__lastpage section__lastpage--${page}`}>
+      <section
+        className={`section__lastpage section__lastpage--${page}`}
+        id={pageAddress.trim().toLowerCase()}
+        // style={{ backgroundImage: `url(${images[idImg].imgUrl})` }}
+      >
         <div className={`lastpage__container lastpage__container--${page}`}>
           <img
             src={`${images[idImg].imgUrl}`}
@@ -52,7 +62,7 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
                 {parr3?.map((p, ip) => (
                   <p
                     className='page__parr3--item'
-                    key={`page__parr3--item--${ip}`}
+                    key={`page__parr3--item--${ip}--${p}`} //avoid ts err for non using p
                   >
                     {parr3[ip]}
                   </p>
@@ -71,8 +81,13 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
                   className='logo__identity--logoAcgme'
                 />
               </div>
+              <div className='contact'>
+                <SocialMedia isColored={true} />
+              </div>
             </div>
           </div>
+
+          {<VisualBox page={page} layoutPattern={[page]} />}
 
           <div
             className={`photoGroup__container photoGroup__container--page--${page}`}
@@ -80,16 +95,15 @@ function LastPage({ lastPage, images }: LastPagePropsType) {
             {photoGroup!.length > 0 &&
               photoGroup?.map((photo, i) => (
                 <img
-                  key={`photoGroup__${page}__photo--${i}`}
+                  key={`lastpage__photoGroup__${page}__photo--${i}`}
                   src={`${images[photo.idImg].imgUrl}`}
-                  alt={`${images[idImg]}`}
-                  className={`page__photoGroup page__photoGroup--${page} page__photoGroup--${page}--${i}`}
+                  alt={`${images[photo.idImg].imgUrl}`}
+                  className={`lastpage__photoGroup lastpage__photoGroup--${page} lastpage__photoGroup--${page}--${i}`}
                 />
               ))}
           </div>
         </div>
       </section>
-      
     </>
   );
 }

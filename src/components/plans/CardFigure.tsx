@@ -1,6 +1,10 @@
+//CardFigure.tsx
+//Parent: Card.tsx
+
 type CardFigurePropType = {
   cardFigurePlan: string[];
 };
+
 export default function CardFigure({ cardFigurePlan }: CardFigurePropType) {
   return (
     <>
@@ -9,7 +13,6 @@ export default function CardFigure({ cardFigurePlan }: CardFigurePropType) {
           <img
             className={`card__figure card__figure--${figName}`}
             src={`/figures/${figName}-removebg-preview.svg`}
-            // src={`/figures/${figName}-removebg-preview.png`}
             alt={`figure-${figName}-${ifig}`}
             key={`${figName}-fig-${ifig}`}
           />

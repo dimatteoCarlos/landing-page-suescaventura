@@ -1,11 +1,14 @@
+//Row.tsx
+//Parent: CardPlansBox.tsx
+
 import { PlanRowsType } from '../../types/types';
 
 type RowPropsType = {
   planRow: PlanRowsType;
-  cardId: number;
+  cardId: number | undefined;
 };
 
-function Row({ planRow, cardId }: RowPropsType) {
+function RowTable({ planRow, cardId }: RowPropsType) {
   const { rowId, concept, cost } = planRow;
 
   const keyRow = `card-${cardId}-${rowId}`;
@@ -24,11 +27,11 @@ function Row({ planRow, cardId }: RowPropsType) {
           <div className={`card__plans__row`}>
             <span className='currency'> $</span>
             {new Intl.NumberFormat(
-              'es-ES'
-              //  {
-              //   style: 'currency',
-              //   currency: 'COP',
-              // }
+              'es-ES',
+               {
+                style: 'currency',
+                currency: 'COP',
+              }
             ).format(cost)}
           </div>
         </div>
@@ -48,11 +51,11 @@ function Row({ planRow, cardId }: RowPropsType) {
           <div className={`card__row__col card__row__col--right`}>
             <span className='currency'> $</span>
             {new Intl.NumberFormat(
-              'es-ES'
-              //  {
-              //   style: 'currency',
-              //   currency: 'COP',
-              // }
+              'es-ES',
+               {
+                style: 'currency',
+                currency: 'COP',
+              }
             ).format(cost)}
           </div>
         </div>
@@ -61,4 +64,4 @@ function Row({ planRow, cardId }: RowPropsType) {
   );
 }
 
-export default Row;
+export default RowTable;

@@ -10,20 +10,37 @@ body {
   text-align: center;
   list-style: none;
   font-size: 16px;
+  font-weight: normal;
 
   font-family: 'Segoe UI', sans-serif, 'Nanum Gothic';
 
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  width: 100svw;
+  overflow-x:hidden;
 }
+
+/* .app__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.app__container {
+  width: 100%;
+}
+

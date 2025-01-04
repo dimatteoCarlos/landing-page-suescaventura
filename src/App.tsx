@@ -1,15 +1,20 @@
-// import { Parallax } from 'react-parallax';
-import Pages from './components/pages/Pages.tsx';
+//App.tsx
+//Parent:main.tsx
+
 import { pages, images, lastPage } from './data/data-pages/dataPages.ts';
 import Plans from './components/plans/Plans.tsx';
-import LastPage from './components/pages/LastPage.tsx';
+import LastPage from './components/lastpage/LastPage.tsx';
+import PagesFlex from './components/pagesFlex/PagesFlex.tsx';
+import Layout from './components/layout/Layout.tsx';
 
 function App() {
   return (
     <>
-      <Pages pages={pages} images={images} />
-      <Plans />
-      <LastPage lastPage={lastPage} images={images} />
+    <Layout>
+        <PagesFlex pages={pages} images={images} />
+        <Plans />
+        <LastPage lastPage={lastPage} images={images} />
+      </Layout>
     </>
   );
 }

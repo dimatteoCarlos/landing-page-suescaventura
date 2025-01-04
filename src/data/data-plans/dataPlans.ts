@@ -1,4 +1,15 @@
+//dataPlans.ts
+
 import { PlansType } from '../../types/types';
+
+export const figureNames: string[] = [
+  'caminata',
+  'cabalgata',
+  'escalada',
+  'rappel',
+  'ferrata',
+  'espeleismo',
+];
 
 export const dataPlans: PlansType[] = [
   //page
@@ -51,18 +62,8 @@ export const dataPlans: PlansType[] = [
           }, //card
         ], //planCards
       }, //plan
-    ], //plans
-  }, //end page
 
-  //start page
-  {
-    pageId: 10,
-    pageTitle: '',
-    parr: '',
-    parr1: '',
-    pageBgImage: 'image-038.png',
-
-    plans: [
+      //start plan
       {
         planId: 4,
         planTitle: '4. Rappel (25m), una línea de descenso',
@@ -75,7 +76,18 @@ export const dataPlans: PlansType[] = [
           }, //end card
         ], //end planCards
       }, //end plan
+    ], //plans
+  }, //end page
 
+  //start page
+  {
+    pageId: 10,
+    pageTitle: '',
+    parr: '',
+    parr1: '',
+    pageBgImage: 'image-038.png',
+
+    plans: [
       //start plan
       {
         planId: 5,
@@ -182,7 +194,7 @@ export const dataPlans: PlansType[] = [
     plans: [
       {
         planId: 8,
-        planTitle: '8. Asenso en vía Ferrata + Caminata',
+        planTitle: '8. Ascenso en vía Ferrata + Caminata',
         planCards: [
           //start of card
           {

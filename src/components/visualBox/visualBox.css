@@ -1,0 +1,14 @@
+/*visualBox.css*/
+
+.visualBox {
+  width: 90%;
+  height: 30rem;
+  min-height: 25rem;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+
+  height: clamp(25rem, -47.647rem + 152.941vw, 100rem);
+
+  /* border:10px solid orangered; */
+}

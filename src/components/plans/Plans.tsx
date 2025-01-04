@@ -1,11 +1,13 @@
+//Plans.tsx
+//Parent:App.tsx
+
 import Card from './Card';
 import '../../styles/style-plans.css';
-
 import { dataPlans } from '../../data/data-plans/dataPlans.ts';
 
-function Plans() {
+// import Navbar from '../navbar/Navbar.tsx';
 
-  
+function Plans() {
   return (
     <>
       {dataPlans &&
@@ -18,11 +20,14 @@ function Plans() {
             <section
               className={`section__plans section__plans--${pageId}`}
               key={`page-${ipage}`}
+              id={`${pageId === 9 ? 'planes' : pageId}`}
+              style={{ backgroundImage: `url(/planBgImg/${pageBgImage})` }}
             >
+              {/* <Navbar /> */}
               <div
                 className={`plans__page__container plans__page__container--${pageId}`}
               >
-                {pageId === 1 && (
+                {pageId === 9 && (
                   <p className='plan__card  seguro__medico'>
                     Cada persona contará con seguro de asistencia médica, cada
                     uno estará equipado con los sistemas de seguridad
@@ -30,14 +35,6 @@ function Plans() {
                     especializada de guías calificados.
                   </p>
                 )}
-
-                <div className={`plan__bgImg plan__bgImg--${pageId}`}>
-                  <img
-                    src={`/planBgImg/${pageBgImage}`}
-                    alt={`${pageBgImage}-page-${pageId}`}
-                    className={`plan__bgImg plan__bgImg--${pageId}`}
-                  />
-                </div>
 
                 <div
                   className={`plan__card pagePlan__container pagePlan__container--${pageId}`}
@@ -68,21 +65,11 @@ function Plans() {
                         className={`plan__container plan__container--${planId}`}
                         key={keyPlan}
                       >
-                        <div
-                          className={`plan--title plan--title--${planId}`}
-                          style={
-                            planTitle.split(' ').length <= 8
-                              ? { fontSize: '1.5rem' }
-                              : { fontSize: '1.25rem' }
-                          }
-                        >
-                          {/* <span>{planId}. </span> */}
+                        <div className={`plan--title plan--title--${planId}`}>
                           {planTitle}
                         </div>
                         <div
-                          className={
-                            `plan__cards__container plan__cards__container--${iplan}`
-                          }
+                          className={`plan__cards__container plan__cards__container--${iplan}`}
                         >
                           {planCards.map((card, icard) => (
                             <Card
